@@ -1,0 +1,227 @@
+/* ------------------------
+font-size
+------------------------ */
+@mixin fs($size) {
+	font-size: $size + px;
+	font-size: $size / 10 + rem;
+}
+
+@mixin mv($image: none) {
+	min-width: 768px;
+	height: 400px;
+
+	@if $image !=none {
+		background-image: url(../images/#{$image});
+	}
+
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 999;
+
+	@include sp {
+		min-width: 0;
+		width: 100%;
+	}
+
+	@if $image !=none {
+		&::before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(3, 3, 3, 0.73) 24%, rgba(51, 51, 51, 0.48) 81%, rgba(255, 255, 255, 0));
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+		position: relative;
+		z-index: 1000;
+
+		.head {
+			margin-top: 90px;
+			font-size: 50px;
+			font-weight: 300;
+
+			@if $image==none {
+				@include sp {
+					margin-top: 80px;
+				}
+			}
+
+			@include sp {
+				font-size: 40px;
+
+			}
+
+			// ここで$imageがnoneの場合にcolorを#000に
+			@if $image ==none {
+				color: #000;
+			}
+
+			@else {
+				color: #FFF;
+			}
+
+			line-height: 1.571;
+			font-weight: 300;
+			text-align: center;
+		}
+
+		.lead {
+			font-size: 16px;
+			font-weight: 300;
+
+			@if $image ==none {
+				color: #000;
+			}
+
+			@else {
+				color: #FFF;
+			}
+
+			padding-top: 10px;
+			letter-spacing: 0.1em;
+			text-align: center;
+		}
+	}
+}
+
+@mixin square-box($border-color: #000, $border-width: 37px, $inner-width: 111px, $inner-height: 106px, $center: false) {
+	@include pc {
+		min-width: 425px;
+	}
+
+
+	.square-box-wrapper {
+		display: flex;
+		align-items: flex-end;
+
+		@if $center =="center" {
+			justify-content: center;
+		}
+
+		.inner-box {
+			width: $inner-width;
+			height: $inner-height;
+			border: $border-width solid $border-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+			&::before {
+				content: "";
+				width: 49px;
+				height: 58px;
+				background-color: if($border-color !=#000, #000, #FFF); // $border-colorが#000でない場合にbackground-colorを#000に変更
+				position: absolute;
+				bottom: $border-width * -1 - 1;
+				right: $border-width * -1 - 1;
+			}
+
+			.inner-box-text {
+				color: #000;
+				font-size: 16px;
+			}
+		}
+
+		.heading {
+			font-size: 30px;
+			font-weight: 300;
+			margin-left: -35px;
+			z-index: 1000;
+		}
+	}
+}
+
+@mixin more-button($color: #000) {
+	color: $color;
+	display: inline-block;
+	font-size: 18px;
+	padding-bottom: 7px;
+	padding-right: 30px;
+	border-bottom: 1px solid $color;
+	position: relative;
+
+	&:after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 1px;
+		height: 14px;
+		border-left: 1px solid $color;
+		transform: rotate(-45deg) translate(-5px, -2px);
+		box-sizing: border-box;
+	}
+}
+
+@mixin link-button() {
+	@include more-button;
+	padding-right: 140px;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+
+	&:after {
+		height: 39px;
+		right: 9px;
+		bottom: -4px;
+
+	}
+
+	@include sp {
+		padding-right: 70px;
+		font-size: 14px
+	}
+
+}
+
+@mixin back-button {
+	@include more-button();
+	padding-right: 69px;
+	padding-left: 69px;
+	padding-bottom: 0;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	margin: 0 auto;
+
+	&:after {
+		height: 39px;
+		left: 9px;
+		bottom: -4px;
+		transform: rotate(45deg) translate(5px, -2px);
+
+	}
+}
+
+@mixin chevron-right($color: #000, $size: 19px) {
+	display: inline-block;
+	vertical-align: middle;
+	color: $color;
+	line-height: 1;
+	width: $size;
+	height: 20px;
+	border: 0.1em solid currentColor;
+	border-left: 0;
+	border-bottom: 0;
+	box-sizing: border-box;
+	transform: translateX(-25%) rotate(45deg);
+
+	@include sp {
+		width: 17px;
+		height: 17px;
+
+	}
+}

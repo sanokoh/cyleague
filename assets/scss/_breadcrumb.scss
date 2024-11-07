@@ -1,0 +1,31 @@
+.breadcrumb {
+	margin-top: 40px;
+	font-size: 12px;
+	font-weight: 300;
+
+	ul {
+		list-style: none;
+		display: flex;
+		gap: 40px;
+		align-items: center;
+		flex-wrap: wrap;
+		@include sp{
+			gap: 20px;
+		}
+	}
+
+	li {
+		color: #333;
+
+		a {
+			color: #000;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+
+	}
+}

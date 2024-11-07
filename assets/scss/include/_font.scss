@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* /NotoSansJP */
+@font-face {
+	font-family: "Noto Sans JP";
+	font-style: bold;
+	font-weight: 700;
+	font-display: swap;
+	src: url("../fonts/NotoSansJP-Bold.otf");
+}
+@font-face {
+	font-family: "Noto Sans JP";
+	font-style: medium;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../fonts/NotoSansJP-Medium.otf");
+}
+@font-face {
+	font-family: "Noto Sans JP";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../fonts/NotoSansJP-Regular.otf");
+}

@@ -1,0 +1,187 @@
+#message_page {
+    position: relative;
+    z-index: 999;
+
+    #mv {
+        margin-top: -151px;
+    }
+
+    .mv {
+        @include mv();
+    }
+
+    .message {
+        padding-top: 140px;
+
+        @include sp {
+            padding-top: 80px;
+        }
+
+        .content {
+            margin-bottom: 240px;
+            @include sp{
+                margin-bottom: 160px;
+            }
+            // 奇数番目のコンテンツのスタイル
+            &:nth-of-type(odd) .executive {
+                @include pc {
+                    margin-right: calc(-50vw + 50%);
+
+                    .square-box {
+                        margin-left: -70px;
+                    }
+                }
+
+                .wrapper {
+                    @include sp {
+                        flex-direction: row-reverse;
+
+                        .square-box {
+                            position: absolute;
+                            bottom: 50px;
+                            left: 0;
+                        }
+                    }
+                }
+
+            }
+
+            // 偶数番目のコンテンツのスタイル
+            &:nth-of-type(even) .executive {
+                @include pc {
+
+                    margin-left: calc(-50vw + 50%);
+                    flex-direction: row-reverse;
+
+                    .square-box {
+                        margin-right: -50px;
+
+                        .square-box-wrapper {
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+
+                .wrapper {
+
+                    @include sp {
+                        .square-box {
+                            position: absolute;
+                            bottom: 50px;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+
+            .executive-container {
+                overflow: hidden;
+
+                .executive {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000;
+                    position: relative;
+
+                    @include sp {
+                        display: block;
+                    }
+
+                    .heading {
+                        color: #fff;
+                        font-size: 26px;
+                        font-weight: 300;
+
+                        @include sp {
+                            font-size: 18px;
+                            margin-top: 40px;
+                            margin-bottom: 41px;
+                        }
+                    }
+
+                    @include sp {
+                        .wrapper {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            position: relative;
+                        }
+                    }
+
+                    .image {
+                        z-index: 1000;
+                        padding-top: 10px;
+
+                        @include sp {
+                            width: 192px;
+                        }
+                    }
+
+                    .square-box {
+                        @include pc {
+                            @include square-box(#fff, 47px, 213px, 228px);
+                        }
+
+                        @include sp {
+                            @include square-box(#fff, 42px, 155px, 147px);
+
+                        }
+
+                        z-index: 999;
+
+                        .inner-box {
+                            flex-direction: column;
+
+                            .inner-box-text-position {
+                                color: #fff;
+                                font-size: 16px;
+                                margin-bottom: 8px;
+                            }
+
+                            .inner-box-text-name {
+                                color: #fff;
+                                font-size: 24px;
+                            }
+
+                            &::before {
+                                @include pc {
+                                    width: 90px !important;
+                                    height: 107px !important;
+                                }
+
+                                @include sp {
+                                    width: 70px !important;
+                                    height: 61px !important;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .text {
+                margin-top: 30px;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 2;
+            }
+        }
+
+        .buttons {
+            margin-bottom: 240px;
+            display: flex;
+            justify-content: center;
+            gap: 120px;
+            margin-top: 40px;
+            @include sp{
+                margin-bottom: 160px;
+                gap: 30px;
+                justify-content: space-around;
+            }
+            .link-button {
+                @include link-button;
+            }
+        }
+    }
+}

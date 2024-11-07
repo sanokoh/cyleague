@@ -1,0 +1,270 @@
+#about_page {
+	position: relative;
+	z-index: 999;
+
+	#mv {
+		margin-top: -151px;
+	}
+
+	.mv {
+		@include mv('about_mv.avif');
+
+	}
+
+	.about-company {
+		padding-top: 233px;
+		margin-bottom: 240px;
+
+		@include sp {
+			padding-top: 80px;
+			margin-bottom: 160px;
+
+		}
+
+		.about-content {
+			padding-left: 156px;
+			padding-right: 156px;
+			min-width: 800px;
+			position: relative;
+
+			@include sp {
+				padding: 0;
+				min-width: 0;
+			}
+
+			.square-box {
+				@include pc {
+					@include square-box(#000, 38px, 121px, 116px);
+				}
+
+				@include sp {
+					@include square-box(#000, 14px, 44px, 42px, center);
+
+				}
+			}
+
+			.image-block {
+				@include pc {
+					position: absolute;
+					top: -126px;
+					left: 10px;
+				}
+
+				@include sp {
+					position: relative;
+					text-align: center;
+
+					img {
+						width: 72px;
+					}
+				}
+			}
+
+			.text-block {
+				flex-grow: 1;
+
+				.heading {
+					font-size: 30px;
+					font-weight: 300;
+					line-height: 2;
+					margin-bottom: 40px;
+
+					@include sp {
+						font-size: 22px;
+						text-align: center;
+						margin-top: 10px;
+						margin-bottom: 20px;
+					}
+
+				}
+
+				.subheading {
+					font-size: 14px;
+					font-weight: 300;
+					margin-bottom: 10px;
+					color: #000;
+					line-height: 2;
+
+				}
+
+			}
+
+			.detail {
+				display: flex;
+				margin-bottom: 240px;
+
+				@include sp {
+					flex-direction: column;
+					margin-bottom: 0px;
+				}
+
+				.description {
+					font-size: 14px;
+					font-weight: 300;
+					color: #000;
+					line-height: 2;
+					width: 50%;
+
+					@include sp {
+						width: 100%;
+						margin-top: 20px;
+					}
+				}
+
+				.about-image {
+					padding-right: 30px;
+					width: 50%;
+
+					@include sp {
+						width: 100%;
+						padding-right: 0px;
+					}
+
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: center;
+			gap: 120px;
+			margin-top: 40px;
+
+			@include sp {
+				gap: 30px;
+				margin-top: 80px;
+				justify-content: space-around;
+			}
+
+			.link-button {
+				@include link-button;
+			}
+		}
+	}
+
+	#group_companies {
+		background-color: #000;
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+		.group-companies {
+			&__content {
+				.header {
+					margin-bottom: 40px;
+
+					.square-box {
+						@include square-box(#FFF, 14px, 45px, 42px, center);
+
+						.inner-box::before {
+							width: 20px !important;
+							height: 22px !important;
+						}
+					}
+
+					.heading {
+						color: #FFF;
+						font-size: 30px;
+						font-weight: 300;
+						text-align: center;
+						margin-top: 10px;
+
+						@include sp {
+							font-size: 22px;
+
+						}
+					}
+				}
+
+				.company-overview {
+					text-align: center;
+
+					.head {
+						color: #FFF;
+						font-size: 20px;
+						font-weight: 300;
+						margin-bottom: 10px;
+					}
+
+					.image-container {
+						margin-bottom: 20px;
+						display: flex;
+						justify-content: center;
+						gap: 20px;
+
+						img {
+							width: 100%;
+						}
+
+						@include sp {
+							flex-direction: column;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	#company_structure {
+		padding-top: 160px;
+		padding-bottom: 240px;
+
+		@include sp {
+			padding-bottom: 160px;
+
+		}
+
+		.company-structure {
+			&__content {
+				.header {
+					margin-bottom: 100px;
+
+					@include sp {
+						margin-bottom: 40px;
+					}
+
+					.square-box {
+						@include square-box(#000, 14px, 45px, 42px, center);
+
+						.inner-box::before {
+							width: 20px !important;
+							height: 22px !important;
+						}
+					}
+
+					.heading {
+						color: #000;
+						font-size: 30px;
+						font-weight: 300;
+						text-align: center;
+						margin-top: 10px;
+					}
+
+					.description {
+						color: #000;
+						font-size: 14px;
+						font-weight: 300;
+						text-align: center;
+						margin-top: 30px;
+					}
+				}
+
+				.image-container {
+					margin-bottom: 20px;
+					text-align: center;
+
+					img {
+						@include pc {
+							width: 1000px;
+						}
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"name": "サイリーグホールディングス株式会社",
+	"employee": [
+	  {
+		"@type": "Person",
+		"name": "高谷 康久",
+		"jobTitle": "代表取締役社長",
+		"image": "https://your-website.com/assets/images/message_takatani.png",
+		"description": "日本を代表する総合的なサイバーセキュリティの会社に、そして世界にもチャレンジ。",
+		"additionalType": "Executive",
+		"disambiguatingDescription": "サイバーセキュリティのインフラを守るために、リーグのような環境を創造し、育成に取り組んでいます。"
+	  },
+	  {
+		"@type": "Person",
+		"name": "福留 大士",
+		"jobTitle": "取締役",
+		"image": "https://your-website.com/assets/images/message_fukutome.png",
+		"description": "これまでの日本のサイバーセキュリティの前提に囚われることなく、日本のセキュリティをチェンジ。",
+		"additionalType": "Executive",
+		"disambiguatingDescription": "サイリーグを通じて、サイバーセキュリティに新しい視点をもたらし、仲間を集めます。"
+	  },
+	  {
+		"@type": "Person",
+		"name": "石川 耕",
+		"jobTitle": "取締役COO",
+		"image": "https://your-website.com/assets/images/message_ishikawa.png",
+		"description": "サイバーセキュリティを中核にした多様な支援をできる事業体を目指す。",
+		"additionalType": "Executive",
+		"disambiguatingDescription": "AIやクラウド活用にも対応したサイバーセキュリティ市場の拡大を目指します。"
+	  },
+	  {
+		"@type": "Person",
+		"name": "大越 いづみ",
+		"jobTitle": "取締役",
+		"image": "https://your-website.com/assets/images/message_ohgoshi.png",
+		"description": "「サイバーセキュリティ人材」を一人でも多く育成・輩出し、キャリアデザインを支援。",
+		"additionalType": "Executive",
+		"disambiguatingDescription": "サイバーセキュリティ人材の育成を通じて、安心できる社会の実現を目指しています。"
+	  }
+	]
+  }
