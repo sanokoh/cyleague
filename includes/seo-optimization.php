@@ -79,3 +79,17 @@ function redirect_to_canonical()
 }
 // add_action('template_redirect', 'redirect_to_canonical');
 
+function add_noindex_meta_tags() {
+    if (is_archive() ||        // アーカイブページ
+        is_search() ||         // 検索結果ページ
+        is_tag() ||            // タグページ
+        is_author() ||         // 著者ページ
+        is_date() ||           // 日付アーカイブページ
+        is_paged() ||          // ページネーション
+        is_page('privacy-policy') ||   // プライバシーポリシー
+        is_page('terms-of-service')) { // 利用規約ページ（ページ名は適宜変更してください）
+
+        echo '<meta name="robots" content="noindex, follow">';
+    }
+}
+add_action('wp_head', 'add_noindex_meta_tags');
