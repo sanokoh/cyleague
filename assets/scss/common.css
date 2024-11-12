@@ -587,6 +587,9 @@ header .header {
 header .header .logo {
   z-index: 1000;
 }
+header .header .logo a:hover {
+  opacity: 1;
+}
 header .header .logo img {
   max-width: 150px;
   width: 100%;
@@ -1426,6 +1429,15 @@ header .header nav.header-black li {
     width: 100%;
   }
 }
+#top_page .news .post .post-item:hover {
+  opacity: 1;
+}
+#top_page .news .post .post-item:hover .title {
+  opacity: 0.5;
+}
+#top_page .news .post .post-item:hover .arrow {
+  opacity: 0.5;
+}
 #top_page .news .post .post-item .text {
   width: 80%;
 }
@@ -1452,6 +1464,7 @@ header .header nav.header-black li {
   font-weight: 300;
   line-height: 2.143;
   padding-top: 24px;
+  transition: all 0.3s;
 }
 @media screen and (min-width: 577px) {
   #top_page .news .post .post-item .text .title {
@@ -1475,6 +1488,7 @@ header .header nav.header-black li {
   border-bottom: 0;
   box-sizing: border-box;
   transform: translateX(-25%) rotate(45deg);
+  transition: all 0.3s;
 }
 @media screen and (max-width: 576px) {
   #top_page .news .post .post-item .arrow {
@@ -1625,6 +1639,9 @@ header .header nav.header-black li {
     width: 100%;
     margin-bottom: 0;
   }
+}
+#top_page .group-companies .companies-list .company img {
+  width: 50%;
 }
 #top_page .group-companies .companies-list .name {
   font-size: 14px;
@@ -1784,7 +1801,7 @@ header .header nav.header-black li {
   }
 }
 #about_page .mv__content .lead {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   color: #FFF;
   padding-top: 10px;
@@ -2263,7 +2280,7 @@ header .header nav.header-black li {
   }
 }
 #service_page .mv__content .lead {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   color: #FFF;
   padding-top: 10px;
@@ -2518,7 +2535,7 @@ header .header nav.header-black li {
   }
 }
 #message_page .mv__content .lead {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   color: #000;
   padding-top: 10px;
@@ -2837,7 +2854,7 @@ header .header nav.header-black li {
   }
 }
 #company_page .mv__content .lead {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   color: #000;
   padding-top: 10px;
@@ -3010,7 +3027,7 @@ header .header nav.header-black li {
   }
 }
 #archive_page .mv-topics__content .lead {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   color: #FFF;
   padding-top: 10px;
@@ -3066,7 +3083,7 @@ header .header nav.header-black li {
   }
 }
 #archive_page .mv-event__content .lead {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   color: #FFF;
   padding-top: 10px;

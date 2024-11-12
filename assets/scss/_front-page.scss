@@ -375,9 +375,11 @@
 			&:first-child {
 				@include pc {
 					border-right: 1px solid #FFF;
-					.header{
+
+					.header {
 						margin-right: 120px;
 					}
+
 					.post-list {
 						margin-right: 120px;
 					}
@@ -417,9 +419,11 @@
 					margin-top: 10px;
 					margin-bottom: 10px;
 					font-weight: 300;
-					@include pc{
+
+					@include pc {
 						margin-left: 10px;
 					}
+
 					@include sp {
 						font-size: 22px;
 						line-height: 1;
@@ -470,6 +474,18 @@
 					width: 100%;
 				}
 
+				&:hover {
+					opacity: 1;
+					.title {
+						opacity: 0.5;
+
+					}
+					.arrow {
+						opacity: 0.5;
+
+					}
+				}
+
 				.text {
 					width: 80%;
 
@@ -477,6 +493,7 @@
 						@include pc {
 							font-size: 14px;
 						}
+
 						color: #FFF;
 						font-size: 12px;
 					}
@@ -495,12 +512,13 @@
 						@include pc {
 							font-size: 17px;
 						}
+
 						color: #FFF;
 						font-size: 14px;
 						font-weight: 300;
 						line-height: 2.143;
 						padding-top: 24px;
-
+						transition: all 0.3s;
 						@include pc {
 							height: 60px;
 						}
@@ -509,8 +527,10 @@
 
 				.arrow {
 					@include chevron-right(#FFF);
+					transition: all 0.3s;
 				}
 			}
+
 
 			.more {
 				display: inline-block;
@@ -545,6 +565,7 @@
 		.header {
 			text-align: center;
 			margin: 0 auto;
+
 			@include pc {
 				display: flex;
 				justify-content: center;
@@ -572,9 +593,11 @@
 				font-weight: 300;
 				margin-top: 10px;
 				margin-bottom: 10px;
-				@include pc{
+
+				@include pc {
 					margin-left: 10px;
 				}
+
 				@include sp {
 					font-size: 22px;
 					line-height: 1.2;
@@ -609,12 +632,16 @@
 					width: 100%;
 					margin-bottom: 0;
 				}
+				img{
+					width: 50%;
+				}
 			}
 
 			.name {
 				@include pc {
 					font-size: 17px;
 				}
+
 				font-size: 14px;
 				margin-top: 10px;
 			}
@@ -630,6 +657,7 @@
 			@include pc {
 				font-size: 17px;
 			}
+
 			font-size: 14px;
 			color: #000;
 		}
