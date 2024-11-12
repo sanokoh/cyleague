@@ -18,17 +18,21 @@
 
 	.archive-posts {
 		margin-top: 160px;
+		margin-bottom: 160px;
 
-		@include sp{
+		@include sp {
 			margin-top: 80px;
 		}
+
 		.post-item {
 
 			margin-bottom: 80px;
-			@include sp{
+
+			@include sp {
 				margin-bottom: 60px;
 
 			}
+
 			&:not(:first-child) {
 
 				margin-top: 80px;
@@ -42,14 +46,16 @@
 			}
 
 			.post-meta {
-				@include sp{
+				@include sp {
 					width: 80%;
 				}
+
 				.post-date {
 					font-size: 12px;
 					font-weight: 300;
 					margin-right: 39px;
-					@include sp{
+
+					@include sp {
 						margin-right: 30px;
 					}
 				}
@@ -71,15 +77,17 @@
 				.post-title {
 					margin-top: 20px;
 					margin-bottom: 20px;
-					font-size: 20px;
+					font-size: 14px;
 					font-weight: 300;
 					line-height: 1;
-					@include sp{
+
+					@include sp {
 						width: 90%;
 						font-size: 14px
 					}
 				}
-				.detail{
+
+				.detail {
 					font-size: 14px
 				}
 			}
@@ -89,10 +97,23 @@
 
 			}
 		}
-		.post-divider{
-			&:last-child{
-				display: none;
-			}
+
+	}
+
+	.pagination {
+		margin-bottom: 240px;
+		display: flex;
+		justify-content: center;
+		gap: 50px;
+		@include sp{
+			margin-bottom: 160px;
+		}
+		.page-numbers{
+			font-size: 20px;
+		}
+		.current {
+			text-decoration: underline;
+			/* 現在のページを強調表示する場合 */
 		}
 	}
 }

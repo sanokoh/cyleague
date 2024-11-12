@@ -2,25 +2,27 @@
 	<div class="footer">
 		<div class="container">
 			<div class="footer-top">
-				<div class="footer-logo">
-					<div class="logo">
-						<picture>
-							<source
-								srcset="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_white.webp'; ?>"
-								type="image/webp">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_white.jpg'; ?>"
-								alt="CyLeagueのロゴ">
-						</picture>
-					</div>
-					<div class="social-icons">
-						<a href="#"><img
-								src="<?php echo get_stylesheet_directory_uri() . '/assets/images/facebook-icon.webp'; ?>"
-								alt="LinkedIn"></a>
-						<a href="#"><img
-								src="<?php echo get_stylesheet_directory_uri() . '/assets/images/linkedin-icon.webp'; ?>"
-								alt="Facebook"></a>
-					</div>
-				</div>
+			<div class="footer-logo">
+                    <div class="logo">
+                        <picture>
+                            <source
+                                srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/logo_white.webp'; ?>"
+                                type="image/webp">
+                            <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/logo_white.jpg'; ?>"
+                                alt="CyLeagueのロゴ">
+                        </picture>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/CyLeagueHoldings" target="_blank" rel="noopener noreferrer">
+                            <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/facebook-icon.webp'; ?>"
+                                alt="CyLeagueのFacebookページ">
+                        </a>
+                        <a href="https://www.linkedin.com/company/cyleague-holdings" target="_blank" rel="noopener noreferrer">
+                            <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/linkedin-icon.webp'; ?>"
+                                alt="CyLeagueのLinkedInページ">
+                        </a>
+                    </div>
+                </div>
 				<div class="footer-links">
 					<div class="footer-column">
 						<?php wp_nav_menu(array('theme_location' => 'footer_l')); ?>

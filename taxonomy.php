@@ -46,6 +46,7 @@ get_header(); // ヘッダーを読み込む
 			<div class="archive-posts container-small">
 				<?php while ($the_query->have_posts()):
 					$the_query->the_post(); ?>
+
 					<article class="post-item">
 						<a href="<?php the_permalink(); ?>" class="post-link">
 							<div class="post-meta">
@@ -70,16 +71,19 @@ get_header(); // ヘッダーを読み込む
 				<?php endwhile; ?>
 			</div><!-- .archive-posts -->
 
-			<div class="pagination">
-				<?php
-				// ページネーションを表示
-				echo paginate_links(array(
-					'total' => $the_query->max_num_pages,
-					'prev_text' => 'Previous',
-					'next_text' => 'Next',
-				));
-				?>
-			</div><!-- .pagination -->
+            <div class="pagination">
+                <?php
+                echo paginate_links(array(
+                    'total' => $the_query->max_num_pages,
+                    'current' => $paged,
+                    'prev_text' => 'Previous',
+                    'next_text' => 'Next',
+                    'end_size' => 1,
+                    'mid_size' => 2,
+                    'aria_label' => 'Pagination', // アクセシビリティ向上
+                ));
+                ?>
+            </div><!-- .pagination -->
 
 		<?php else: ?>
 			<div class="container-small">

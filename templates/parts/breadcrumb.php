@@ -5,6 +5,11 @@ echo '<nav class="breadcrumb container"><ul>';
 // ホームリンクを追加
 echo '<li><a href="' . home_url() . '">トップ</a></li>';
 
+// 特定の固定ページの場合、/about へのリンクを追加
+if (is_page('message') || is_page('company')) {
+    echo '<li>&gt;</li><li><a href="' . home_url('/about') . '">サイリーグについて</a></li>';
+}
+
 // 投稿ページの場合
 if (is_single()) {
     // カテゴリリンクを表示
@@ -46,7 +51,6 @@ elseif (is_page()) {
     }
     echo '<li>&gt;</li><li>' . get_the_title() . '</li>';
 }
-
 
 // カテゴリページの場合
 elseif (is_category()) {

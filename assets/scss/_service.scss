@@ -7,7 +7,7 @@
 	}
 
 	.mv {
-		@include mv('service_mv.png');
+		@include mv('top_service.avif');
 
 	}
 
@@ -67,18 +67,22 @@
 				}
 			}
 
-			.solution-table {
-				img {
-					width: 100%;
-				}
-			}
+		}
 
+		.solution-table {
+			img {
+				width: 100%;
+			}
 
 		}
 	}
 
 	.group {
 		padding-top: 233px;
+
+		@include sp {
+			padding-top: 0;
+		}
 
 		.group-content {
 			@include pc {
@@ -213,7 +217,8 @@
 				.more-button {
 					@include more-button;
 					margin-bottom: 240px;
-					@include sp{
+
+					@include sp {
 						margin-bottom: 160px;
 					}
 				}

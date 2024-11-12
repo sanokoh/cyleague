@@ -83,9 +83,9 @@ get_header();
 								<div class="image">
 									<picture>
 										<source
-											srcset="<?php echo get_stylesheet_directory_uri() . '/assets/images/' . $executive['image'] . '.webp'; ?>"
+											srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/' . $executive['image'] . '.webp'; ?>"
 											type="image/webp">
-										<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/' . $executive['image'] . '.png'; ?>"
+										<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/' . $executive['image'] . '.png'; ?>"
 											alt="<?php echo $executive['position'] . ' ' . $executive['name']; ?>"
 											class="image">
 									</picture>
@@ -119,9 +119,9 @@ get_header();
 									<div class="image">
 										<picture>
 											<source
-												srcset="<?php echo get_stylesheet_directory_uri() . '/assets/images/' . $executive['image'] . '.webp'; ?>"
+												srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/' . $executive['image'] . '.webp'; ?>"
 												type="image/webp">
-											<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/' . $executive['image'] . '.png'; ?>"
+											<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/' . $executive['image'] . '.png'; ?>"
 												alt="<?php echo $executive['position'] . ' ' . $executive['name']; ?>"
 												class="image">
 										</picture>

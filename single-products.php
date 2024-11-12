@@ -1,15 +1,10 @@
 <?php
-/**
- * The template for displaying single service posts
- *
- * @package YourTheme
- */
 
 // テーマのヘッダーを読み込む
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main">
+	<main id="main" class="site-main container">
 
 		<?php
 		// 投稿が存在する場合、ループで表示

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const isInitialLogoWhite = logoImage.src.includes("logo_white") && logoSource.srcset.includes("logo_white");
 
 	// WordPressのディレクトリURIに代わる変数を定義
-	const stylesheetDirectoryUri = `${window.location.protocol}//${window.location.host}/cyleague/wp-content/themes/cyleague/assets/images`;
+	const stylesheetDirectoryUri = `${window.location.protocol}//${window.location.host}/wp/wp-content/themes/cyleague/assets/images`;
 
 
 	hamburgerMenu.addEventListener("click", function () {

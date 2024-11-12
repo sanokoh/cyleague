@@ -870,19 +870,21 @@ header .header nav.header-black li {
 #top_page #hero {
   margin-top: -151px;
 }
+@media screen and (max-width: 576px) {
+  #top_page .hero-wrapper {
+    height: 100vh;
+  }
+}
 #top_page .hero {
   min-width: 768px;
-  height: 97vh;
-  background-image: url(../images/mv_temp.png);
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
   position: relative;
   z-index: 999;
 }
 @media screen and (max-width: 576px) {
   #top_page .hero {
     min-width: 390px;
-    height: 60vh;
+    height: 71vh;
   }
 }
 #top_page .hero::before {
@@ -914,6 +916,11 @@ header .header nav.header-black li {
   position: relative;
   z-index: 999;
 }
+@media screen and (max-width: 576px) {
+  #top_page .hero__content {
+    justify-content: flex-end;
+  }
+}
 #top_page .hero__content .head {
   font-size: 70px;
   color: #FFF;
@@ -935,6 +942,7 @@ header .header nav.header-black li {
   #top_page .hero__content .lead {
     font-size: 14px;
     padding-top: 10px;
+    padding-bottom: 30px;
   }
 }
 #top_page .news-box {
@@ -1069,6 +1077,9 @@ header .header nav.header-black li {
   #top_page .about .wrapper, #top_page .service .wrapper {
     display: block;
   }
+}
+#top_page .about .text-wrapper, #top_page .service .text-wrapper {
+  display: flex;
 }
 @media screen and (min-width: 577px) and (min-width: 577px) {
   #top_page .about .square-box, #top_page .service .square-box {
@@ -1388,6 +1399,11 @@ header .header nav.header-black li {
   line-height: 2.143;
   padding-top: 24px;
 }
+@media screen and (min-width: 577px) {
+  #top_page .news .post .post-item .text .title {
+    height: 60px;
+  }
+}
 #top_page .news .post .post-item .arrow {
   display: inline-block;
   vertical-align: middle;
@@ -1409,7 +1425,7 @@ header .header nav.header-black li {
 }
 #top_page .news .post .more {
   display: inline-block;
-  width: 80%;
+  width: 100%;
   text-align: right;
 }
 @media screen and (max-width: 576px) {
@@ -1913,7 +1929,7 @@ header .header nav.header-black li {
 }
 @media screen and (max-width: 576px) {
   #about_page .about-company .buttons .link-button {
-    padding-right: 70px;
+    padding-right: 50px;
     font-size: 14px;
   }
 }
@@ -2098,7 +2114,7 @@ header .header nav.header-black li {
 #service_page .mv {
   min-width: 768px;
   height: 400px;
-  background-image: url(../images/service_mv.png);
+  background-image: url(../images/top_service.avif);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -2200,11 +2216,16 @@ header .header nav.header-black li {
     margin-bottom: 30px;
   }
 }
-#service_page .solution .solution-content .solution-table img {
+#service_page .solution .solution-table img {
   width: 100%;
 }
 #service_page .group {
   padding-top: 233px;
+}
+@media screen and (max-width: 576px) {
+  #service_page .group {
+    padding-top: 0;
+  }
 }
 @media screen and (min-width: 577px) {
   #service_page .group .group-content {
@@ -2618,7 +2639,7 @@ header .header nav.header-black li {
 @media screen and (max-width: 576px) {
   #message_page .message .buttons {
     margin-bottom: 160px;
-    gap: 30px;
+    gap: 15px;
     justify-content: space-around;
   }
 }
@@ -2654,7 +2675,7 @@ header .header nav.header-black li {
 }
 @media screen and (max-width: 576px) {
   #message_page .message .buttons .link-button {
-    padding-right: 70px;
+    padding-right: 50px;
     font-size: 14px;
   }
 }
@@ -2720,13 +2741,14 @@ header .header nav.header-black li {
 }
 @media screen and (max-width: 576px) {
   #company_page .company {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 #company_page .company .section {
   display: flex;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.4117647059);
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 @media screen and (max-width: 576px) {
   #company_page .company .section {
@@ -2819,7 +2841,7 @@ header .header nav.header-black li {
 }
 @media screen and (max-width: 576px) {
   #company_page .buttons .link-button {
-    padding-right: 70px;
+    padding-right: 50px;
     font-size: 14px;
   }
 }
@@ -2945,6 +2967,7 @@ header .header nav.header-black li {
 }
 #archive_page .archive-posts {
   margin-top: 160px;
+  margin-bottom: 160px;
 }
 @media screen and (max-width: 576px) {
   #archive_page .archive-posts {
@@ -2997,7 +3020,7 @@ header .header nav.header-black li {
 #archive_page .archive-posts .post-item .post-meta .post-title {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1;
 }
@@ -3029,8 +3052,23 @@ header .header nav.header-black li {
     height: 17px;
   }
 }
-#archive_page .archive-posts .post-divider:last-child {
-  display: none;
+#archive_page .pagination {
+  margin-bottom: 240px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media screen and (max-width: 576px) {
+  #archive_page .pagination {
+    margin-bottom: 160px;
+  }
+}
+#archive_page .pagination .page-numbers {
+  font-size: 20px;
+}
+#archive_page .pagination .current {
+  text-decoration: underline;
+  /* 現在のページを強調表示する場合 */
 }
 
 #single_page {

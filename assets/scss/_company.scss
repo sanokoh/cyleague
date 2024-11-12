@@ -12,19 +12,22 @@
 
 	.company {
 		padding-top: 140px;
-		@include sp{
-			padding-top: 80px;
+
+		@include sp {
+			padding-top: 40px;
 
 		}
+
 		.section {
 			display: flex;
-			border-bottom: 1px solid #333;
+			border-bottom: 1px solid #33333369;
 			padding-bottom: 60px;
+			padding-top: 60px;
 
-
-			@include sp{
+			@include sp {
 				flex-direction: column;
 				padding-bottom: 40px;
+
 				&:not(:first-child) {
 					padding-top: 40px;
 				}
@@ -39,11 +42,11 @@
 			color: #fff;
 			font-size: 18px;
 			font-weight: 300;
-			// text-align: center;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			@include sp{
+
+			@include sp {
 				width: 138px;
 				height: 36px;
 				font-size: 14px;
@@ -57,7 +60,8 @@
 			font-weight: 300;
 			align-self: center;
 			width: 100%;
-			@include sp{
+
+			@include sp {
 				margin-top: 30px;
 				padding-left: 0;
 			}
@@ -76,13 +80,16 @@
 		display: flex;
 		justify-content: center;
 		gap: 120px;
-		@include sp{
+
+		@include sp {
 			margin-bottom: 160px;
 			gap: 30px;
 			justify-content: space-around;
 		}
+
 		.link-button {
 			@include link-button;
+
 		}
 	}
 }

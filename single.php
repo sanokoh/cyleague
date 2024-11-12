@@ -26,19 +26,22 @@ get_header(); // ヘッダーを読み込む
 
                 // ループ開始
                 while (have_posts()):
-                    the_post(); ?>
+                    the_post();
+                    $post_type = get_post_type();  // カスタム投稿タイプ取得
+
+                    ?>
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
                         <header class="entry-header">
                             <div class="entry-meta">
-                                <?php
+                            <?php
                                 // 出力するタクソノミーの配列
                                 $taxonomies = ['event_type', 'news_type'];
-
                                 foreach ($taxonomies as $taxonomy) {
-                                    // タクソノミーに紐づいたタームを出力
-                                    the_terms(get_the_ID(), $taxonomy, '<div class="entry-category">', '', '</div>');
+                                    if (taxonomy_exists($taxonomy)) {
+                                        the_terms(get_the_ID(), $taxonomy, '<div class="entry-category">', '', '</div>');
+                                    }
                                 }
                                 ?>
                                 <p class="entry-date"><?php echo get_the_date('Y.m.d'); ?></p>
@@ -63,31 +66,35 @@ get_header(); // ヘッダーを読み込む
                             the_content();
 
                             $external_url = get_post_meta($post->ID, 'external_url', true);
-                            echo $external_url;
-
+                            if ($external_url) {
+                                echo $external_url;
+                            }
                             ?>
+                            <?php if (get_post_type() === 'event'): ?>
+                                <?php
+                                $date = get_post_meta($post->ID, 'date', true);
+                                $place = get_post_meta($post->ID, 'place', true);
+                                $detail = get_post_meta($post->ID, 'detail', true);
+
+                                if ($date || $place || $detail): ?>
+                                    <hr class="wp-block-separator has-alpha-channel-opacity">
+                                    <?php if ($date): ?>
+                                    <h2 class="wp-block-heading">日時</h2>
+                                        <p><?php echo $date; ?></p>
+                                    <?php endif; ?>
+
+                                    <?php if ($place): ?>
+                                    <h2 class="wp-block-heading">場所</h2>
+                                        <p><?php echo $place; ?></p>
+                                    <?php endif; ?>
+
+                                    <?php if ($detail): ?>
+                                    <h2 class="wp-block-heading">詳細</h2>
+                                        <p><?php echo $detail; ?></p>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            <?php endif; ?>
                             <hr class="wp-block-separator has-alpha-channel-opacity">
-                            </hr>
-                            <h2 class="wp-block-heading">日時</h2>
-                            <p>
-                                <?php
-                                echo get_post_meta($post->ID, 'date', true);
-                                ?>
-                            </p>
-                            <h2 class="wp-block-heading">場所 </h2>
-                            <p>
-                                <?php
-                                echo get_post_meta($post->ID, 'place', true);
-                                ?>
-                            </p>
-                            <h2 class="wp-block-heading">詳細</h2>
-                            <p>
-                                <?php
-                                echo get_post_meta($post->ID, 'detail', true);
-                                ?>
-                            </p>
-                            <hr class="wp-block-separator has-alpha-channel-opacity">
-                            </hr>
 
                             <div class="contact-info">
                                 <p>本件に関するお問い合わせ先

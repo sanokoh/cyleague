@@ -25,9 +25,9 @@ get_header();
 				<div class="image-block">
 					<picture>
 						<source
-							srcset="<?php echo get_stylesheet_directory_uri() . '/assets/images/company_mark.webp'; ?>"
+							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
 							type="image/webp">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/company_mark.png'; ?>"
+						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.png'; ?>"
 							alt="サイリーグホールディングスのロゴ" class="image">
 					</picture>
 				</div>
@@ -36,18 +36,18 @@ get_header();
 						<br>幅広いソリューションを提供しています
 					</h2>
 				</div>
-				<div class="solution-table">
-					<a href="<?php echo get_stylesheet_directory_uri() . '/assets/images/solution_table.png'; ?>"
-						target="_blank">
-						<picture>
-							<source
-								srcset="<?php echo get_stylesheet_directory_uri() . '/assets/images/solution_table.png'; ?>"
-								type="image/webp">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/solution_table.png'; ?>"
-								alt="サイリーグホールディングスのロゴ" class="image">
-						</picture>
-					</a>
-				</div>
+			</div>
+			<div class="solution-table ">
+				<a href="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>"
+					target="_blank">
+					<picture>
+						<source
+							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>"
+							type="image/webp">
+						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>"
+							alt="サイリーグホールディングスのロゴ" class="image">
+					</picture>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -57,9 +57,9 @@ get_header();
 				<div class="image-block">
 					<picture>
 						<source
-							srcset="<?php echo get_stylesheet_directory_uri() . '/assets/images/company_mark.webp'; ?>"
+							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
 							type="image/webp">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/company_mark.png'; ?>"
+						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.png'; ?>"
 							alt="サイリーグホールディングスのロゴ" class="image">
 					</picture>
 				</div>

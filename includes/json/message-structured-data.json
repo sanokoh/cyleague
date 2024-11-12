@@ -7,37 +7,29 @@
 		"@type": "Person",
 		"name": "高谷 康久",
 		"jobTitle": "代表取締役社長",
-		"image": "https://your-website.com/assets/images/message_takatani.png",
-		"description": "日本を代表する総合的なサイバーセキュリティの会社に、そして世界にもチャレンジ。",
-		"additionalType": "Executive",
-		"disambiguatingDescription": "サイバーセキュリティのインフラを守るために、リーグのような環境を創造し、育成に取り組んでいます。"
+		"image": "https://cyleague.jp/wp/wp-content/themes/cyleague/assets/images/message_takatani.png",
+		"description": "サイリーグホールディングスの代表取締役社長として、日本と世界に挑む総合サイバーセキュリティ企業の指導者。"
 	  },
 	  {
 		"@type": "Person",
 		"name": "福留 大士",
 		"jobTitle": "取締役",
-		"image": "https://your-website.com/assets/images/message_fukutome.png",
-		"description": "これまでの日本のサイバーセキュリティの前提に囚われることなく、日本のセキュリティをチェンジ。",
-		"additionalType": "Executive",
-		"disambiguatingDescription": "サイリーグを通じて、サイバーセキュリティに新しい視点をもたらし、仲間を集めます。"
+		"image": "https://cyleague.jp/wp/wp-content/themes/cyleague/assets/images/message_fukutome.png",
+		"description": "サイリーグホールディングスの取締役として、日本のサイバーセキュリティを進化させる役割を担う。"
 	  },
 	  {
 		"@type": "Person",
 		"name": "石川 耕",
 		"jobTitle": "取締役COO",
-		"image": "https://your-website.com/assets/images/message_ishikawa.png",
-		"description": "サイバーセキュリティを中核にした多様な支援をできる事業体を目指す。",
-		"additionalType": "Executive",
-		"disambiguatingDescription": "AIやクラウド活用にも対応したサイバーセキュリティ市場の拡大を目指します。"
+		"image": "https://cyleague.jp/wp/wp-content/themes/cyleague/assets/images/message_ishikawa.png",
+		"description": "取締役COOとして、サイバーセキュリティ事業を広範にサポートし、革新を推進。"
 	  },
 	  {
 		"@type": "Person",
 		"name": "大越 いづみ",
 		"jobTitle": "取締役",
-		"image": "https://your-website.com/assets/images/message_ohgoshi.png",
-		"description": "「サイバーセキュリティ人材」を一人でも多く育成・輩出し、キャリアデザインを支援。",
-		"additionalType": "Executive",
-		"disambiguatingDescription": "サイバーセキュリティ人材の育成を通じて、安心できる社会の実現を目指しています。"
+		"image": "https://cyleague.jp/wp/wp-content/themes/cyleague/assets/images/message_ohgoshi.png",
+		"description": "取締役として、サイバーセキュリティ人材の育成とキャリアサポートを提供。"
 	  }
 	]
-  }
+}

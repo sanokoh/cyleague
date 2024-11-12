@@ -17,6 +17,7 @@ function my_theme_setup(): void
     // メニューの位置を登録
     register_nav_menus(array(
         'header' => 'ヘッダーメニュー',
+        'header_sp' => 'SPヘッダーメニュー',
         'footer_l' => '左側フッターメニュー',
         'footer_c' => '中間フッターメニュー',
         'footer_r' => '右側フッターメニュー'
