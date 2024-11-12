@@ -13,12 +13,14 @@ add_action('wp_head', 'add_custom_favicon');
 function add_open_graph_tags()
 {
 
-        global $post;
-        echo '<meta property="og:title" content="' . get_the_title() . '"/>'; // 記事のタイトル
-        echo '<meta property="og:description" content="' . get_the_excerpt() . '"/>'; // 記事の抜粋（説明）
-        echo '<meta property="og:image" content="' . get_the_post_thumbnail_url($post->ID, 'full') . '"/>'; // サムネイル画像
-        echo '<meta property="og:url" content="' . get_permalink() . '"/>'; // 記事のURL
-        echo '<meta property="og:type" content="article"/>'; // 記事タイプを指定
+    global $post;
+    echo '<meta property="og:title" content="' . get_the_title() . '"/>'; // 記事のタイトル
+    echo '<meta property="og:description" content="' . get_the_excerpt() . '"/>'; // 記事の抜粋（説明）
+// サムネイルが設定されている場合はそれを使用し、なければサイトのロゴを使用
+    $og_image = get_the_post_thumbnail_url($post->ID, 'full') ?: get_site_icon_url();
+    echo '<meta property="og:image" content="' . esc_url($og_image) . '"/>'; // サムネイル画像またはサイトロゴ
+    echo '<meta property="og:url" content="' . get_permalink() . '"/>'; // 記事のURL
+    echo '<meta property="og:type" content="article"/>'; // 記事タイプを指定
 
 }
 add_action('wp_head', 'add_open_graph_tags');
@@ -76,3 +78,4 @@ function redirect_to_canonical()
     }
 }
 // add_action('template_redirect', 'redirect_to_canonical');
+
