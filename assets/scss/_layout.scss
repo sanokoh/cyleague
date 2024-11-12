@@ -76,6 +76,14 @@ header {
 				li {
 					font-size: 16px;
 					color: #FFF;
+
+					a {
+						transition: all 0.3s;
+
+						&:hover {
+							opacity: 0.5;
+						}
+					}
 				}
 			}
 		}
@@ -265,6 +273,11 @@ header {
 								color: #fff;
 								text-decoration: none;
 								font-size: 14px;
+								transition: all 0.3s;
+
+								&:hover {
+									opacity: 0.5;
+								}
 							}
 						}
 					}
@@ -311,7 +324,10 @@ header {
 				color: #fff;
 				text-decoration: none;
 				margin-left: 10px;
-
+				transition: all 0.3s;
+				&:hover{
+					opacity: 0.5;
+				}
 				@include sp {
 					margin-left: 0;
 				}

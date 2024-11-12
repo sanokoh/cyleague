@@ -602,6 +602,12 @@ header .header nav.pc-nav ul li {
   font-size: 16px;
   color: #FFF;
 }
+header .header nav.pc-nav ul li a {
+  transition: all 0.3s;
+}
+header .header nav.pc-nav ul li a:hover {
+  opacity: 0.5;
+}
 @media screen and (max-width: 576px) {
   header .header .hamburger-menu {
     position: relative;
@@ -753,6 +759,10 @@ header .header nav.header-black li {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
+  transition: all 0.3s;
+}
+#footer .footer-top .footer-links .footer-column ul.menu li a:hover, #footer .footer-top .footer-links .footer-column ul.sub-menu li a:hover {
+  opacity: 0.5;
 }
 #footer .footer-top .footer-links .footer-column ul.sub-menu {
   margin-top: 20px;
@@ -791,6 +801,10 @@ header .header nav.header-black li {
   color: #fff;
   text-decoration: none;
   margin-left: 10px;
+  transition: all 0.3s;
+}
+#footer .footer-bottom .footer-links a:hover {
+  opacity: 0.5;
 }
 @media screen and (max-width: 576px) {
   #footer .footer-bottom .footer-links a {
