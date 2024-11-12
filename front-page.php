@@ -242,8 +242,10 @@ get_header();
                             </div>
                         </div>
                     </div>
-                    <h2 class="header__title">トピックス</h2>
-                    <span class="header__caption">News & Topics</span>
+                    <div class="haader__wrapper">
+                        <h2 class="header__title">トピックス</h2>
+                        <span class="header__caption">News & Topics</span>
+                    </div>
                 </div>
                 <div class="post-list">
                     <?php
@@ -308,8 +310,11 @@ get_header();
                             </div>
                         </div>
                     </div>
-                    <h2 class="header__title">イベント・セミナー情報</h2>
-                    <span class="header__caption">Events & Seminars</span>
+                    <div class="header__wrapper">
+
+                        <h2 class="header__title">イベント・セミナー情報</h2>
+                        <span class="header__caption">Events & Seminars</span>
+                    </div>
                 </div>
                 <div class="post-list">
                     <?php
@@ -377,8 +382,10 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <h2 class="header__title">グループ会社</h2>
-                <span class="header__caption">Group Company</span>
+                <div class="header__wapper">
+                    <h2 class="header__title">グループ会社</h2>
+                    <span class="header__caption">Group Company</span>
+                </div>
             </div>
             <div class="companies-list">
                 <?php

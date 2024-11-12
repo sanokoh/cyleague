@@ -1272,6 +1272,9 @@ header .header nav.header-black li {
   #top_page .news .post:first-child {
     border-right: 1px solid #FFF;
   }
+  #top_page .news .post:first-child .header {
+    margin-right: 120px;
+  }
   #top_page .news .post:first-child .post-list {
     margin-right: 120px;
   }
@@ -1284,6 +1287,12 @@ header .header nav.header-black li {
 #top_page .news .post .header {
   text-align: center;
   margin: 0 auto;
+}
+@media screen and (min-width: 577px) {
+  #top_page .news .post .header {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 577px) {
   #top_page .news .post .header .square-box {
@@ -1323,6 +1332,11 @@ header .header nav.header-black li {
   margin-left: -35px;
   z-index: 1000;
 }
+@media screen and (min-width: 577px) {
+  #top_page .news .post .header .square-box {
+    min-width: 0 !important;
+  }
+}
 #top_page .news .post .header .square-box .inner-box::before {
   width: 20px !important;
   height: 22px !important;
@@ -1333,6 +1347,11 @@ header .header nav.header-black li {
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 300;
+}
+@media screen and (min-width: 577px) {
+  #top_page .news .post .header__title {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 576px) {
   #top_page .news .post .header__title {
@@ -1469,6 +1488,12 @@ header .header nav.header-black li {
   margin: 0 auto;
 }
 @media screen and (min-width: 577px) {
+  #top_page .group-companies .header {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 577px) {
   #top_page .group-companies .header .square-box {
     min-width: 425px;
   }
@@ -1506,6 +1531,11 @@ header .header nav.header-black li {
   margin-left: -35px;
   z-index: 1000;
 }
+@media screen and (min-width: 577px) {
+  #top_page .group-companies .header .square-box {
+    min-width: 0 !important;
+  }
+}
 #top_page .group-companies .header .square-box .inner-box::before {
   width: 20px !important;
   height: 22px !important;
@@ -1516,6 +1546,11 @@ header .header nav.header-black li {
   font-weight: 300;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 577px) {
+  #top_page .group-companies .header__title {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 576px) {
   #top_page .group-companies .header__title {
