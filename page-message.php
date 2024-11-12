@@ -87,7 +87,7 @@ get_header();
 											type="image/webp">
 										<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/' . $executive['image'] . '.png'; ?>"
 											alt="<?php echo $executive['position'] . ' ' . $executive['name']; ?>"
-											class="image">
+											class="image" loading="lazy">
 									</picture>
 								</div>
 								<div class="square-box">
@@ -123,7 +123,7 @@ get_header();
 												type="image/webp">
 											<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/' . $executive['image'] . '.png'; ?>"
 												alt="<?php echo $executive['position'] . ' ' . $executive['name']; ?>"
-												class="image">
+												class="image" loading="lazy">
 										</picture>
 									</div>
 									<div class="square-box">

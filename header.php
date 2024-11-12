@@ -40,7 +40,7 @@
 								srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/logo' . ($is_light_logo ? '_white' : '') . '.webp'; ?>"
 								type="image/webp">
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/logo' . ($is_light_logo ? '_white' : '') . '.jpg'; ?>"
-								alt="サイリーグ株式会社">
+								alt="サイリーグ株式会社" loading="lazy">
 						</picture>
 					</a>
 				</div>

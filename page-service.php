@@ -28,7 +28,7 @@ get_header();
 							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
 							type="image/webp">
 						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.png'; ?>"
-							alt="サイリーグホールディングスのロゴ" class="image">
+							alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
 					</picture>
 				</div>
 				<div class="text-block">
@@ -45,7 +45,7 @@ get_header();
 							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>"
 							type="image/webp">
 						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>"
-							alt="サイリーグホールディングスのロゴ" class="image">
+							alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
 					</picture>
 				</a>
 			</div>
@@ -60,7 +60,7 @@ get_header();
 							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
 							type="image/webp">
 						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.png'; ?>"
-							alt="サイリーグホールディングスのロゴ" class="image">
+							alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
 					</picture>
 				</div>
 				<div class="text-block">

@@ -27,7 +27,7 @@ get_header();
 							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
 							type="image/webp">
 						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.png'; ?>"
-							alt="サイリーグホールディングスのロゴ" class="image">
+							alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
 					</picture>
 				</div>
 				<div class="text-block">
@@ -45,7 +45,7 @@ get_header();
 								srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/building-image.avif'; ?>"
 								type="image/webp">
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/building-image.png'; ?>"
-								alt="オフィスビルの外観" class="image">
+								alt="オフィスビルの外観" class="image" loading="lazy">
 						</picture>
 					</div>
 					<p class="description">
@@ -96,7 +96,7 @@ get_header();
 								type="image/webp">
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/group_companies_NEW-IT.png'; ?>"
 								alt="NEW-ITのグループ企業: CHANGE、サイリーグホールディングス、E-Guardian、IdealRoute Consulting、DFA Robotics、beacapp、KaWaL eLearning、KaWaL診断"
-								class="image">
+								class="image" loading="lazy">
 						</picture>
 						<picture>
 							<source
@@ -104,7 +104,7 @@ get_header();
 								type="image/webp">
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/group_comapnies_publitec.png'; ?>"
 								alt="パブリテックのグループ企業: TRUST BANK、Governance Technologies、Travel Zip、Orb、LoGoチャット、LoGoフォーム、ふるさとチョイス、ガバメイツ、アップクロス"
-								class="image">
+								class="image" loading="lazy">
 						</picture>
 					</div>
 				</div>
@@ -133,7 +133,7 @@ get_header();
 							type="image/webp">
 						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company-structure.png'; ?>"
 							alt="サイリーグホールディングスの組織図。中央にCyLeagueが位置し、上部にCHANGE HOLDINGS、下部にE-GuardianとIdealRoute Consultingのロゴ。その他、外部パートナー、Gr各社、セキュリティ各社といった関連企業やパートナー企業が示されています。"
-							class="image">
+							class="image" loading="lazy">
 					</picture>
 				</div>
 			</div>

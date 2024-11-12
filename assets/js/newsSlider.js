@@ -8,8 +8,8 @@ jQuery(document).ready(function ($) {
         dots: false,
         arrows: true,
         appendArrows: $('.arrow-box'),
-        prevArrow: '<div class="prev-arrow"><img src="' + homeUrl + '/wp/wp-content/themes/cyleague/assets/images/svg/top_slide_arrow_left.svg" alt="矢印" width="15" height="24"></div>',
-        nextArrow: '<div class="next-arrow"><img src="' + homeUrl + '/wp/wp-content/themes/cyleague/assets/images/svg/top_slide_arrow_right.svg" alt="矢印" width="15" height="24"></div>',
+        prevArrow: '<div class="prev-arrow"><img src="' + homeUrl + '/wp/wp-content/themes/cyleague/assets/images/svg/top_slide_arrow_left.svg" alt="矢印" width="15" height="24"  loading="lazy"></div>',
+        nextArrow: '<div class="next-arrow"><img src="' + homeUrl + '/wp/wp-content/themes/cyleague/assets/images/svg/top_slide_arrow_right.svg" alt="矢印" width="15" height="24" loading="lazy"></div>',
     });
 
     $(".slide-items--sp").slick({
@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
         dots: false,
         arrows: true,
         appendArrows: $('.arrow-box--sp'),
-        prevArrow: '<div class="prev-arrow"><img src="' + homeUrl + '/wp/wp-content/themes/cyleague/assets/images/svg/top_slide_arrow_left.svg" alt="矢印" width="15" height="24"></div>',
-        nextArrow: '<div class="next-arrow"><img src="' + homeUrl + '/wp/wp-content/themes/cyleague/assets/images/svg/top_slide_arrow_right.svg" alt="矢印" width="15" height="24"></div>',
+        prevArrow: '<div class="prev-arrow"><img src="' + homeUrl + '/wp/wp-content/themes/cyleague/assets/images/svg/top_slide_arrow_left.svg" alt="矢印" width="15" height="24" loading="lazy"></div>',
+        nextArrow: '<div class="next-arrow"><img src="' + homeUrl + '/wp/wp-content/themes/cyleague/assets/images/svg/top_slide_arrow_right.svg" alt="矢印" width="15" height="24" loading="lazy"></div>',
     });
 });

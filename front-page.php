@@ -137,7 +137,7 @@ get_header();
                             <source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/top_about.png'; ?>"
                                 type="image/webp">
                             <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/top_about.png'; ?>"
-                                alt="サイリーグについての説明セクションのイメージ" class="image">
+                                alt="サイリーグについての説明セクションのイメージ" class="image" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -162,7 +162,7 @@ get_header();
                     <source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/top_about.avif'; ?>"
                         type="image/webp">
                     <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/top_about.png'; ?>"
-                        alt="サイリーグについての説明セクションのイメージ" class="image">
+                        alt="サイリーグについての説明セクションのイメージ" class="image" loading="lazy">
                 </picture>
             </div>
             <div class="container">
@@ -182,7 +182,7 @@ get_header();
                             <source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/top_service.avif'; ?>"
                                 type="image/webp">
                             <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/top_service.jpg'; ?>"
-                                alt="サイリーグの製品・サービスセクションのイメージ" class="image">
+                                alt="サイリーグの製品・サービスセクションのイメージ" class="image" loading="lazy">
                         </picture>
                     </div>
                     <div class="text-wrapper">
@@ -220,7 +220,7 @@ get_header();
                     <source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/top_service.avif'; ?>"
                         type="image/webp">
                     <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/top_service.jpg'; ?>"
-                        alt="サイリーグの製品・サービスセクションのイメージ" class="image">
+                        alt="サイリーグの製品・サービスセクションのイメージ" class="image" loading="lazy">
                 </picture>
             </div>
             <div class="container">
@@ -418,7 +418,7 @@ get_header();
                         <picture>
                             <source srcset="<?php echo $company['src'] . '.webp'; ?>" type="image/webp">
                             <img src="<?php echo $company['src'] . '.png'; ?>"
-                                alt="<?php echo esc_attr($company['alt']); ?>" class="image">
+                                alt="<?php echo esc_attr($company['alt']); ?>" class="image" loading="lazy">
                         </picture>
                         <p class="name"><?php echo esc_html($company['name']); ?></p>
                     </div>

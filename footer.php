@@ -9,17 +9,17 @@
                                 srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/logo_white.webp'; ?>"
                                 type="image/webp">
                             <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/logo_white.jpg'; ?>"
-                                alt="CyLeagueのロゴ">
+                                alt="CyLeagueのロゴ" loading="lazy">
                         </picture>
                     </div>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/CyLeagueHoldings" target="_blank" rel="noopener noreferrer">
                             <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/facebook-icon.webp'; ?>"
-                                alt="CyLeagueのFacebookページ">
+                                alt="CyLeagueのFacebookページ" loading="lazy">
                         </a>
                         <a href="https://www.linkedin.com/company/cyleague-holdings" target="_blank" rel="noopener noreferrer">
                             <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/linkedin-icon.webp'; ?>"
-                                alt="CyLeagueのLinkedInページ">
+                                alt="CyLeagueのLinkedInページ" loading="lazy">
                         </a>
                     </div>
                 </div>
