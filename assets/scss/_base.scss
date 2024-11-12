@@ -57,7 +57,10 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  opacity: 0.5;
+
+  @include pc {
+    opacity: 0.5;
+  }
 }
 
 a:active {

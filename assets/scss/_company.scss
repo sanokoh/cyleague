@@ -60,7 +60,9 @@
 			font-weight: 300;
 			align-self: center;
 			width: 100%;
-
+			@include pc {
+				font-size: 17px;
+			}
 			@include sp {
 				margin-top: 30px;
 				padding-left: 0;

@@ -278,7 +278,11 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  opacity: 0.5;
+}
+@media screen and (min-width: 577px) {
+  a:hover {
+    opacity: 0.5;
+  }
 }
 
 a:active {
@@ -2908,6 +2912,11 @@ header .header nav.header-black li {
   font-weight: 300;
   align-self: center;
   width: 100%;
+}
+@media screen and (min-width: 577px) {
+  #company_page .company .section-content {
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 576px) {
   #company_page .company .section-content {
