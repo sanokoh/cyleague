@@ -5,6 +5,7 @@ function my_theme_enqueue_scripts()
 {
     wp_enqueue_style('stylesheet', STYLESHEET_DIRECTORY . '/assets/scss/common.css');
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap', false);
+    wp_enqueue_style('adobe-fonts', 'https://use.typekit.net/mka4riw.css', false);
     if (is_front_page()) {
         wp_enqueue_script('adjust-hero-height', get_template_directory_uri() . '/assets/js/adjustHeroHeight.js', array(), null, true);
         wp_enqueue_script('news-slider', get_template_directory_uri() . '/assets/js/newsSlider.js', array('jquery', 'slick-js'), null, true);

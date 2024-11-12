@@ -1,4 +1,5 @@
 <?php
+define('STYLESHEET_DIRECTORY', get_stylesheet_directory_uri());
 
 // includesディレクトリのファイルを読み込む
 require_once get_template_directory() . '/includes/theme-setup.php';
@@ -13,4 +14,3 @@ require_once get_template_directory() . '/includes/structured-data.php'; // 構�
 require_once get_template_directory() . '/includes/breadcrumb.php'; // パンくずリスト
 require_once get_template_directory() . '/includes/external-url-for-blog.php';  // タームがblogのとき、外部リンクが設定されていれば外部リンクに遷移
 
-define('STYLESHEET_DIRECTORY', get_stylesheet_directory_uri());

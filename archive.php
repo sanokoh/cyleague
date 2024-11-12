@@ -32,7 +32,8 @@
         </section>
 
         <section id="breadcrumb">
-            <?php if (function_exists('display_breadcrumb')) display_breadcrumb(); ?>
+            <?php if (function_exists('display_breadcrumb'))
+                display_breadcrumb(); ?>
         </section>
 
         <?php
@@ -48,19 +49,26 @@
 
         <?php if ($the_query->have_posts()): ?>
             <div class="archive-posts container-small">
-                <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+                <?php while ($the_query->have_posts()):
+                    $the_query->the_post(); ?>
                     <article class="post-item">
                         <a href="<?php the_permalink(); ?>" class="post-link">
                             <div class="post-meta">
                                 <span class="post-date"><?php echo get_the_date('Y.m.d'); ?></span>
 
                                 <?php
-                                $terms = get_the_terms(get_the_ID(), 'news_type');
-                                if ($terms && !is_wp_error($terms)):
-                                    foreach ($terms as $term): ?>
-                                        <span class="post-category"><?php echo esc_html($term->name); ?></span>
-                                    <?php endforeach;
-                                endif;
+                                // news_type と event_type のタクソノミーを一度に処理
+                                $taxonomies = ['news_type', 'event_type'];
+
+                                foreach ($taxonomies as $taxonomy) {
+                                    $terms = get_the_terms(get_the_ID(), $taxonomy);
+                                    if ($terms && !is_wp_error($terms)):
+                                        foreach ($terms as $term): ?>
+                                            <span class="post-category"><?php echo esc_html($term->name); ?></span>
+                                        <?php endforeach;
+                                    endif;
+                                }
+
                                 ?>
 
                                 <h2 class="post-title"><?php the_title(); ?></h2>
@@ -97,3 +105,4 @@
 </main>
 
 <?php get_footer(); ?>
+

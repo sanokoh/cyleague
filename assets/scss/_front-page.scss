@@ -72,7 +72,7 @@
 			}
 
 			.lead {
-				font-size: 16px;
+				font-size: 20px;
 				color: #FFF;
 				padding-top: 56px;
 				letter-spacing: 0.1em;
@@ -128,6 +128,7 @@
 		}
 
 		.news-title {
+
 			color: #FFF;
 			font-size: 14px;
 			font-weight: 300;
@@ -187,6 +188,7 @@
 				}
 
 				.news-title {
+
 					color: #FFF;
 					font-size: 14px;
 					font-weight: 300;
@@ -472,6 +474,9 @@
 					width: 80%;
 
 					.date {
+						@include pc {
+							font-size: 14px;
+						}
 						color: #FFF;
 						font-size: 12px;
 					}
@@ -487,6 +492,9 @@
 					}
 
 					.title {
+						@include pc {
+							font-size: 17px;
+						}
 						color: #FFF;
 						font-size: 14px;
 						font-weight: 300;
@@ -604,6 +612,9 @@
 			}
 
 			.name {
+				@include pc {
+					font-size: 17px;
+				}
 				font-size: 14px;
 				margin-top: 10px;
 			}
@@ -616,6 +627,9 @@
 		}
 
 		.group-title p {
+			@include pc {
+				font-size: 17px;
+			}
 			font-size: 14px;
 			color: #000;
 		}

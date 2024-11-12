@@ -40,6 +40,9 @@
 
 					a {
 						padding: 8px 20px;
+						&:hover{
+							opacity: 1;
+						}
 					}
 				}
 
@@ -123,6 +126,9 @@
 
 
 		p {
+			@include pc {
+				font-size: 17px;
+			}
 			margin-bottom: 50px;
 			font-size: 14px;
 			line-height: 2;

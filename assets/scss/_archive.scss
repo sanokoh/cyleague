@@ -43,6 +43,18 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				&:hover {
+					opacity: 1;
+					.post-title{
+						opacity: 0.5;
+					}
+					.detail {
+						opacity: 0.5;
+					}
+					.arrow{
+						opacity: 0.5;
+					}
+				}
 			}
 
 			.post-meta {
@@ -51,6 +63,10 @@
 				}
 
 				.post-date {
+					@include pc {
+						font-size: 14px;
+					}
+
 					font-size: 12px;
 					font-weight: 300;
 					margin-right: 39px;
@@ -61,6 +77,10 @@
 				}
 
 				.post-category {
+					@include pc {
+						font-size: 17px;
+					}
+
 					display: inline-flex;
 					justify-content: center;
 					align-items: center;
@@ -77,9 +97,10 @@
 				.post-title {
 					margin-top: 20px;
 					margin-bottom: 20px;
-					font-size: 14px;
+					font-size: 17px;
 					font-weight: 300;
 					line-height: 1;
+					transition: all 0.3s;
 
 					@include sp {
 						width: 90%;
@@ -88,11 +109,17 @@
 				}
 
 				.detail {
+					transition: all 0.3s;
+					@include pc {
+						font-size: 14px;
+					}
+
 					font-size: 14px
 				}
 			}
 
 			.arrow {
+				transition: all 0.3s;
 				@include chevron-right(#000);
 
 			}
@@ -105,12 +132,15 @@
 		display: flex;
 		justify-content: center;
 		gap: 50px;
-		@include sp{
+
+		@include sp {
 			margin-bottom: 160px;
 		}
-		.page-numbers{
+
+		.page-numbers {
 			font-size: 20px;
 		}
+
 		.current {
 			text-decoration: underline;
 			/* 現在のページを強調表示する場合 */

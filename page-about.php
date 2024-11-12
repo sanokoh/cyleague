@@ -80,7 +80,7 @@ get_header();
 				</div>
 				<div class="company-overview">
 					<h3 class="head">株式会社チェンジホールディングス</h3>
-					<div class="image-container pr70 pl70">
+					<div class="change-logo image-container pr70 pl70">
 						<picture>
 							<source
 								srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/change_holdings_logo_colored.avif'; ?>"

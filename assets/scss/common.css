@@ -230,25 +230,26 @@ img {
 /* ====================================================
 base style
 ==================================================== */
-html {
-  font-size: 14px;
-}
-
 body {
   color: #000000;
   font-size: 100%;
-  font-size: 14px;
   font-size: 1rem;
   font-weight: 300;
   background-color: #FFFFFF;
   line-height: 2;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Futura PT", "Noto Sans JP", sans-serif;
   overflow: scroll;
   margin: 0 auto;
 }
 @media screen and (min-width: 577px) {
   body {
     min-width: 1400px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -263,6 +264,10 @@ main {
   margin: 0 !important;
 }
 
+a {
+  transition: all 0.3s;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -273,6 +278,7 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+  opacity: 0.5;
 }
 
 a:active {
@@ -761,6 +767,11 @@ header .header nav.header-black li {
   font-size: 14px;
   transition: all 0.3s;
 }
+@media screen and (min-width: 577px) {
+  #footer .footer-top .footer-links .footer-column ul.menu li a, #footer .footer-top .footer-links .footer-column ul.sub-menu li a {
+    font-size: 17px;
+  }
+}
 #footer .footer-top .footer-links .footer-column ul.menu li a:hover, #footer .footer-top .footer-links .footer-column ul.sub-menu li a:hover {
   opacity: 0.5;
 }
@@ -853,6 +864,11 @@ header .header nav.header-black li {
   margin-top: 40px;
   font-size: 12px;
   font-weight: 300;
+}
+@media screen and (min-width: 577px) {
+  .breadcrumb {
+    font-size: 16px;
+  }
 }
 .breadcrumb ul {
   list-style: none;
@@ -947,7 +963,7 @@ header .header nav.header-black li {
   }
 }
 #top_page .hero__content .lead {
-  font-size: 16px;
+  font-size: 20px;
   color: #FFF;
   padding-top: 56px;
   letter-spacing: 0.1em;
@@ -1417,6 +1433,11 @@ header .header nav.header-black li {
   color: #FFF;
   font-size: 12px;
 }
+@media screen and (min-width: 577px) {
+  #top_page .news .post .post-item .text .date {
+    font-size: 14px;
+  }
+}
 #top_page .news .post .post-item .text .category {
   display: inline-block;
   background-color: #FFF;
@@ -1431,6 +1452,11 @@ header .header nav.header-black li {
   font-weight: 300;
   line-height: 2.143;
   padding-top: 24px;
+}
+@media screen and (min-width: 577px) {
+  #top_page .news .post .post-item .text .title {
+    font-size: 17px;
+  }
 }
 @media screen and (min-width: 577px) {
   #top_page .news .post .post-item .text .title {
@@ -1604,6 +1630,11 @@ header .header nav.header-black li {
   font-size: 14px;
   margin-top: 10px;
 }
+@media screen and (min-width: 577px) {
+  #top_page .group-companies .companies-list .name {
+    font-size: 17px;
+  }
+}
 #top_page .group-companies .group-title h2 {
   font-size: 24px;
   margin-top: 10px;
@@ -1611,6 +1642,11 @@ header .header nav.header-black li {
 #top_page .group-companies .group-title p {
   font-size: 14px;
   color: #000;
+}
+@media screen and (min-width: 577px) {
+  #top_page .group-companies .group-title p {
+    font-size: 17px;
+  }
 }
 #top_page .group-companies .company {
   width: 250px;
@@ -1896,6 +1932,11 @@ header .header nav.header-black li {
   color: #000;
   line-height: 2;
 }
+@media screen and (min-width: 577px) {
+  #about_page .about-company .about-content .text-block .subheading {
+    font-size: 17px;
+  }
+}
 #about_page .about-company .about-content .detail {
   display: flex;
   margin-bottom: 240px;
@@ -1912,6 +1953,11 @@ header .header nav.header-black li {
   color: #000;
   line-height: 2;
   width: 50%;
+}
+@media screen and (min-width: 577px) {
+  #about_page .about-company .about-content .detail .description {
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 576px) {
   #about_page .about-company .about-content .detail .description {
@@ -2067,6 +2113,9 @@ header .header nav.header-black li {
     flex-direction: column;
   }
 }
+#about_page #group_companies .group-companies__content .company-overview .image-container.change-logo img {
+  width: 200px;
+}
 #about_page #company_structure {
   padding-top: 160px;
   padding-bottom: 240px;
@@ -2139,6 +2188,11 @@ header .header nav.header-black li {
   font-weight: 300;
   text-align: center;
   margin-top: 30px;
+}
+@media screen and (min-width: 577px) {
+  #about_page #company_structure .company-structure__content .header .description {
+    font-size: 17px;
+  }
 }
 #about_page #company_structure .company-structure__content .image-container {
   margin-bottom: 20px;
@@ -2678,6 +2732,11 @@ header .header nav.header-black li {
   font-weight: 300;
   line-height: 2;
 }
+@media screen and (min-width: 577px) {
+  #message_page .message .content .text {
+    font-size: 17px;
+  }
+}
 #message_page .message .buttons {
   margin-bottom: 240px;
   display: flex;
@@ -3039,6 +3098,18 @@ header .header nav.header-black li {
   justify-content: space-between;
   align-items: center;
 }
+#archive_page .archive-posts .post-item .post-link:hover {
+  opacity: 1;
+}
+#archive_page .archive-posts .post-item .post-link:hover .post-title {
+  opacity: 0.5;
+}
+#archive_page .archive-posts .post-item .post-link:hover .detail {
+  opacity: 0.5;
+}
+#archive_page .archive-posts .post-item .post-link:hover .arrow {
+  opacity: 0.5;
+}
 @media screen and (max-width: 576px) {
   #archive_page .archive-posts .post-item .post-meta {
     width: 80%;
@@ -3048,6 +3119,11 @@ header .header nav.header-black li {
   font-size: 12px;
   font-weight: 300;
   margin-right: 39px;
+}
+@media screen and (min-width: 577px) {
+  #archive_page .archive-posts .post-item .post-meta .post-date {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 576px) {
   #archive_page .archive-posts .post-item .post-meta .post-date {
@@ -3066,12 +3142,18 @@ header .header nav.header-black li {
   line-height: 1;
   margin-right: 10px;
 }
+@media screen and (min-width: 577px) {
+  #archive_page .archive-posts .post-item .post-meta .post-category {
+    font-size: 17px;
+  }
+}
 #archive_page .archive-posts .post-item .post-meta .post-title {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 576px) {
   #archive_page .archive-posts .post-item .post-meta .post-title {
@@ -3080,9 +3162,16 @@ header .header nav.header-black li {
   }
 }
 #archive_page .archive-posts .post-item .post-meta .detail {
+  transition: all 0.3s;
   font-size: 14px;
 }
+@media screen and (min-width: 577px) {
+  #archive_page .archive-posts .post-item .post-meta .detail {
+    font-size: 14px;
+  }
+}
 #archive_page .archive-posts .post-item .arrow {
+  transition: all 0.3s;
   display: inline-block;
   vertical-align: middle;
   color: #000;
@@ -3164,6 +3253,9 @@ header .header nav.header-black li {
 }
 #single_page .single-post .entry-header .entry-meta .entry-category a {
   padding: 8px 20px;
+}
+#single_page .single-post .entry-header .entry-meta .entry-category a:hover {
+  opacity: 1;
 }
 #single_page .single-post .entry-header .entry-meta .entry-title {
   margin-top: 20px;
@@ -3251,6 +3343,11 @@ header .header nav.header-black li {
   font-size: 14px;
   line-height: 2;
   font-weight: 300;
+}
+@media screen and (min-width: 577px) {
+  #single_page .single-post p {
+    font-size: 17px;
+  }
 }
 #single_page .single-post .wp-block-separator {
   border-top: 1px solid #cccccc;

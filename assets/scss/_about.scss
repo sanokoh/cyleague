@@ -79,6 +79,10 @@
 				}
 
 				.subheading {
+					@include pc {
+						font-size: 17px;
+					}
+
 					font-size: 14px;
 					font-weight: 300;
 					margin-bottom: 10px;
@@ -99,6 +103,10 @@
 				}
 
 				.description {
+					@include pc {
+						font-size: 17px;
+					}
+
 					font-size: 14px;
 					font-weight: 300;
 					color: #000;
@@ -189,6 +197,10 @@
 						margin-bottom: 10px;
 					}
 
+
+
+
+
 					.image-container {
 						margin-bottom: 20px;
 						display: flex;
@@ -201,6 +213,12 @@
 
 						@include sp {
 							flex-direction: column;
+						}
+
+						&.change-logo {
+							img {
+								width: 200px;
+							}
 						}
 					}
 				}
@@ -245,6 +263,10 @@
 					}
 
 					.description {
+						@include pc {
+							font-size: 17px;
+						}
+
 						color: #000;
 						font-size: 14px;
 						font-weight: 300;
@@ -261,6 +283,7 @@
 						@include pc {
 							width: 1000px;
 						}
+
 						width: 100%;
 					}
 				}
