@@ -90,7 +90,7 @@ get_header(); // ヘッダーを読み込む
 
                                     <?php if ($detail): ?>
                                     <h2 class="wp-block-heading">詳細</h2>
-                                        <p><?php echo $detail; ?></p>
+                                        <a href="<?php echo $detail; ?>"  target="_blank" rel="noopener noreferrer" class="detail"><?php echo $detail; ?></a>
                                     <?php endif; ?>
                                 <?php endif; ?>
                             <?php endif; ?>

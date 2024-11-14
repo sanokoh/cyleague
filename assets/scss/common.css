@@ -3339,6 +3339,10 @@ header .header nav.header-black li {
 #single_page .single-post .post-divider:last-child {
   display: none;
 }
+#single_page .single-post .detail {
+  display: block;
+  margin-bottom: 50px;
+}
 #single_page .single-post .wp-block-heading,
 #single_page .single-post h2,
 #single_page .single-post h3,
