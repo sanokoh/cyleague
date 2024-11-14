@@ -15,7 +15,7 @@ body {
   overflow: scroll;
   // width: min(100%, 1920px);
   margin: 0 auto;
-
+  overflow-x: auto;
   @include pc {
     min-width: 1250px;
     font-size: 17px;

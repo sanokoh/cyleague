@@ -111,7 +111,7 @@ get_header();
 			</div>
 		</div>
 	</section>
-	<section id="company_structure">
+	<!-- <section id="company_structure">
 		<div class="company-structure container">
 			<div class="company-structure__content">
 				<div class="header">
@@ -122,7 +122,7 @@ get_header();
 							</div>
 						</div>
 					</div>
-					<!-- <h2 class="heading">中間持株会社化 で<br class="sp-only"> 専門家を集積・増強</h2> -->
+					<h2 class="heading">中間持株会社化 で<br class="sp-only"> 専門家を集積・増強</h2>
 					<p class="description">
 						CyLeague（「Cyber」＋「League」）には、独立事業者が集い、切磋琢磨し、より<br class="pc-only">良いサービスを提供し、グローバルに飛び出す　という思いを込めている </p>
 				</div>
@@ -138,7 +138,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 </main>
 <?php get_footer(); ?>
 

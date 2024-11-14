@@ -240,6 +240,7 @@ body {
   font-family: "Futura PT", "Noto Sans JP", sans-serif;
   overflow: scroll;
   margin: 0 auto;
+  overflow-x: auto;
 }
 @media screen and (min-width: 577px) {
   body {
