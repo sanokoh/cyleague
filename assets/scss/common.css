@@ -3340,7 +3340,7 @@ header .header nav.header-black li {
   display: none;
 }
 #single_page .single-post .detail {
-  display: block;
+  display: inline-block;
   margin-bottom: 50px;
 }
 #single_page .single-post .wp-block-heading,
