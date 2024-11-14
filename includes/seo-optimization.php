@@ -5,7 +5,7 @@
 // カスタムファビコンの追加（ファビコンのアイコンを設定する）
 function add_custom_favicon()
 {
-    echo '<link rel="icon" href="' . get_template_directory_uri() . '/images/favicon.ico" type="image/x-icon">';
+    echo '<link rel="icon" href="' . get_template_directory_uri() . '/assets/images/favicon.ico" type="image/x-icon">';
 }
 add_action('wp_head', 'add_custom_favicon');
 

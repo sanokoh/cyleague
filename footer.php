@@ -13,11 +13,11 @@
                         </picture>
                     </div>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/CyLeagueHoldings" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/cyleagueholdings/" target="_blank" rel="noopener noreferrer">
                             <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/facebook-icon.webp'; ?>"
                                 alt="CyLeagueのFacebookページ" loading="lazy">
                         </a>
-                        <a href="https://www.linkedin.com/company/cyleague-holdings" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/cyleague/" target="_blank" rel="noopener noreferrer">
                             <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/linkedin-icon.webp'; ?>"
                                 alt="CyLeagueのLinkedInページ" loading="lazy">
                         </a>
@@ -40,9 +40,9 @@
 			<div class="footer-bottom">
 				<p class="pc-only">&copy; CyLeague Holdings, Inc.</p>
 				<p class="footer-links">
-					<a href="#">情報セキュリティ基本方針</a>
-					<a href="#">コンプライアンス・リスク管理基本方針</a>
-					<a href="#">反社会勢力に対しての基本方針</a>
+					<a href="https://www.changeholdings.co.jp/isms/" target="_blank" rel="noopener noreferrer">情報セキュリティ基本方針</a>
+					<a href="https://www.changeholdings.co.jp/compliance_risk/" target="_blank" rel="noopener noreferrer">コンプライアンス・リスク管理基本方針</a>
+					<a href="https://www.changeholdings.co.jp/anti_social/" target="_blank" rel="noopener noreferrer">反社会勢力に対しての基本方針</a>
 				</p>
 
 			</div>
