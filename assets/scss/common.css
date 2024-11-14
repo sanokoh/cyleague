@@ -3136,9 +3136,14 @@ header .header nav.header-black li {
 #archive_page .archive-posts .post-item .post-link:hover .arrow {
   opacity: 0.5;
 }
+@media screen and (min-width: 577px) {
+  #archive_page .archive-posts .post-item .post-meta {
+    max-width: 80%;
+  }
+}
 @media screen and (max-width: 576px) {
   #archive_page .archive-posts .post-item .post-meta {
-    width: 80%;
+    width: 88%;
   }
 }
 #archive_page .archive-posts .post-item .post-meta .post-date {
@@ -3178,12 +3183,11 @@ header .header nav.header-black li {
   margin-bottom: 20px;
   font-size: 17px;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.4;
   transition: all 0.3s;
 }
 @media screen and (max-width: 576px) {
   #archive_page .archive-posts .post-item .post-meta .post-title {
-    width: 90%;
     font-size: 14px;
   }
 }

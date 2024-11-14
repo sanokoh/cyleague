@@ -72,8 +72,13 @@
                                 ?>
 
                                 <h2 class="post-title"><?php the_title(); ?></h2>
-                                <p class="detail"><?php echo esc_html(get_post_meta(get_the_ID(), 'date', true)); ?></p>
-                                <p class="detail"><?php echo esc_html(get_post_meta(get_the_ID(), 'place', true)); ?></p>
+                                <?php if (get_post_meta(get_the_ID(), 'date', true)): ?>
+                                    <p class="detail"><?php echo esc_html(get_post_meta(get_the_ID(), 'date', true)); ?></p>
+                                <?php endif; ?>
+
+                                <?php if (get_post_meta(get_the_ID(), 'place', true)): ?>
+                                    <p class="detail"><?php echo esc_html(get_post_meta(get_the_ID(), 'place', true)); ?></p>
+                                <?php endif; ?>
                             </div>
                             <div class="arrow"> </div>
                         </a>

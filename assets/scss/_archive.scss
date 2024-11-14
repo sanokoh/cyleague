@@ -38,28 +38,34 @@
 				margin-top: 80px;
 			}
 
-
 			.post-link {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+
 				&:hover {
 					opacity: 1;
-					.post-title{
+
+					.post-title {
 						opacity: 0.5;
 					}
+
 					.detail {
 						opacity: 0.5;
 					}
-					.arrow{
+
+					.arrow {
 						opacity: 0.5;
 					}
 				}
 			}
 
 			.post-meta {
+				@include pc {
+					max-width: 80%;
+				}
 				@include sp {
-					width: 80%;
+					width: 88%;
 				}
 
 				.post-date {
@@ -99,17 +105,17 @@
 					margin-bottom: 20px;
 					font-size: 17px;
 					font-weight: 300;
-					line-height: 1;
+					line-height: 1.4;
 					transition: all 0.3s;
 
 					@include sp {
-						width: 90%;
 						font-size: 14px
 					}
 				}
 
 				.detail {
 					transition: all 0.3s;
+
 					@include pc {
 						font-size: 14px;
 					}
