@@ -66,9 +66,9 @@ get_header(); // ヘッダーを読み込む
                             the_content();
 
                             $external_url = get_post_meta($post->ID, 'external_url', true);
-                            if ($external_url) {
-                                echo $external_url;
-                            }
+                            // if ($external_url) {
+                            //     echo $external_url;
+                            // }
                             ?>
                             <?php if (get_post_type() === 'event'): ?>
                                 <?php
