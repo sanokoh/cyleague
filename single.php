@@ -35,7 +35,7 @@ get_header(); // ヘッダーを読み込む
 
                         <header class="entry-header">
                             <div class="entry-meta">
-                            <?php
+                                <?php
                                 // 出力するタクソノミーの配列
                                 $taxonomies = ['event_type', 'news_type'];
                                 foreach ($taxonomies as $taxonomy) {
@@ -79,18 +79,19 @@ get_header(); // ヘッダーを読み込む
                                 if ($date || $place || $detail): ?>
                                     <hr class="wp-block-separator has-alpha-channel-opacity">
                                     <?php if ($date): ?>
-                                    <h2 class="wp-block-heading">日時</h2>
+                                        <h2 class="wp-block-heading">日時</h2>
                                         <p><?php echo $date; ?></p>
                                     <?php endif; ?>
 
                                     <?php if ($place): ?>
-                                    <h2 class="wp-block-heading">場所</h2>
+                                        <h2 class="wp-block-heading">場所</h2>
                                         <p><?php echo $place; ?></p>
                                     <?php endif; ?>
 
                                     <?php if ($detail): ?>
-                                    <h2 class="wp-block-heading">詳細</h2>
-                                        <a href="<?php echo $detail; ?>"  target="_blank" rel="noopener noreferrer" class="detail"><?php echo $detail; ?></a>
+                                        <h2 class="wp-block-heading">詳細</h2>
+                                        <a href="<?php echo $detail; ?>" target="_blank" rel="noopener noreferrer"
+                                            class="detail"><?php echo $detail; ?></a>
                                     <?php endif; ?>
                                 <?php endif; ?>
                             <?php endif; ?>
@@ -103,6 +104,17 @@ get_header(); // ヘッダーを読み込む
                                     <br>Tel：03-6435-7338
                                 </p>
                             </div> -->
+
+                            <?php
+                            $selected_contact = get_post_meta(get_the_ID(), '_selected_contact_info', true);
+
+                            if ($selected_contact === 'cyleague') {
+                                echo '<p>本件に関するお問い合わせ先<br>サイリーグホールディングス株式会社<br>Email：<a href="mailto:info@cyleague.jp">info@cyleague.jp</a><br>Tel：03-6435-7338</p>';
+                            } elseif ($selected_contact === 'another_contact') {
+                                echo '<p>本件に関するお問い合わせ先<br>チェンジホールディングス<br>Email：<a href="mailto:another@contact.com">another@contact.com</a><br>Tel：012-3456-7890</p>';
+                            }
+                            ?>
+
                         </div><!-- .entry-content -->
 
 
