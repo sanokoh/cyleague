@@ -2395,6 +2395,7 @@ header .header nav.header-black li {
 }
 #service_page .group .group-solution .service-list .service-thumbnail img {
   width: 266px;
+  height: auto;
 }
 @media screen and (max-width: 576px) {
   #service_page .group .group-solution .service-list .service-thumbnail {
