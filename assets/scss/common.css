@@ -3340,6 +3340,10 @@ header .header nav.header-black li {
     height: 17px;
   }
 }
+#single_page .single-post .entry-content a {
+  color: #2271b1;
+  text-decoration: underline;
+}
 #single_page .single-post .post-divider:last-child {
   display: none;
 }
@@ -3386,10 +3390,6 @@ header .header nav.header-black li {
   #single_page .single-post p {
     font-size: 17px;
   }
-}
-#single_page .single-post a {
-  color: #2271b1;
-  text-decoration: underline;
 }
 #single_page .single-post .wp-block-separator {
   border-top: 1px solid #cccccc;

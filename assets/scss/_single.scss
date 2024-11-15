@@ -88,6 +88,11 @@
 			.arrow {
 				@include chevron-right(#000);
 			}
+
+			a {
+				color: #2271b1;
+				text-decoration: underline;
+			}
 		}
 
 		.post-divider {
@@ -144,10 +149,6 @@
 			font-weight: 300;
 		}
 
-		a {
-			color: #2271b1;
-			text-decoration: underline;
-		}
 
 		.wp-block-separator {
 			border-top: 1px solid #cccccc;
