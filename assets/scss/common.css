@@ -3253,7 +3253,6 @@ header .header nav.header-black li {
   margin-bottom: 240px;
   /* 引用 */
   /* リスト */
-  /* リスト */
   /* 画像 */
   /* ボタン */
   /* コードブロック */
@@ -3466,6 +3465,9 @@ header .header nav.header-black li {
 }
 #single_page .single-post .back-to-archive {
   text-align: center;
+}
+#single_page .single-post .back-to-archive a {
+  text-decoration: none;
 }
 @media screen and (max-width: 576px) {
   #single_page .single-post .back-to-archive {

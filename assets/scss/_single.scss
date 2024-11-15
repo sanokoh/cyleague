@@ -166,7 +166,6 @@
 		}
 
 		/* リスト */
-		/* リスト */
 		ul {
 			margin-bottom: 30px;
 			padding-left: 20px;
@@ -245,6 +244,11 @@
 
 		.back-to-archive {
 			text-align: center;
+
+			a {
+				text-decoration: none;
+
+			}
 
 			@include sp {
 				margin-top: 160px;
