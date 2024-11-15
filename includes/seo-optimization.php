@@ -9,6 +9,9 @@ function add_custom_favicon()
 }
 add_action('wp_head', 'add_custom_favicon');
 
+// WordpressデフォルトのHTMLへのファビコン出力を無効化
+remove_action('wp_head', 'wp_site_icon', 99);
+
 // Open Graphタグの追加（SNS共有時に最適なタイトル、画像、URLを設定）
 function add_open_graph_tags()
 {

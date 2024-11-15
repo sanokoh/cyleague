@@ -134,6 +134,10 @@
 		.group-solution {
 			.service-list {
 				.service-thumbnail {
+					img {
+						width: 266px;
+					}
+
 					@include sp {
 						text-align: center;
 					}

@@ -96,13 +96,13 @@ get_header(); // ヘッダーを読み込む
                             <?php endif; ?>
                             <hr class="wp-block-separator has-alpha-channel-opacity">
 
-                            <div class="contact-info">
+                            <!-- <div class="contact-info">
                                 <p>本件に関するお問い合わせ先
                                     <br>サイリーグホールディングス株式会社
                                     <br>Email：<a href="mailto:info@cyleague.jp">info@cyleague.jp</a>
                                     <br>Tel：03-6435-7338
                                 </p>
-                            </div>
+                            </div> -->
                         </div><!-- .entry-content -->
 
 
