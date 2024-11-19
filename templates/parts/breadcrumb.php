@@ -36,6 +36,22 @@ if (is_single()) {
     echo '<li>&gt;</li><li>' . esc_html(get_the_title()) . '</li>';
 }
 
+// タクソノミー一覧ページの場合
+elseif (is_tax()) {
+    $term = get_queried_object();
+    $taxonomy = $term->taxonomy;
+    $post_type = get_taxonomy($taxonomy)->object_type[0]; // タクソノミーに関連付けられた投稿タイプを取得
+    $post_type_object = get_post_type_object($post_type);
+
+    // 投稿タイプのリンクを表示
+    if ($post_type_object && $post_type_object->has_archive) {
+        echo '<li>&gt;</li><li><a href="' . get_post_type_archive_link($post_type) . '">' . esc_html($post_type_object->labels->name) . '</a></li>';
+    }
+
+    // タクソノミーのリンクを表示
+    echo '<li>&gt;</li><li><a href="' . get_term_link($term) . '">' . esc_html($term->name) . '</a></li>';
+}
+
 // その他の条件（固定ページ、カテゴリ、アーカイブなど）
 elseif (is_page()) {
     global $post;
@@ -54,9 +70,6 @@ elseif (is_page()) {
     echo '<li>&gt;</li><li>' . esc_html(get_the_title()) . '</li>';
 } elseif (is_category()) {
     echo '<li>&gt;</li><li>' . esc_html(single_cat_title('', false)) . '</li>';
-} elseif (is_tax()) {
-    $term = get_queried_object();
-    echo '<li>&gt;</li><li><a href="' . get_term_link($term) . '">' . esc_html($term->name) . '</a></li>';
 } elseif (is_post_type_archive()) {
     echo '<li>&gt;</li><li>' . esc_html(post_type_archive_title('', false)) . '</li>';
 } elseif (is_archive()) {
