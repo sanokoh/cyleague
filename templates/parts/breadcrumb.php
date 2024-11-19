@@ -52,10 +52,19 @@ elseif (is_tax()) {
     echo '<li>&gt;</li><li><a href="' . get_term_link($term) . '">' . esc_html($term->name) . '</a></li>';
 }
 
-// その他の条件（固定ページ、カテゴリ、アーカイブなど）
+// 固定ページの場合
 elseif (is_page()) {
     global $post;
 
+    // message または company ページの場合、親として about を追加
+    if (is_page(['message', 'company'])) {
+        $about_page = get_page_by_path('about'); // about ページを取得
+        if ($about_page) {
+            echo '<li>&gt;</li><li><a href="' . get_permalink($about_page->ID) . '">' . esc_html(get_the_title($about_page->ID)) . '</a></li>';
+        }
+    }
+
+    // 通常の親ページ処理
     if ($post->post_parent) {
         $parent_id = $post->post_parent;
         $breadcrumbs = [];
