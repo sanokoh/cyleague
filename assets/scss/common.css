@@ -919,9 +919,13 @@ header .header nav.header-black li {
 #top_page .hero {
   min-width: 768px;
   height: 100vh;
-  min-height: 1000px;
   position: relative;
   z-index: 999;
+}
+@media screen and (min-width: 577px) {
+  #top_page .hero {
+    min-height: 1000px;
+  }
 }
 @media screen and (max-width: 576px) {
   #top_page .hero {

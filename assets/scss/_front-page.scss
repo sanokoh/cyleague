@@ -15,14 +15,16 @@
 	.hero {
 		min-width: 768px;
 		height: 100vh;
-		min-height: 1000px;
 		position: relative;
 		z-index: 999;
+
+		@include pc {
+			min-height: 1000px;
+		}
 
 		@include sp {
 			min-width: 390px;
 			height: 71vh;
-
 		}
 
 		&::before {
@@ -477,10 +479,12 @@
 
 				&:hover {
 					opacity: 1;
+
 					.title {
 						opacity: 0.5;
 
 					}
+
 					.arrow {
 						opacity: 0.5;
 
@@ -520,6 +524,7 @@
 						line-height: 2.143;
 						padding-top: 24px;
 						transition: all 0.3s;
+
 						@include pc {
 							height: 60px;
 						}
@@ -633,7 +638,8 @@
 					width: 100%;
 					margin-bottom: 0;
 				}
-				img{
+
+				img {
 					width: 50%;
 				}
 			}

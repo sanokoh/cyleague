@@ -66,11 +66,7 @@ get_header(); // ヘッダーを読み込む
                             the_content();
 
                             $external_url = get_post_meta($post->ID, 'external_url', true);
-                            // if ($external_url) {
-                            //     echo $external_url;
-                            // }
-                            ?>
-                            <?php if (get_post_type() === 'event'): ?>
+                            if (get_post_type() === 'event'): ?>
                                 <?php
                                 $date = get_post_meta($post->ID, 'date', true);
                                 $place = get_post_meta($post->ID, 'place', true);
@@ -96,14 +92,6 @@ get_header(); // ヘッダーを読み込む
                                 <?php endif; ?>
                             <?php endif; ?>
                             <hr class="wp-block-separator has-alpha-channel-opacity">
-
-                            <!-- <div class="contact-info">
-                                <p>本件に関するお問い合わせ先
-                                    <br>サイリーグホールディングス株式会社
-                                    <br>Email：<a href="mailto:info@cyleague.jp">info@cyleague.jp</a>
-                                    <br>Tel：03-6435-7338
-                                </p>
-                            </div> -->
 
                             <?php
                             $selected_contact = get_post_meta(get_the_ID(), '_selected_contact_info', true);
