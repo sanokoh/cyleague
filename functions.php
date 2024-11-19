@@ -29,8 +29,11 @@ add_action('add_meta_boxes', 'add_custom_meta_box');
 
 // メタボックスのレンダリング
 function render_contact_info_meta_box($post) {
-    // 現在のメタデータ値を取得
+    // 現在のメタデータ値を取得、空の場合は "cyleague" をデフォルト値とする
     $selected_contact = get_post_meta($post->ID, '_selected_contact_info', true);
+    if (empty($selected_contact)) {
+        $selected_contact = 'cyleague';
+    }
 
     // ラジオボタンのレンダリング（無選択状態も可能に）
     ?>
@@ -41,10 +44,6 @@ function render_contact_info_meta_box($post) {
     <label>
         <input type="radio" name="selected_contact_info" value="cyleague" <?php checked($selected_contact, 'cyleague'); ?>>
         サイリーグホールディングス株式会社
-    </label><br>
-    <label>
-        <input type="radio" name="selected_contact_info" value="another_contact" <?php checked($selected_contact, 'another_contact'); ?>>
-        チェンジホールディングス
     </label>
     <?php
 }
