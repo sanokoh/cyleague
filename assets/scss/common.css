@@ -3399,6 +3399,11 @@ header .header nav.header-black li {
     font-size: 17px;
   }
 }
+@media screen and (max-width: 576px) {
+  #single_page .single-post a {
+    font-size: 14px;
+  }
+}
 #single_page .single-post .wp-block-separator {
   border-top: 1px solid #cccccc;
   margin-bottom: 50px;

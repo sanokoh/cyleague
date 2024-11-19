@@ -149,6 +149,11 @@
 			font-weight: 300;
 		}
 
+		a {
+			@include sp {
+				font-size: 14px;
+			}
+		}
 
 		.wp-block-separator {
 			border-top: 1px solid #cccccc;
