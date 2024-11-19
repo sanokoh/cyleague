@@ -222,7 +222,11 @@ header {
 			@include sp {
 				text-align: center;
 			}
-
+			a{
+				&:hover{
+					opacity: 1;
+				}
+			}
 			.logo {
 				width: 256px;
 

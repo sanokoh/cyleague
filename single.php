@@ -138,7 +138,7 @@ get_header(); // ヘッダーを読み込む
             // アーカイブページが存在する場合のみボタンを表示
             if ($archive_url): ?>
                 <div class="back-to-archive">
-                    <a href="<?php echo esc_url($archive_url); ?>" class="back-button">Back to Index</a>
+                    <a href="<?php echo esc_url($archive_url); ?>" class="back-button">一覧に戻る</a>
                 </div>
             <?php endif; ?>
         </div>

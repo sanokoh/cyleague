@@ -32,7 +32,12 @@ get_header();
                     '代表取締役社長' => '高谷 康久',
                     '役員' => '取締役 福留 大士<br>取締役COO 石川 耕<br>取締役 大越 いづみ<br>監査役 久保 剛彦',
                     '事業内容' => 'サイバーセキュリティ事業及びデジタル・トランスフォーメーション関連事業<br>並びにそれらを行う会社の株式保有、事業活動の支援及び管理',
-                    'グループ会社' => '<p><a href="#" target="_blank" rel="noopener noreferrer">アイディルートコンサルティング株式会社 〉</a></p><p><a href="#" target="_blank" rel="noopener noreferrer">EGセキュアソリューションズ株式会社 〉</a></p>',
+                    'グループ会社' =>   '<p><a href="https://idealroute.jp/" target="_blank" rel="noopener noreferrer">アイディルートコンサルティング株式会社 〉</a></p>
+                                        <p><a href="https://www.eg-secure.co.jp/" target="_blank" rel="noopener noreferrer">EGセキュアソリューションズ株式会社 〉</a></p>
+                                        <p><a href="https://www.changeholdings.co.jp/" target="_blank" rel="noopener noreferrer">チェンジホールディングス 〉</a></p>
+                                        <p><a href="https://www.e-guardian.co.jp/" target="_blank" rel="noopener noreferrer">イーガーディアン 〉</a></p>'
+
+
                 ];
 
                 // 会社情報をループで表示

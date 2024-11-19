@@ -384,7 +384,7 @@ get_header();
                 </div>
                 <div class="header__wapper">
                     <h2 class="header__title">グループ会社</h2>
-                    <span class="header__caption">Group Company</span>
+                    <span class="header__caption">Group Companies</span>
                 </div>
             </div>
             <div class="companies-list">

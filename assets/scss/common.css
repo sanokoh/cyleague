@@ -726,6 +726,9 @@ header .header nav.header-black li {
     text-align: center;
   }
 }
+#footer .footer-top .footer-logo a:hover {
+  opacity: 1;
+}
 #footer .footer-top .footer-logo .logo {
   width: 256px;
 }
@@ -3181,7 +3184,7 @@ header .header nav.header-black li {
 }
 @media screen and (min-width: 577px) {
   #archive_page .archive-posts .post-item .post-meta .post-category {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 #archive_page .archive-posts .post-item .post-meta .post-title {
