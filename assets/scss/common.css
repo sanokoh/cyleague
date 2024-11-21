@@ -2059,7 +2059,7 @@ header .header nav.header-black li {
   }
 }
 #about_page #group_companies {
-  background-color: #000;
+  background-color: #414141;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -3196,7 +3196,7 @@ header .header nav.header-black li {
   margin-bottom: 20px;
   font-size: 17px;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 34px;
   transition: all 0.3s;
 }
 @media screen and (max-width: 576px) {
