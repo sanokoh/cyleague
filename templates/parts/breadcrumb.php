@@ -32,8 +32,8 @@ if (is_single()) {
         }
     }
 
-    // 現在の記事タイトルを表示
-    echo '<li>&gt;</li><li>' . esc_html(get_the_title()) . '</li>';
+    // 現在の記事タイトルを「詳細記事」として表示
+    echo '<li>&gt;</li><li>詳細記事</li>';
 }
 
 // タクソノミー一覧ページの場合
