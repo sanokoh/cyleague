@@ -88,7 +88,7 @@ get_header();
 			?>
 			<div class="message__contents pc-only">
 				<?php foreach ($executives as $executive): ?>
-					<div id="<?php echo $executives['id']; ?>" class="content">
+					<div id="<?php echo $executive['id']; ?>" class="content">
 						<div class="executive-container container">
 							<div class="executive">
 								<h2 class="heading">
