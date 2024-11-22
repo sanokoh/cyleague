@@ -29,9 +29,9 @@ get_header();
                                 <p class="mt20">アクセス<br>東京メトロ日比谷線「神谷町」駅徒歩約1分<br>銀座線「虎ノ門」駅徒歩約9分<br>都営地下鉄三田線「御成門」駅徒歩約9分</p>',
                     '設立' => '2023年12月',
                     '資本金' => '99 百万円',
-                    '代表取締役社長' => '高谷 康久<a href="/message/#takatani" style="text-decoration: underline!important;">（プロフィール）</a>
+                    '代表取締役社長' => '高谷 康久（<a href="/message/#takatani" style="text-decoration: underline!important;">プロフィール</a>）
 ',
-                    '役員' => '取締役 福留 大士<a href="/message/#fukutome" style="text-decoration: underline!important;">（プロフィール）</a><br>取締役COO 石川 耕<a href="/message/#ishikawa" style="text-decoration: underline!important;">（プロフィール）</a><br>取締役 大越 いづみ<a href="/message/#ohgoe" style="text-decoration: underline!important;">（プロフィール）</a><br>監査役 久保 剛彦',
+                    '役員' => '取締役 福留 大士（<a href="/message/#fukutome" style="text-decoration: underline!important;">プロフィール</a>）<br>取締役COO 石川 耕（<a href="/message/#ishikawa" style="text-decoration: underline!important;">プロフィール</a>）<br>取締役 大越 いづみ（<a href="/message/#ohgoe" style="text-decoration: underline!important;">プロフィール</a>）<br>監査役 久保 剛彦',
                     '事業内容' => 'サイバーセキュリティ事業及びデジタル・トランスフォーメーション関連事業<br>並びにそれらを行う会社の株式保有、事業活動の支援及び管理',
                     'グループ会社' =>   '<p><a href="https://idealroute.jp/" target="_blank" rel="noopener noreferrer">アイディルートコンサルティング株式会社 〉</a></p>
                                         <p><a href="https://www.eg-secure.co.jp/" target="_blank" rel="noopener noreferrer">EGセキュアソリューションズ株式会社 〉</a></p>
