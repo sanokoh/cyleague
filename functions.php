@@ -15,3 +15,4 @@ require_once TEMPLATE_DIRECTORY . '/includes/structured-data.php';
 require_once TEMPLATE_DIRECTORY . '/includes/breadcrumb.php';
 require_once TEMPLATE_DIRECTORY . '/includes/external-url-for-blog.php';
 require_once TEMPLATE_DIRECTORY . '/includes/meta-boxes.php';
+require_once TEMPLATE_DIRECTORY . '/includes/google-analytics.php';
