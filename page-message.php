@@ -126,7 +126,7 @@ get_header();
 			</div>
 			<div class="message__contents sp-only">
 				<?php foreach ($executives as $executive): ?>
-					<div class="content">
+					<div id="<?php echo $executive['id']; ?>" class="content">
 						<div class="executive-container">
 							<div class="executive container">
 								<h2 class="heading">
@@ -156,6 +156,9 @@ get_header();
 							</div>
 							<p class="text container">
 								<?php echo $executive['text']; ?>
+							</p>
+							<p class="profile">
+								<?php echo $executive['profile']; ?>
 							</p>
 						</div>
 					</div>
