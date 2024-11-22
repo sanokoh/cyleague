@@ -55,6 +55,9 @@
 	</div>
 </footer>
 <?php wp_footer(); ?>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47773245.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 
 
