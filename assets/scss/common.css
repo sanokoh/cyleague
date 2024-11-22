@@ -2771,14 +2771,14 @@ header .header nav.header-black li {
     font-size: 17px;
   }
 }
-#message_page .message .content .text {
+#message_page .message .content .profile {
   margin-top: 30px;
   font-size: 13px;
   font-weight: 300;
   line-height: 2;
 }
 @media screen and (min-width: 577px) {
-  #message_page .message .content .text {
+  #message_page .message .content .profile {
     font-size: 15px;
   }
 }

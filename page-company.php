@@ -40,7 +40,6 @@ get_header();
 
 
                 ];
-<a href="/message/#takatani">（プロフィール）</a>
                 // 会社情報をループで表示
                 foreach ($company_info as $title => $content): ?>
                     <div class="section">
