@@ -61,5 +61,23 @@ get_header();
         </div>
     </section>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const links = document.querySelectorAll('a[href^="/message/#"]');
 
+        links.forEach(link => {
+            const href = link.getAttribute('href');
+            const hashIndex = href.indexOf('#');
+            if (hashIndex !== -1) {
+                const baseUrl = href.slice(0, hashIndex);
+                const id = href.slice(hashIndex + 1);
+                const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+                // IDをスマホ用またはPC用に切り替え
+                const newId = isMobile ? `${id}-sp` : `${id}-pc`;
+                link.setAttribute('href', `${baseUrl}#${newId}`);
+            }
+        });
+    });
+</script>
 <?php get_footer(); ?>
