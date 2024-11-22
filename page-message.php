@@ -157,7 +157,7 @@ get_header();
 							<p class="text container">
 								<?php echo $executive['text']; ?>
 							</p>
-							<p class="profile">
+							<p class="profile container">
 								<?php echo $executive['profile']; ?>
 							</p>
 						</div>
