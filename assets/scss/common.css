@@ -968,14 +968,14 @@ header .header nav.header-black li {
   }
 }
 #top_page .hero__content .head {
-  font-size: 70px;
+  font-size: 60px;
   color: #FFF;
   line-height: 1.571;
   font-weight: 300;
 }
 @media screen and (max-width: 576px) {
   #top_page .hero__content .head {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 #top_page .hero__content .lead {

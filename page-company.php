@@ -34,8 +34,8 @@ get_header();
                     '事業内容' => 'サイバーセキュリティ事業及びデジタル・トランスフォーメーション関連事業<br>並びにそれらを行う会社の株式保有、事業活動の支援及び管理',
                     'グループ会社' =>   '<p><a href="https://idealroute.jp/" target="_blank" rel="noopener noreferrer">アイディルートコンサルティング株式会社 〉</a></p>
                                         <p><a href="https://www.eg-secure.co.jp/" target="_blank" rel="noopener noreferrer">EGセキュアソリューションズ株式会社 〉</a></p>
-                                        <p><a href="https://www.changeholdings.co.jp/" target="_blank" rel="noopener noreferrer">チェンジホールディングス 〉</a></p>
-                                        <p><a href="https://www.e-guardian.co.jp/" target="_blank" rel="noopener noreferrer">イーガーディアン 〉</a></p>'
+                                        <p><a href="https://www.changeholdings.co.jp/" target="_blank" rel="noopener noreferrer">株式会社チェンジホールディングス 〉</a></p>
+                                        <p><a href="https://www.e-guardian.co.jp/" target="_blank" rel="noopener noreferrer">イーガーディアン株式会社 〉</a></p>'
 
 
                 ];
