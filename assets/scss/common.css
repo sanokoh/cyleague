@@ -2901,16 +2901,16 @@ header .header nav.header-black li {
 #company_page .company .section {
   display: flex;
   border-bottom: 1px solid rgba(51, 51, 51, 0.4117647059);
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 @media screen and (max-width: 576px) {
   #company_page .company .section {
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   #company_page .company .section:not(:first-child) {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 }
 #company_page .company .section-title {
@@ -3125,24 +3125,24 @@ header .header nav.header-black li {
   text-align: center;
 }
 #archive_page .archive-posts {
-  margin-top: 160px;
-  margin-bottom: 160px;
-}
-@media screen and (max-width: 576px) {
-  #archive_page .archive-posts {
-    margin-top: 80px;
-  }
-}
-#archive_page .archive-posts .post-item {
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 @media screen and (max-width: 576px) {
+  #archive_page .archive-posts {
+    margin-top: 40px;
+  }
+}
+#archive_page .archive-posts .post-item {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 576px) {
   #archive_page .archive-posts .post-item {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 #archive_page .archive-posts .post-item:not(:first-child) {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 #archive_page .archive-posts .post-item .post-link {
   display: flex;
@@ -3246,14 +3246,14 @@ header .header nav.header-black li {
   }
 }
 #archive_page .pagination {
-  margin-bottom: 240px;
+  margin-bottom: 120px;
   display: flex;
   justify-content: center;
   gap: 50px;
 }
 @media screen and (max-width: 576px) {
   #archive_page .pagination {
-    margin-bottom: 160px;
+    margin-bottom: 80px;
   }
 }
 #archive_page .pagination .page-numbers {

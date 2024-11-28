@@ -21,15 +21,15 @@
 		.section {
 			display: flex;
 			border-bottom: 1px solid #33333369;
-			padding-bottom: 60px;
-			padding-top: 60px;
+			padding-bottom: 40px;
+			padding-top: 40px;
 
 			@include sp {
 				flex-direction: column;
-				padding-bottom: 40px;
+				padding-bottom: 30px;
 
 				&:not(:first-child) {
-					padding-top: 40px;
+					padding-top: 30px;
 				}
 
 			}

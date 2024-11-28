@@ -17,25 +17,24 @@
 	}
 
 	.archive-posts {
-		margin-top: 160px;
-		margin-bottom: 160px;
+		margin-top: 80px;
+		margin-bottom: 80px;
 
 		@include sp {
-			margin-top: 80px;
+			margin-top: 40px;
 		}
 
 		.post-item {
-
-			margin-bottom: 80px;
+			margin-bottom: 40px;
 
 			@include sp {
-				margin-bottom: 60px;
+				margin-bottom: 30px;
 
 			}
 
 			&:not(:first-child) {
 
-				margin-top: 80px;
+				margin-top: 40px;
 			}
 
 			.post-link {
@@ -64,6 +63,7 @@
 				@include pc {
 					max-width: 80%;
 				}
+
 				@include sp {
 					width: 88%;
 				}
@@ -134,13 +134,13 @@
 	}
 
 	.pagination {
-		margin-bottom: 240px;
+		margin-bottom: 120px;
 		display: flex;
 		justify-content: center;
 		gap: 50px;
 
 		@include sp {
-			margin-bottom: 160px;
+			margin-bottom: 80px;
 		}
 
 		.page-numbers {
