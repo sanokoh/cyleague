@@ -1633,6 +1633,7 @@ header .header nav.header-black li {
   margin-top: 70px;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 576px) {

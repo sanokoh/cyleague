@@ -80,7 +80,7 @@ get_header();
 					<h2 class="heading">チェンジ<br class="sp-only">ホールディングスの<br class="sp-only">事業領域とグループ各社</h2>
 				</div>
 				<div class="company-overview">
-					<h3 class="head">株式会社チェンジホールディングス</h3>
+					<!-- <h3 class="head">株式会社チェンジホールディングス</h3>
 					<div class="change-logo image-container pr70 pl70">
 						<picture>
 							<source
@@ -89,7 +89,7 @@ get_header();
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/change_holdings_logo_colored.png'; ?>"
 								alt="株式会社チェンジホールディングスのロゴ" class="image">
 						</picture>
-					</div>
+					</div> -->
 					<div class="image-container container">
 						<!-- <picture>
 							<source
