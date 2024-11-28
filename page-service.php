@@ -32,8 +32,8 @@ get_header();
 					</picture>
 				</div>
 				<div class="text-block">
-					<h2 class="heading">特定から検知・対応・復旧まで
-						<br>幅広いソリューションを提供しています
+					<h2 class="heading">特定から復旧まで
+						<br>幅広いソリューションをワンストップで提供しています
 					</h2>
 				</div>
 			</div>

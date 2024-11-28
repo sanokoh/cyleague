@@ -50,7 +50,8 @@ get_header();
 					</div>
 					<p class="description">
 						<span class="sp-only">サイリーグホールディングスは、日本の企業や組織のサイバーセキュリティを高めることを使命とする持株会社です。M&A、業務提携、自社サービスの開発を通じて、ITインフラやネットワークの安全性を確保しつつ、事業の成長と発展を支えます。</span>
-						「リーグ（League）」の精神のもと、グループ企業やパートナーと共に競い合い、日本のサイバーセキュリティ業界全体を牽引。セキュリティ人材の育成にも力を入れ、企業や組織が直面する脅威に迅速で効果的な対応ができる体制を整備し、デジタル時代における安心と安全を提供する総合的なサイバーセキュリティ企業を目指します。
+						「リーグ（League）」の精神のもと、グループ企業やパートナーと切磋琢磨し、日本のサイバーセキュリティ業界を牽引します。セキュリティ人材育成にも注力し、企業が抱えるサイバー脅威に迅速に対応できる体制を構築。デジタル社会の安心・安全に貢献する総合的なサイバーセキュリティ企業を目指します。
+
 					</p>
 				</div>
 			</div>
@@ -90,7 +91,7 @@ get_header();
 						</picture>
 					</div>
 					<div class="image-container container">
-						<picture>
+						<!-- <picture>
 							<source
 								srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/group_companies_NEW-IT.avif'; ?>"
 								type="image/webp">
@@ -104,6 +105,14 @@ get_header();
 								type="image/webp">
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/group_comapnies_publitec.png'; ?>"
 								alt="パブリテックのグループ企業: TRUST BANK、Governance Technologies、Travel Zip、Orb、LoGoチャット、LoGoフォーム、ふるさとチョイス、ガバメイツ、アップクロス"
+								class="image" loading="lazy">
+						</picture> -->
+						<picture>
+							<source
+								srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/img_business_area01.webp'; ?>"
+								type="image/webp">
+							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/img_business_area01.png'; ?>"
+								alt="NEW-ITのグループ企業: CHANGE、サイリーグホールディングス、E-Guardian、IdealRoute Consulting、DFA Robotics、beacapp、KaWaL eLearning、KaWaL診断.パブリテックのグループ企業: TRUST BANK、Governance Technologies、Travel Zip、Orb、LoGoチャット、LoGoフォーム、ふるさとチョイス、ガバメイツ、アップクロス"
 								class="image" loading="lazy">
 						</picture>
 					</div>

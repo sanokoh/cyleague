@@ -193,7 +193,7 @@ get_header();
                                 </div>
                                 <h2 class="heading">製品・サービス</h2>
                             </div>
-                            <p class="description">特定から検知・対応・復旧まで幅広いソリューションを提供しています</p>
+                            <p class="description">特定から復旧まで幅広いソリューションをワンストップで提供しています</p>
                         </div>
                         <p class="more"> <a href="/service" class="more-button">More...</a> </p>
 
@@ -225,8 +225,7 @@ get_header();
             </div>
             <div class="container">
                 <p class="lead">
-                    特定から検知・対応・復旧まで幅広いソリューションを提供しています
-                </p>
+                    特定から復旧まで幅広いソリューションをワンストップで提供しています </p>
                 <p class="more"> <a href="/service" class="more-button">More...</a> </p>
             </div>
         </div>
@@ -398,8 +397,8 @@ get_header();
                     ],
                     [
                         'src' => "$stylesheet_directory/assets/images/ideal_route_consulting_logo",
-                        'name' => 'アイディールルートコンサルティング株式会社',
-                        'alt' => 'アイディールルートコンサルティング株式会社のロゴ'
+                        'name' => 'アイディルートコンサルティング株式会社',
+                        'alt' => 'アイディルートコンサルティング株式会社のロゴ'
                     ],
                     [
                         'src' => "$stylesheet_directory/assets/images/e-guardian_logo",
