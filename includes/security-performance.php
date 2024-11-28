@@ -36,3 +36,6 @@ remove_action('wp_head', 'wlwmanifest_link');
 
 // RSD（リモート投稿のためのリンク）を無効化（不要な場合）
 remove_action('wp_head', 'rsd_link');
+
+//自動更新を無効にする
+add_filter( 'automatic_updater_disabled', '__return_true' );
