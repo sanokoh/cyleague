@@ -39,7 +39,7 @@ get_header();
                     'グループ会社' => '<p><a href="https://idealroute.jp/" target="_blank" rel="noopener noreferrer">アイディルートコンサルティング株式会社 〉</a></p>
                                         <p><a href="https://www.eg-secure.co.jp/" target="_blank" rel="noopener noreferrer">EGセキュアソリューションズ株式会社 〉</a></p>
                                         <p><a href="https://www.changeholdings.co.jp/" target="_blank" rel="noopener noreferrer">株式会社チェンジホールディングス 〉</a></p>
-                                        <p><a href="https://www.e-guardian.co.jp/" target="_blank" rel="noopener noreferrer">イーガーディアン株式会社 〉</a></p>'
+                                        <p><a href="https://www.e-guardian.co.jp/" target="_blank" rel="noopener noreferrer">イー・ガーディアン株式会社 〉</a></p>'
 
 
                 ];
