@@ -32,16 +32,13 @@ get_header();
                     '資本金' => '99 百万円',
                     '株主' => '株式会社チェンジホールディングス<br>
                     ※サイリーグホールディングス株式会社は株式会社チェンジホールディングスの100％子会社です。',
-                    '代表取締役社長' => '高谷 康久（<a href="/message/#takatani" style="text-decoration: underline!important;">プロフィール</a>）
-',
+                    '代表取締役社長' => '高谷 康久（<a href="/message/#takatani" style="text-decoration: underline!important;">プロフィール</a>）',
                     '役員' => '取締役 福留 大士（<a href="/message/#fukutome" style="text-decoration: underline!important;">プロフィール</a>）<br>取締役COO 石川 耕（<a href="/message/#ishikawa" style="text-decoration: underline!important;">プロフィール</a>）<br>取締役 大越 いづみ（<a href="/message/#ohgoe" style="text-decoration: underline!important;">プロフィール</a>）<br>監査役 久保 剛彦',
                     '事業内容' => 'サイバーセキュリティ事業及びデジタル・トランスフォーメーション関連事業<br>並びにそれらを行う会社の株式保有、事業活動の支援及び管理',
                     'グループ会社' => '<p><a href="https://idealroute.jp/" target="_blank" rel="noopener noreferrer">アイディルートコンサルティング株式会社 〉</a></p>
                                         <p><a href="https://www.eg-secure.co.jp/" target="_blank" rel="noopener noreferrer">EGセキュアソリューションズ株式会社 〉</a></p>
                                         <p><a href="https://www.changeholdings.co.jp/" target="_blank" rel="noopener noreferrer">株式会社チェンジホールディングス 〉</a></p>
                                         <p><a href="https://www.e-guardian.co.jp/" target="_blank" rel="noopener noreferrer">イー・ガーディアン株式会社 〉</a></p>'
-
-
                 ];
                 // 会社情報をループで表示
                 foreach ($company_info as $title => $content): ?>

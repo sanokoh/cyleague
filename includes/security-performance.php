@@ -14,8 +14,8 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
 
 // REST APIを無効化（セキュリティ向上）
-add_filter('rest_enabled', '__return_false');
-add_filter('rest_jsonp_enabled', '__return_false');
+// add_filter('rest_enabled', '__return_false');
+// add_filter('rest_jsonp_enabled', '__return_false');
 
 // oEmbed（外部コンテンツの埋め込み）機能を無効化（セキュリティとパフォーマンス向上）
 remove_action('wp_head', 'wp_oembed_add_discovery_links');
