@@ -25,6 +25,8 @@
 		@include sp {
 			min-width: 390px;
 			height: 71vh;
+			max-height:2000px;
+
 		}
 
 		&::before {

@@ -931,6 +931,7 @@ header .header nav.header-black li {
   #top_page .hero {
     min-width: 390px;
     height: 71vh;
+    max-height: 2000px;
   }
 }
 #top_page .hero::before {
@@ -3626,4 +3627,18 @@ header .header nav.header-black li {
 }
 #privacy_page .privacy strong {
   font-weight: 400;
+}
+
+.notfound {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.notfound h1 {
+  font-size: 2.5rem;
+}
+
+.notfound p {
+  margin-top: 40px;
+  font-size: 16px;
 }/*# sourceMappingURL=common.css.map */
