@@ -27,3 +27,4 @@ function move_jquery_to_footer()
     }
 }
 add_action('wp_enqueue_scripts', 'move_jquery_to_footer');
+
