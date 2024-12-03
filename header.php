@@ -8,7 +8,13 @@
 
 	<?php wp_head(); ?>
 </head>
-
+<script>
+    if (window.location.hash === "#message") {
+        window.location.href = "/message/";
+    } else if (window.location.hash === "#company") {
+        window.location.href = "/company/";
+    }
+</script>
 <body <?php body_class(); ?>>
 	<div class="modal-overlay" id="modalOverlay"></div>
 	<header id="header">
