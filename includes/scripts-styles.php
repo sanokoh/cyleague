@@ -27,3 +27,10 @@ function move_jquery_to_footer()
     }
 }
 add_action('wp_enqueue_scripts', 'move_jquery_to_footer');
+
+// リダイレクト
+function add_redirect_script() {
+    wp_enqueue_script('redirect', get_template_directory_uri() . '/assets/js/redirect', array(), null, true);
+
+}
+add_action('wp_footer', 'add_redirect_script');

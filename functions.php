@@ -16,3 +16,20 @@ require_once TEMPLATE_DIRECTORY . '/includes/breadcrumb.php';
 require_once TEMPLATE_DIRECTORY . '/includes/external-url-for-blog.php';
 require_once TEMPLATE_DIRECTORY . '/includes/meta-boxes.php';
 require_once TEMPLATE_DIRECTORY . '/includes/google-analytics.php';
+
+// リダイレクト
+function add_redirect_script() {
+    // JavaScriptをエンキューする
+    ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.location.hash === "#message") {
+                window.location.href = "/message/";
+            } else if (window.location.hash === "#company") {
+                window.location.href = "/company/";
+            }
+        });
+    </script>
+    <?php
+}
+add_action('wp_footer', 'add_redirect_script');

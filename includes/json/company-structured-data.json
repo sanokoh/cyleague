@@ -76,6 +76,16 @@
 		"name": "EGセキュアソリューションズ株式会社",
 		"url": "https://egsecure.com"
 	  }
+	  {
+		"@type": "Organization",
+		"name": "株式会社チェンジホールディングス",
+		"url": "https://www.changeholdings.co.jp/"
+	  }
+	  {
+		"@type": "Organization",
+		"name": "イー・ガーディアン株式会社",
+		"url": "https://www.e-guardian.co.jp/"
+	  }
 	],
 	"foundingLocation": {
 	  "@type": "Place",
