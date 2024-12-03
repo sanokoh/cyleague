@@ -98,17 +98,18 @@ function add_noindex_meta_tags() {
 add_action('wp_head', 'add_noindex_meta_tags');
 
 // リダイレクト
-function add_redirect_script() {
-    ?>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
+function add_redirect_script_to_head() {
+    if (is_front_page()) { // トップページのみ
+        ?>
+        <script>
             if (window.location.hash === "#message") {
                 window.location.href = "/message/";
             } else if (window.location.hash === "#company") {
                 window.location.href = "/company/";
             }
-        });
-    </script>
-    <?php
+        </script>
+        <?php
+    }
 }
-add_action('wp_footer', 'add_redirect_script');
+add_action('wp_head', 'add_redirect_script_to_head');
+
