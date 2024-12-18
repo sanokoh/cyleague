@@ -1,5 +1,5 @@
-<?php if (is_active_sidebar('banar')): ?>
-	<?php dynamic_sidebar('banar'); ?>
+<?php if (is_active_sidebar('banner')): ?>
+	<?php dynamic_sidebar('banner'); ?>
 <?php endif; ?>
 <footer id="footer">
 	<div class="footer">

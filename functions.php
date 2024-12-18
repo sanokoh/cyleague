@@ -18,27 +18,25 @@ require_once TEMPLATE_DIRECTORY . '/includes/meta-boxes.php';
 require_once TEMPLATE_DIRECTORY . '/includes/google-analytics.php';
 
 //ウィジェット
-function sample_widgets(){
+function add_widgets()
+{
 	register_sidebar(array(
-	'name' => 'トップページのバナー',
-	'description' => 'トップウィジェット',
-	'id' => 'banar-top',
-	'before_widget' => '<div>',
-	'after_widget' => '</div>',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>'
+		'name' => 'トップページのバナー',
+		'description' => 'トップウィジェット',
+		'id' => 'banner-top',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
 	));
-   }
-   add_action('widgets_init', 'sample_widgets');
-function sample_widgets(){
 	register_sidebar(array(
-	'name' => '下層ページのバナー',
-	'description' => '下層ウィジェット',
-	'id' => 'banar',
-	'before_widget' => '<div>',
-	'after_widget' => '</div>',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>'
+		'name' => '下層ページのバナー',
+		'description' => '下層ウィジェット',
+		'id' => 'banner',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
 	));
-   }
-   add_action('widgets_init', 'sample_widgets');
+}
+add_action('widgets_init', 'add_widgets');
