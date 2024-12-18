@@ -1,3 +1,6 @@
+<?php if (is_active_sidebar('banar')): ?>
+	<?php dynamic_sidebar('banar'); ?>
+<?php endif; ?>
 <footer id="footer">
 	<div class="footer">
 		<div class="container">
