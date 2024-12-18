@@ -1,6 +1,8 @@
-<?php if (is_active_sidebar('banner')): ?>
-	<?php dynamic_sidebar('banner'); ?>
-<?php endif; ?>
+<?php if !is_front_page(){
+	if (is_active_sidebar('banner')) {
+		dynamic_sidebar('banner');
+	}
+} ?>
 <footer id="footer">
 	<div class="footer">
 		<div class="container">
