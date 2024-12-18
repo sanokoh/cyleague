@@ -116,6 +116,9 @@ get_header();
         </div>
 
     </section>
+    <?php if (is_active_sidebar('banar-top')): ?>
+        <?php dynamic_sidebar('banar-top'); ?>
+    <?php endif; ?>
     <section id="about" class="about">
         <div class="pc-only">
             <div class="container">
