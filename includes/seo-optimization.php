@@ -20,7 +20,8 @@ function add_open_graph_tags()
     echo '<meta property="og:title" content="' . get_the_title() . '"/>'; // 記事のタイトル
     echo '<meta property="og:description" content="' . get_the_excerpt() . '"/>'; // 記事の抜粋（説明）
 // サムネイルが設定されている場合はそれを使用し、なければサイトのロゴを使用
-    $og_image = get_the_post_thumbnail_url($post->ID, 'full') ?: get_site_icon_url();
+    // $og_image = get_the_post_thumbnail_url($post->ID, 'full') ?: get_stylesheet_directory_uri() . '/assets/images/favicon.png';
+    $og_image =  get_stylesheet_directory_uri() . '/assets/images/favicon.png';
     echo '<meta property="og:image" content="' . esc_url($og_image) . '"/>'; // サムネイル画像またはサイトロゴ
     echo '<meta property="og:url" content="' . get_permalink() . '"/>'; // 記事のURL
     echo '<meta property="og:type" content="article"/>'; // 記事タイプを指定

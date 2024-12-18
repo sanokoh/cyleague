@@ -3437,6 +3437,9 @@ header .header nav.header-black li {
 #single_page .single-post ul li {
   margin-bottom: 10px;
 }
+#single_page .single-post ul li ul li {
+  list-style: circle;
+}
 #single_page .single-post ol {
   margin-bottom: 30px;
   padding-left: 20px;
