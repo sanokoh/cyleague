@@ -1096,12 +1096,12 @@ header .header nav.header-black li {
   }
 }
 #top_page .about, #top_page .service {
-  margin-top: 240px;
+  margin-top: 100px;
   margin-bottom: 240px;
 }
 @media screen and (max-width: 576px) {
   #top_page .about, #top_page .service {
-    margin-top: 160px;
+    margin-top: 100px;
     margin-bottom: 160px;
   }
 }
