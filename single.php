@@ -61,7 +61,6 @@ get_header(); // ヘッダーを読み込む
                                 echo '<div class="entry-thumbnail">' . get_the_post_thumbnail(get_the_ID(), 'large') . '</div>';
                             }
 
-
                             // 投稿の本文を表示
                             the_content();
 
