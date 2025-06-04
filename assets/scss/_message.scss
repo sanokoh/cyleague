@@ -19,9 +19,11 @@
 
         .content {
             margin-bottom: 240px;
-            @include sp{
+
+            @include sp {
                 margin-bottom: 160px;
             }
+
             // 奇数番目のコンテンツのスタイル
             &:nth-of-type(odd) .executive {
                 @include pc {
@@ -115,6 +117,12 @@
                         @include sp {
                             width: 192px;
                         }
+
+                        &:nth-of-type(even) {
+                            @include sp {
+                                margin-left: -20px;
+                            }
+                        }
                     }
 
                     .square-box {
@@ -158,42 +166,59 @@
                         }
                     }
                 }
+
             }
 
-            .text {
-                @include pc {
-                    font-size: 17px;
+        }
+
+        #fukutome-sp {
+            .executive-container {
+                .executive {
+                    .image {
+                        margin-left: -20px;
+                    }
                 }
-                margin-top: 30px;
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 2;
-            }
-            .profile {
-                @include pc {
-                    font-size: 15px;
-                }
-                margin-top: 30px;
-                font-size: 13px;
-                font-weight: 300;
-                line-height: 2;
             }
         }
 
-        .buttons {
-            margin-bottom: 240px;
-            display: flex;
-            justify-content: center;
-            gap: 120px;
-            margin-top: 40px;
-            @include sp{
-                margin-bottom: 160px;
-                gap: 15px;
-                justify-content: space-around;
+        .text {
+            @include pc {
+                font-size: 17px;
             }
-            .link-button {
-                @include link-button;
+
+            margin-top: 30px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 2;
+        }
+
+        .profile {
+            @include pc {
+                font-size: 15px;
             }
+
+            margin-top: 30px;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 2;
+        }
+    }
+
+    .buttons {
+        margin-bottom: 240px;
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+        margin-top: 40px;
+
+        @include sp {
+            margin-bottom: 160px;
+            gap: 15px;
+            justify-content: space-around;
+        }
+
+        .link-button {
+            @include link-button;
         }
     }
 }

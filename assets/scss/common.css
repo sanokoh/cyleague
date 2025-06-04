@@ -2657,6 +2657,11 @@ header .header nav.header-black li {
     width: 192px;
   }
 }
+@media screen and (max-width: 576px) {
+  #message_page .message .content .executive-container .executive .image:nth-of-type(even) {
+    margin-left: -20px;
+  }
+}
 #message_page .message .content .executive-container .executive .square-box {
   z-index: 999;
 }
@@ -2762,29 +2767,32 @@ header .header nav.header-black li {
     height: 61px !important;
   }
 }
-#message_page .message .content .text {
+#message_page .message #fukutome-sp .executive-container .executive .image {
+  margin-left: -20px;
+}
+#message_page .message .text {
   margin-top: 30px;
   font-size: 14px;
   font-weight: 300;
   line-height: 2;
 }
 @media screen and (min-width: 577px) {
-  #message_page .message .content .text {
+  #message_page .message .text {
     font-size: 17px;
   }
 }
-#message_page .message .content .profile {
+#message_page .message .profile {
   margin-top: 30px;
   font-size: 13px;
   font-weight: 300;
   line-height: 2;
 }
 @media screen and (min-width: 577px) {
-  #message_page .message .content .profile {
+  #message_page .message .profile {
     font-size: 15px;
   }
 }
-#message_page .message .buttons {
+#message_page .buttons {
   margin-bottom: 240px;
   display: flex;
   justify-content: center;
@@ -2792,13 +2800,13 @@ header .header nav.header-black li {
   margin-top: 40px;
 }
 @media screen and (max-width: 576px) {
-  #message_page .message .buttons {
+  #message_page .buttons {
     margin-bottom: 160px;
     gap: 15px;
     justify-content: space-around;
   }
 }
-#message_page .message .buttons .link-button {
+#message_page .buttons .link-button {
   color: #000;
   display: inline-block;
   font-size: 18px;
@@ -2811,7 +2819,7 @@ header .header nav.header-black li {
   font-weight: 300;
   text-align: center;
 }
-#message_page .message .buttons .link-button:after {
+#message_page .buttons .link-button:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -2823,13 +2831,13 @@ header .header nav.header-black li {
   transform: rotate(-45deg) translate(-5px, -2px);
   box-sizing: border-box;
 }
-#message_page .message .buttons .link-button:after {
+#message_page .buttons .link-button:after {
   height: 39px;
   right: 9px;
   bottom: -4px;
 }
 @media screen and (max-width: 576px) {
-  #message_page .message .buttons .link-button {
+  #message_page .buttons .link-button {
     padding-right: 50px;
     font-size: 14px;
   }
