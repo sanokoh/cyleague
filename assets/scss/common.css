@@ -2505,6 +2505,272 @@ header .header nav.header-black li {
   }
 }
 
+#ir_service_page {
+  position: relative;
+  z-index: 999;
+}
+#ir_service_page #mv {
+  margin-top: -151px;
+}
+#ir_service_page .mv {
+  min-width: 768px;
+  height: 400px;
+  background-image: url(../images/top_service.avif);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 999;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .mv {
+    min-width: 0;
+    width: 100%;
+  }
+}
+#ir_service_page .mv::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(3, 3, 3, 0.73) 24%, rgba(51, 51, 51, 0.48) 81%, rgba(255, 255, 255, 0));
+}
+#ir_service_page .mv__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  z-index: 1000;
+}
+#ir_service_page .mv__content .head {
+  margin-top: 90px;
+  font-size: 50px;
+  font-weight: 300;
+  color: #FFF;
+  line-height: 1.571;
+  font-weight: 300;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .mv__content .head {
+    font-size: 40px;
+  }
+}
+#ir_service_page .mv__content .lead {
+  font-size: 20px;
+  font-weight: 300;
+  color: #FFF;
+  padding-top: 10px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+#ir_service_page .solution {
+  padding-top: 233px;
+  margin-bottom: 240px;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .solution {
+    padding-top: 80px;
+    margin-bottom: 160px;
+  }
+}
+@media screen and (min-width: 577px) {
+  #ir_service_page .solution .solution-content {
+    padding-left: 156px;
+    padding-right: 156px;
+    min-width: 800px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 577px) {
+  #ir_service_page .solution .solution-content .image-block {
+    position: absolute;
+    top: -126px;
+    left: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .solution .solution-content .image-block {
+    text-align: center;
+  }
+  #ir_service_page .solution .solution-content .image-block img {
+    width: 72px;
+  }
+}
+#ir_service_page .solution .solution-content .text-block {
+  flex-grow: 1;
+}
+#ir_service_page .solution .solution-content .text-block .heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .solution .solution-content .text-block .heading {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+#ir_service_page .solution .solution-table img {
+  width: 100%;
+}
+#ir_service_page .group {
+  padding-top: 233px;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .group {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 577px) {
+  #ir_service_page .group .group-content {
+    padding-left: 156px;
+    padding-right: 156px;
+    min-width: 800px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 577px) {
+  #ir_service_page .group .group-content .image-block {
+    position: absolute;
+    top: -126px;
+    left: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .group .group-content .image-block {
+    text-align: center;
+  }
+  #ir_service_page .group .group-content .image-block img {
+    width: 72px;
+  }
+}
+#ir_service_page .group .group-content .text-block {
+  flex-grow: 1;
+}
+#ir_service_page .group .group-content .text-block .heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .group .group-content .text-block .heading {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+#ir_service_page .group .group-solution .service-list .service-thumbnail img {
+  width: 266px;
+  height: auto;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .group .group-solution .service-list .service-thumbnail {
+    text-align: center;
+  }
+}
+#ir_service_page .group .group-solution .service-list .service-title {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .group .group-solution .service-list .service-title {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+#ir_service_page .group .group-solution .service-list .service-content {
+  margin-bottom: 60px;
+}
+#ir_service_page .group .group-solution .service-list .service-content h2.wp-block-heading {
+  font-size: 26px;
+  font-weight: 400;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .group .group-solution .service-list .service-content h2.wp-block-heading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+#ir_service_page .group .group-solution .service-list .service-content h3.wp-block-heading {
+  font-size: 26px;
+  font-weight: 300;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .group .group-solution .service-list .service-content h3.wp-block-heading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+#ir_service_page .group .group-solution .service-list .service-content h4.wp-block-heading {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 40px;
+}
+#ir_service_page .group .group-solution .service-list .service-content p {
+  font-size: 20px;
+  font-weight: 300;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .group .group-solution .service-list .service-content p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+#ir_service_page .group .group-solution .service-list .service-content .wp-block-list {
+  margin-bottom: 40px;
+}
+#ir_service_page .group .group-solution .service-list .service-content .wp-block-list li {
+  font-size: 14px;
+  font-weight: 300;
+}
+#ir_service_page .group .group-solution .service-list .service-content .wp-block-list li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  margin-right: 3px;
+}
+#ir_service_page .group .group-solution .service-list .more-button {
+  color: #000;
+  display: inline-block;
+  font-size: 18px;
+  padding-bottom: 7px;
+  padding-right: 30px;
+  border-bottom: 1px solid #000;
+  position: relative;
+  margin-bottom: 240px;
+}
+#ir_service_page .group .group-solution .service-list .more-button:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 14px;
+  border-left: 1px solid #000;
+  transform: rotate(-45deg) translate(-5px, -2px);
+  box-sizing: border-box;
+}
+@media screen and (max-width: 576px) {
+  #ir_service_page .group .group-solution .service-list .more-button {
+    margin-bottom: 160px;
+  }
+}
+
 #message_page {
   position: relative;
   z-index: 999;
