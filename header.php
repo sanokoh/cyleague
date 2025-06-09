@@ -17,7 +17,7 @@
 
 			<?php
 			// ロゴ、ナビゲーション、メニューのスタイル判定用変数
-			$is_light_logo = (is_front_page() || is_page('about') || is_page('service') || (is_archive() && !is_tax()));
+			$is_light_logo = (is_front_page() || is_page('about') || is_page('service') || (is_archive() && !is_tax() || is_page('ir_service')));
 			?>
 
 			<?php if (is_front_page()): ?>

@@ -17,6 +17,9 @@ require_once TEMPLATE_DIRECTORY . '/includes/external-url-for-blog.php';
 require_once TEMPLATE_DIRECTORY . '/includes/meta-boxes.php';
 require_once TEMPLATE_DIRECTORY . '/includes/google-analytics.php';
 
+// ウィジェット機能の読み込み
+require_once get_template_directory() . '/includes/widgets.php';
+
 //ウィジェット
 function add_widgets()
 {

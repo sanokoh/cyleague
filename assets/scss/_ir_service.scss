@@ -1,40 +1,52 @@
-#ir_service_page {
+#ir_service {
 	position: relative;
 	z-index: 999;
+
+	.ir_service {}
 
 	#mv {
 		margin-top: -151px;
 	}
 
 	.mv {
-		@include mv('top_service.avif');
+		@include mv('top_ir_service.webp');
+		@include pc{
+			min-height: 450px;
+		}
+		@include sp{
+			min-height: 70vh;
+		}
+		.head {
+			@include pc {
+				min-width: 1030px;
+			}
 
+			@include sp {
+				font-size: 30px;
+				margin-bottom: 30px;
+			}
+		}
 	}
 
 	.solution {
 		padding-top: 233px;
-		margin-bottom: 240px;
+		margin-bottom: 150px;
 
 		@include sp {
 			padding-top: 80px;
 			margin-bottom: 160px;
-
 		}
 
 		.solution-content {
 			@include pc {
-
 				padding-left: 156px;
 				padding-right: 156px;
 				min-width: 800px;
 				position: relative;
 			}
 
-			@include sp {}
-
 			.image-block {
 				@include pc {
-
 					position: absolute;
 					top: -126px;
 					left: 10px;
@@ -63,40 +75,52 @@
 						margin-top: 10px;
 						margin-bottom: 30px;
 					}
+				}
 
+				.description {
+					@include pc {
+						font-size: 17px;
+						margin-bottom: 10px;
+					}
+
+					font-size: 14px;
+					font-weight: 300;
+					margin-bottom: 10px;
+					color: #000;
+					line-height: 2;
+				}
+
+				span.bold {
+					font-weight: 500;
 				}
 			}
-
 		}
 
 		.solution-table {
 			img {
 				width: 100%;
 			}
-
 		}
 	}
 
-	.group {
+	.features {
 		padding-top: 233px;
+		padding-bottom: 200px;
 
 		@include sp {
 			padding-top: 0;
 		}
 
-		.group-content {
+		.features-content {
 			@include pc {
-
 				padding-left: 156px;
 				padding-right: 156px;
 				min-width: 800px;
 				position: relative;
 			}
 
-
 			.image-block {
 				@include pc {
-
 					position: absolute;
 					top: -126px;
 					left: 10px;
@@ -126,108 +150,460 @@
 						margin-top: 10px;
 						margin-bottom: 20px;
 					}
-
-				}
-			}
-		}
-
-		.group-solution {
-			.service-list {
-				.service-thumbnail {
-					img {
-						width: 266px;
-						height: auto;
-					}
-
-					@include sp {
-						text-align: center;
-					}
 				}
 
-				.service-title {
-					font-size: 20px;
+				.subheading {
+					@include pc {
+						font-size: 17px;
+					}
+
+					font-size: 14px;
 					font-weight: 300;
-					margin-bottom: 60px;
+					margin-bottom: 10px;
+					color: #000;
+					line-height: 2;
+
+					span.bold {
+						font-weight: 500;
+					}
+				}
+			}
+
+			.features-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+				gap: 30px;
+				margin-top: 50px;
+
+				@include sp {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			.feature-card {
+				background: white;
+				padding: 40px 30px;
+				border-radius: 15px;
+				text-align: center;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+				&:hover {
+					transform: translateY(-5px);
+					box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+				}
+			}
+
+			.feature-icon {
+				margin-bottom: 15px
+			}
+
+			.feature-title {
+				font-size: 20px;
+				font-weight: bold;
+				color: #1a1a1a;
+				margin-bottom: 15px;
+
+				@include sp {
+					font-size: 18px;
+				}
+			}
+
+			.feature-description {
+				color: #666;
+				line-height: 1.7;
+			}
+		}
+	}
+
+	// プランセクション
+	.plans {
+		padding-bottom: 200px;
+
+		@include pc {
+			padding-top: 140px;
+			padding-bottom: 240px;
+		}
+
+		.plans-content {
+			@include pc {
+				padding-left: 156px;
+				padding-right: 156px;
+				min-width: 800px;
+				position: relative;
+			}
+
+			.image-block {
+				@include pc {
+					position: absolute;
+					top: -126px;
+					left: 10px;
+				}
+
+				@include sp {
+					text-align: center;
+
+					img {
+						width: 72px;
+					}
+				}
+			}
+
+			.text-block {
+				flex-grow: 1;
+
+				.heading {
+					font-size: 30px;
+					font-weight: 300;
+					line-height: 2;
+					margin-bottom: 40px;
 
 					@include sp {
 						text-align: center;
-						font-size: 14px;
-						margin-bottom: 30px;
-
+						font-size: 28px;
+						margin-top: 10px;
+						margin-bottom: 20px;
 					}
 				}
 
-				.service-content {
-					margin-bottom: 60px;
-
-					h2.wp-block-heading {
-						font-size: 26px;
-						font-weight: 400;
-
-						@include sp {
-							font-size: 18px;
-							margin-bottom: 30px;
-						}
-
-
+				.subheading {
+					@include pc {
+						font-size: 17px;
 					}
 
-					h3.wp-block-heading {
-						font-size: 26px;
-						font-weight: 300;
+					font-size: 14px;
+					font-weight: 300;
+					margin-bottom: 10px;
+					color: #000;
+					line-height: 2;
 
-						@include sp {
-							font-size: 18px;
-							margin-bottom: 30px;
-						}
-					}
-
-					h4.wp-block-heading {
-						font-size: 20px;
-						font-weight: 300;
-						margin-top: 40px;
-					}
-
-					p {
-						font-size: 20px;
-						font-weight: 300;
-
-						@include sp {
-							font-size: 14px;
-							margin-bottom: 30px;
-						}
-					}
-
-					.wp-block-list {
-						margin-bottom: 40px;
-
-						li {
-							font-size: 14px;
-							font-weight: 300;
-
-							&::before {
-								content: "";
-								display: inline-block;
-								width: 10px;
-								height: 10px;
-								border-radius: 50%;
-								background-color: #000;
-								margin-right: 3px;
-							}
-						}
-					}
-
-				}
-
-				.more-button {
-					@include more-button;
-					margin-bottom: 240px;
-
-					@include sp {
-						margin-bottom: 160px;
+					span.bold {
+						font-weight: 500;
 					}
 				}
 			}
 		}
+	}
+}
+
+// テーブルスタイルを外部に移動
+.table-container {
+	overflow-x: auto;
+	margin-top: 40px;
+	border-radius: 12px;
+	// box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+	@include sp {
+		margin: 20px -10px 0 -10px;
+		border-radius: 0;
+		box-shadow: none;
+		// border-top: 1px solid #e2e8f0;
+		// border-bottom: 1px solid #e2e8f0;
+		padding: 0 10px;
+	}
+}
+
+.plans-table {
+	width: 100%;
+	min-width: 600px;
+	border-collapse: collapse;
+	background: white;
+	border-radius: 12px;
+	overflow: hidden;
+	font-family: 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+
+	@include sp {
+		border-radius: 0;
+		font-size: 11px;
+	}
+
+	th {
+		background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+		color: white;
+		padding: 20px 15px;
+		text-align: center;
+		font-size: 17px;
+		font-weight: 600;
+		border: none;
+		line-height: 1.4;
+		position: relative;
+
+		&:first-child {
+			background: transparent;
+			width: 60px;
+		}
+
+		&:nth-child(2) {
+			background: transparent;
+			width: 200px;
+		}
+
+		@include sp {
+			padding: 12px 8px;
+			font-size: 14px;
+		}
+	}
+
+	td {
+		padding: 18px 12px;
+		text-align: center;
+		border: 1px solid #e2e8f0;
+		font-size: 17px;
+		line-height: 1.5;
+		vertical-align: middle;
+		transition: background-color 0.2s ease;
+
+		@include sp {
+			padding: 12px 8px;
+			font-size: 14px;
+		}
+	}
+
+	// 奇数行（1, 3, 5行目）- 白背景
+	tbody tr:nth-child(odd) td {
+		background: white;
+	}
+
+	// 偶数行（2, 4行目）- 薄い灰色背景
+	tbody tr:nth-child(even) td {
+		background: #f8f9fa;
+	}
+
+	// カテゴリセルと サービス名セルは元の色を維持
+	.category-cell {
+		background: inherit !important;
+		writing-mode: vertical-lr;
+		text-orientation: mixed;
+		font-weight: 600;
+		color: white;
+		font-size: 16px;
+		padding: 20px 12px;
+		width: 60px;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+		border-radius: 8px 0 0 8px;
+
+		@include sp {
+			font-size: 14px;
+			padding: 15px 8px;
+		}
+	}
+
+	.service-name {
+		font-weight: 600;
+		font-size: 17px;
+		text-align: left;
+		padding-left: 20px;
+		color: #2d3748;
+		// border-right: 2px solid #cbd5e0;
+
+		@include sp {
+			font-size: 14px;
+		}
+	}
+
+	// 結合セルは交互配色を維持
+	.merged-cell {
+		color: #2d3748;
+		font-weight: 500;
+		border: 1px solid #e2e8f0;
+	}
+
+	.plan-price {
+		font-size: 17px;
+		font-weight: 500;
+		color: #f7fafc;
+		opacity: 0.9;
+
+		@include sp {
+			font-size: 14px;
+		}
+	}
+
+	.category-normal {
+		background: #28a745 !important;
+		border: none;
+	}
+
+	.category-incident {
+		background: #dc3545 !important;
+		border: none;
+	}
+
+	.entry-plan {
+		background: #495057;
+		color: white;
+	}
+
+	.standard-plan {
+		background: #343a40;
+		color: white;
+	}
+
+	td.small-text {
+		font-size: 17px;
+		line-height: 1.4;
+		color: #4a5568;
+
+		@include sp {
+			font-size: 14px;
+		}
+	}
+
+	// 最初と最後の行に角丸を適用
+	tbody tr:first-child td:first-child {
+		border-radius: 8px 0 0 0;
+	}
+
+	tbody tr:last-child td:first-child {
+		border-radius: 0 0 0 8px;
+	}
+
+	tbody tr:first-child td:last-child {
+		border-radius: 0 8px 0 0;
+	}
+
+	tbody tr:last-child td:last-child {
+		border-radius: 0 0 8px 0;
+	}
+}
+
+/* CTAセクション */
+#cta {
+	background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+	padding: 80px 0;
+	margin-bottom: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+// #cta::before {
+// 	content: '';
+// 	position: absolute;
+// 	top: -50%;
+// 	left: -50%;
+// 	width: 200%;
+// 	height: 200%;
+// 	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+// 	animation: float 20s ease-in-out infinite;
+// }
+
+// @keyframes float {
+// 	0%, 100% { transform: translateY(0px) rotate(0deg); }
+// 	50% { transform: translateY(-20px) rotate(2deg); }
+// }
+
+.cta-content {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+
+.cta-title {
+	font-size: 36px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 20px;
+	line-height: 1.4;
+}
+
+.cta-subtitle {
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 40px;
+	line-height: 1.6;
+}
+
+.cta-buttons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.cta-button {
+	background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+	color: #343a40;
+	padding: 18px 40px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 16px;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	border: 2px solid #ffffff;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.cta-button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+	border-color: #e9ecef;
+}
+
+.cta-contact-info {
+	margin-top: 50px;
+	padding-top: 30px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-title {
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.contact-details {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.contact-item {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 16px;
+}
+
+.contact-label {
+	font-weight: 500;
+	margin-right: 8px;
+}
+
+.contact-link {
+	color: #6c757d;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+	color: #495057;
+}
+
+@include sp {
+	.cta-title {
+		font-size: 28px;
+	}
+
+	.cta-buttons {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.cta-button {
+		width: 280px;
+		justify-content: center;
+	}
+
+	.contact-details {
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
 	}
 }
