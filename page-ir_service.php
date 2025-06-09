@@ -11,19 +11,17 @@ get_header();
 						CyLeague サイバーレジリエンス・パッケージ</h1>
 					<p class="lead">年間100万円で、“いざ”というときに動ける体制を確保できる<br class="pc-only">
 						S&JとサイリーグHDの共同開発サービス
-
-
 					</p>
 				</div>
 			</div>
 		</section>
-		<section id="breadcrumb">
+		<nav aria-label="breadcrumb" id="breadcrumb">
 			<?php
 			if (function_exists('display_breadcrumb'))
 				display_breadcrumb();
 			?>
 
-		</section>
+		</nav>
 		<section id="solution">
 			<div class="solution container">
 				<div class="solution-content">
@@ -55,6 +53,14 @@ get_header();
 							<span class="bold">初動の遅れを防ぎ、復旧を早め、被害を最小限に抑える。</span>その備えが、企業の未来を守ります。
 						</p>
 					</div>
+					<div class="solution-logo">
+						<picture>
+							<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/sandj_cyleague.png'; ?>"
+								type="image/webp">
+							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/sandj_cyleague.png'; ?>"
+								alt="サイリーグホールディングスのロゴ" class="image" loading="lazy" width="" height="">
+						</picture>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -82,7 +88,8 @@ get_header();
 										srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_01.webp'; ?>"
 										type="image/webp">
 									<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_01.png'; ?>"
-										alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
+										alt="専門家チームを象徴する複数のビジネスパーソンのシルエット" class="image" loading="lazy" width="160"
+										height="160">
 								</picture>
 							</div>
 							<h3 class="feature-title">年間100万円で、<br>専門家による<br>インシデント対応体制を確保</h3>
@@ -95,7 +102,7 @@ get_header();
 										srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_02.webp'; ?>"
 										type="image/webp">
 									<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_02.png'; ?>"
-										alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
+										alt="事前準備による迅速対応を示すチェックマーク付き円形矢印" class="image" loading="lazy">
 								</picture>
 							</div>
 							<h3 class="feature-title">事前の準備と合意により<br>最短で対応を開始<br>業務への影響を最小化</h3>
@@ -108,7 +115,7 @@ get_header();
 										srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_03.webp'; ?>"
 										type="image/webp">
 									<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_03.png'; ?>"
-										alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
+										alt="前払い済みリソースを示す円マーク入りコインのスタック" class="image" loading="lazy">
 								</picture>
 							</div>
 							<h3 class="feature-title">契約時に一定時間分を<br>確保・前払い済み。<br>緊急事態不要で支援開始</h3>
@@ -121,7 +128,7 @@ get_header();
 										srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_04.webp'; ?>"
 										type="image/webp">
 									<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_04.png'; ?>"
-										alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
+										alt="効率的／的確なサービスを表す的の中心に刺さる矢" class="image" loading="lazy">
 								</picture>
 							</div>
 							<h3 class="feature-title">インシデント対応に特化した<br>効率的なサービス設計</h3>
@@ -134,7 +141,7 @@ get_header();
 										srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_05.webp'; ?>"
 										type="image/webp">
 									<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_05.png'; ?>"
-										alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
+										alt="ベンダーフリーな協力体制を象徴する握手のアイコン" class="image" loading="lazy">
 								</picture>
 							</div>
 							<h3 class="feature-title">EDRなどセキュリティ製品の<br>ベンダーフリー対応</h3>
@@ -147,7 +154,7 @@ get_header();
 										srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_06.webp'; ?>"
 										type="image/webp">
 									<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/feature_06.png'; ?>"
-										alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
+										alt="脅威情報共有とセキュリティ文化を示すテーブルを囲む人々のアイコン" class="image" loading="lazy">
 								</picture>
 							</div>
 							<h3 class="feature-title">脅威情報の共有と<br>セキュリティカルチャーで<br>平時からの備えをサポート</h3>
@@ -195,7 +202,7 @@ get_header();
 									<td class="small-text merged-cell" colspan="2">年間4回</td>
 								</tr>
 								<tr>
-									<td class="service-name">セキュリティカルチャー作成</td>
+									<td class="service-name">セキュリティカルテ作成</td>
 									<td class="small-text merged-cell" colspan="2">契約時に作成。その後、四半期ごとに更新</td>
 								</tr>
 								<tr>
@@ -212,6 +219,7 @@ get_header();
 						</table>
 					</div>
 				</div>
+			</div>
 		</section>
 		<section id="cta">
 			<div class="cta-content container">
@@ -222,7 +230,7 @@ get_header();
 				</div>
 
 				<div class="cta-buttons">
-					<a href="https://offers.cyleague.jp/crp_download" class="cta-button" target="_blank", rel="noopener">
+					<a href="https://offers.cyleague.jp/crp_download" class="cta-button" target="_blank" rel="noopener">
 						お問い合わせ
 					</a>
 				</div>

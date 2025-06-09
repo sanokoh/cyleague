@@ -10,12 +10,15 @@
 
 	.mv {
 		@include mv('top_ir_service.webp');
-		@include pc{
+
+		@include pc {
 			min-height: 450px;
 		}
-		@include sp{
+
+		@include sp {
 			min-height: 70vh;
 		}
+
 		.head {
 			@include pc {
 				min-width: 1030px;
@@ -43,7 +46,26 @@
 				padding-right: 156px;
 				min-width: 800px;
 				position: relative;
+				display: flex;
+				justify-content: space-between;
+				position: relative;
 			}
+			.solution-logo {
+				@include pc {
+					position: absolute;
+					top: 0;
+					left: 900px;
+					img{
+						width: 100%;
+					}
+				}
+				@include sp{
+					text-align: center;
+					margin-top: 50px;
+				}
+			}
+
+
 
 			.image-block {
 				@include pc {
