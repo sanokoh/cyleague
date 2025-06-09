@@ -2575,7 +2575,8 @@ header .header nav.header-black li {
 }
 @media screen and (max-width: 576px) {
   #ir_service .mv {
-    min-height: 70vh;
+    height: 70vh;
+    min-height: 570px;
   }
 }
 @media screen and (min-width: 577px) {
