@@ -55,9 +55,9 @@ get_header();
 					</div>
 					<div class="solution-logo">
 						<picture>
-							<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/sandj_cyleague.png'; ?>"
+							<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/sandj_cyleague_2.webp'; ?>"
 								type="image/webp">
-							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/sandj_cyleague.png'; ?>"
+							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/sandj_cyleague_2.png'; ?>"
 								alt="サイリーグホールディングスのロゴ" class="image" loading="lazy" width="" height="">
 						</picture>
 					</div>
