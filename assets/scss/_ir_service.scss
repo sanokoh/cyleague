@@ -18,7 +18,6 @@
 		@include sp {
 			height: 70vh;
 			min-height: 570px;
-
 		}
 
 		.head {
@@ -52,16 +51,19 @@
 				justify-content: space-between;
 				position: relative;
 			}
+
 			.solution-logo {
 				@include pc {
 					position: absolute;
 					top: 0;
 					left: 900px;
-					img{
+
+					img {
 						width: 100%;
 					}
 				}
-				@include sp{
+
+				@include sp {
 					text-align: center;
 					margin-top: 50px;
 				}
@@ -608,6 +610,55 @@
 
 .contact-link:hover {
 	color: #495057;
+}
+
+/* セクション内CTAボタン */
+.section-cta {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.section-cta-button {
+	background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+	color: #343a40;
+	padding: 15px 75px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 20px;
+	transition: all 0.3s ease;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	border: 2px solid #e9ecef;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.section-cta-button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+	border-color: #dee2e6;
+}
+
+.section-cta-button.primary {
+	background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+	color: white;
+	border: 2px solid #343a40;
+}
+
+.section-cta-button.primary:hover {
+	background: linear-gradient(135deg, #495057 0%, #6c757d 100%);
+	border-color: #495057;
+}
+
+#cta {
+	background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+	padding: 80px 0;
+	margin-bottom: 0;
+	position: relative;
+	overflow: hidden;
 }
 
 @include sp {

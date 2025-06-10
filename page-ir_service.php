@@ -62,6 +62,12 @@ get_header();
 						</picture>
 					</div>
 				</div>
+				<div class="section-cta">
+					<a href="https://offers.cyleague.jp/crp_download" class="section-cta-button primary" target="_blank"
+						rel="noopener">
+						資料をダウンロードする
+					</a>
+				</div>
 			</div>
 		</section>
 		<section id="features">
@@ -161,6 +167,12 @@ get_header();
 						</div>
 					</div>
 				</div>
+				<div class="section-cta">
+					<a href="https://offers.cyleague.jp/crp_download" class="section-cta-button primary" target="_blank"
+						rel="noopener">
+						資料をダウンロードする
+					</a>
+				</div>
 			</div>
 		</section>
 		<section id="plans">
@@ -184,7 +196,7 @@ get_header();
 							<thead>
 								<tr>
 									<th></th>
-									<th></th>
+									<th style="color:black; font-weight: 400; vertical-align: bottom; padding-bottom:0; text-align: left;">※対象：従業員300名以上の企業・団体 </th>
 									<th class="entry-plan">エントリープラン<br><span class="plan-price">年間100万円（税別）</span></th>
 									<th class="standard-plan">スタンダードプラン<br><span class="plan-price">年間180万円（税別）</span>
 									</th>
@@ -194,8 +206,8 @@ get_header();
 								<tr>
 									<td class="category-cell category-normal" rowspan="3">平<br>時</td>
 									<td class="service-name">定例会</td>
-									<td class="small-text">1時間×年間4回<br>※その他のQA対応</td>
-									<td class="small-text">1時間×年間4回<br>※事前QA時間対応</td>
+									<td class="small-text">1時間×年間4回<br>その場でのQA対応 </td>
+									<td class="small-text">1時間×年間4回<br>※事前またはその場でQA1問対応</td>
 								</tr>
 								<tr>
 									<td class="service-name">脅威インテリジェンス提供</td>
@@ -208,8 +220,8 @@ get_header();
 								<tr>
 									<td class="category-cell category-incident" rowspan="2">有<br>事</td>
 									<td class="service-name">インシデント初動対応支援</td>
-									<td class="small-text">年間1件<br>3時間まで</td>
-									<td class="small-text">四半期ごとに1件<br>3時間まで</td>
+									<td class="small-text">年間1件3時間まで</td>
+									<td class="small-text">年間4件 12時間まで※1<br>※四半期ごとに1件 3時間まで </td>
 								</tr>
 								<tr>
 									<td class="service-name">インシデントハンドリング</td>
@@ -217,6 +229,8 @@ get_header();
 								</tr>
 							</tbody>
 						</table>
+						<p>※1： 各四半期あたり1件3時間までが上限です。未使用分の繰越や超過分の利用はできません。</p>
+						<p>※有事の対応時間については、人時ベースになっております。事象やタイミングに応じて、参加人数が１名～３名になる場合があります。 </p>
 					</div>
 				</div>
 			</div>
@@ -228,9 +242,12 @@ get_header();
 					"いざ"というときにすぐ動ける体制を、年間100万円で事前に確保。<br>
 					初動の遅れを防ぎ、復旧を早め、被害を最小限に抑えます。
 				</div>
-
 				<div class="cta-buttons">
-					<a href="https://offers.cyleague.jp/crp_download" class="cta-button" target="_blank" rel="noopener">
+					<a href="https://offers.cyleague.jp/crp_download" class="cta-button secondary" target="_blank"
+						rel="noopener">
+						資料ダウンロード
+					</a>
+					<a href="/contact" class="cta-button">
 						お問い合わせ
 					</a>
 				</div>
