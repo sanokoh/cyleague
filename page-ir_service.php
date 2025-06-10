@@ -210,7 +210,7 @@ get_header();
 									<td class="category-cell category-normal" rowspan="3">平<br>時</td>
 									<td class="service-name">定例会</td>
 									<td class="small-text">1時間×年間4回<br>その場でのQA対応 </td>
-									<td class="small-text">1時間×年間4回<br>※事前またはその場でQA1問対応</td>
+									<td class="small-text">1時間×年間4回<br>※事前QA1問対応＋その場でQA1問対応</td>
 								</tr>
 								<tr>
 									<td class="service-name">脅威インテリジェンス提供</td>
