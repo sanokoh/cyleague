@@ -220,7 +220,7 @@ get_header();
 								<tr>
 									<td class="category-cell category-incident" rowspan="2">有<br>事</td>
 									<td class="service-name">インシデント初動対応支援</td>
-									<td class="small-text">年間1件3時間まで</td>
+									<td class="small-text">年間1件 3時間まで</td>
 									<td class="small-text">年間4件 12時間まで※1<br>※四半期ごとに1件 3時間まで </td>
 								</tr>
 								<tr>
