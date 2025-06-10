@@ -3132,6 +3132,12 @@ header .header nav.header-black li {
   align-items: center;
   gap: 8px;
 }
+@media screen and (max-width: 576px) {
+  .section-cta-button {
+    font-size: 20px;
+    padding: 15px 35px;
+  }
+}
 
 .section-cta-button:hover {
   transform: translateY(-2px);
