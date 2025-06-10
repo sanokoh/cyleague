@@ -55,7 +55,8 @@ get_header();
 					</div>
 					<div class="solution-logo">
 						<picture>
-							<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/sandj_cyleague_2.webp'; ?>"
+							<source
+								srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/sandj_cyleague_2.webp'; ?>"
 								type="image/webp">
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/sandj_cyleague_2.png'; ?>"
 								alt="サイリーグホールディングスのロゴ" class="image" loading="lazy" width="" height="">
@@ -65,7 +66,7 @@ get_header();
 				<div class="section-cta">
 					<a href="https://offers.cyleague.jp/crp_download" class="section-cta-button primary" target="_blank"
 						rel="noopener">
-						資料をダウンロードする
+						導入検討資料をダウンロードする
 					</a>
 				</div>
 			</div>
@@ -170,7 +171,7 @@ get_header();
 				<div class="section-cta">
 					<a href="https://offers.cyleague.jp/crp_download" class="section-cta-button primary" target="_blank"
 						rel="noopener">
-						資料をダウンロードする
+						導入検討資料をダウンロードする
 					</a>
 				</div>
 			</div>
@@ -196,7 +197,9 @@ get_header();
 							<thead>
 								<tr>
 									<th></th>
-									<th style="color:black; font-weight: 400; vertical-align: bottom; padding-bottom:0; text-align: left;">※対象：従業員300名以上の企業・団体 </th>
+									<th
+										style="color:black; font-weight: 400; vertical-align: bottom; padding-bottom:0; text-align: left;">
+										※対象：従業員300名以上の企業・団体 </th>
 									<th class="entry-plan">エントリープラン<br><span class="plan-price">年間100万円（税別）</span></th>
 									<th class="standard-plan">スタンダードプラン<br><span class="plan-price">年間180万円（税別）</span>
 									</th>
@@ -245,8 +248,7 @@ get_header();
 				<div class="cta-buttons">
 					<a href="https://offers.cyleague.jp/crp_download" class="cta-button secondary" target="_blank"
 						rel="noopener">
-						資料ダウンロード
-					</a>
+						導入検討資料をダウンロードする </a>
 					<a href="/contact" class="cta-button">
 						お問い合わせ
 					</a>

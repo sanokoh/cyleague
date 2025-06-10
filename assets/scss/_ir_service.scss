@@ -634,8 +634,8 @@
 	align-items: center;
 	gap: 8px;
 	@include sp{
-		font-size: 20px;
-		padding: 15px 35px;
+		font-size: 17px;
+		padding: 24px 35px;
 	}
 }
 
@@ -678,8 +678,9 @@
 	}
 
 	.cta-button {
-		width: 200px;
+		width: 260px;
 		justify-content: center;
+		padding: 18px 20px;
 	}
 
 	.contact-details {

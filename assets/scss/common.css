@@ -3134,8 +3134,8 @@ header .header nav.header-black li {
 }
 @media screen and (max-width: 576px) {
   .section-cta-button {
-    font-size: 20px;
-    padding: 15px 35px;
+    font-size: 17px;
+    padding: 24px 35px;
   }
 }
 
@@ -3176,8 +3176,9 @@ header .header nav.header-black li {
     gap: 15px;
   }
   .cta-button {
-    width: 200px;
+    width: 260px;
     justify-content: center;
+    padding: 18px 20px;
   }
   .contact-details {
     flex-direction: column;
