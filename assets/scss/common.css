@@ -2401,14 +2401,14 @@ header .header nav.header-black li {
     margin-bottom: 30px;
   }
 }
-#service_page .ir_service .ir_service-content .lead {
-  font-size: 20px;
+#service_page .ir_service .lead {
+  font-size: 26px;
   font-weight: 300;
   margin-bottom: 60px;
 }
 @media screen and (max-width: 576px) {
-  #service_page .ir_service .ir_service-content .lead {
-    font-size: 14px;
+  #service_page .ir_service .lead {
+    font-size: 18px;
     margin-bottom: 30px;
   }
 }

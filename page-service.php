@@ -62,9 +62,9 @@ get_header();
 				<div class="text-block">
 					<h2 class="heading">CyLeagueサイバーレジリエンス・パッケージ </h2>
 				</div>
-				<p class="lead">年間100万円で、“いざ”というときに動ける体制を確保できるS&JとサイリーグHDの共同開発サービス</p>
-				<a href="/service/ir_service" class="more-button">More... </a>
 			</div>
+			<p class="lead">年間100万円で、“いざ”というときに動ける体制を確保できるS&JとサイリーグHDの共同開発サービス</p>
+			<a href="/service/ir_service" class="more-button">More... </a>
 
 		</div>
 	</section>
