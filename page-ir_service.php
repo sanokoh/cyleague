@@ -249,7 +249,7 @@ get_header();
 					<a href="https://offers.cyleague.jp/crp_download" class="cta-button secondary" target="_blank"
 						rel="noopener">
 						導入検討資料をダウンロードする </a>
-					<a href="/contact" class="cta-button">
+					<a href="https://offers.cyleague.jp/contact/" class="cta-button" target="_blank" rel="noopener">
 						お問い合わせ
 					</a>
 				</div>
