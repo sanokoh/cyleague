@@ -2354,6 +2354,63 @@ header .header nav.header-black li {
 #service_page .solution .solution-table img {
   width: 100%;
 }
+#service_page .ir_service {
+  padding-top: 233px;
+}
+@media screen and (max-width: 576px) {
+  #service_page .ir_service {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 577px) {
+  #service_page .ir_service .ir_service-content {
+    padding-left: 156px;
+    padding-right: 156px;
+    min-width: 800px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 577px) {
+  #service_page .ir_service .ir_service-content .image-block {
+    position: absolute;
+    top: -126px;
+    left: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #service_page .ir_service .ir_service-content .image-block {
+    text-align: center;
+  }
+  #service_page .ir_service .ir_service-content .image-block img {
+    width: 72px;
+  }
+}
+#service_page .ir_service .ir_service-content .text-block {
+  flex-grow: 1;
+}
+#service_page .ir_service .ir_service-content .text-block .heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 576px) {
+  #service_page .ir_service .ir_service-content .text-block .heading {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+#service_page .ir_service .ir_service-content .lead {
+  font-size: 20px;
+  font-weight: 300;
+}
+@media screen and (max-width: 576px) {
+  #service_page .ir_service .ir_service-content .lead {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
 #service_page .group {
   padding-top: 233px;
 }
@@ -2477,7 +2534,7 @@ header .header nav.header-black li {
   background-color: #000;
   margin-right: 3px;
 }
-#service_page .group .group-solution .service-list .more-button {
+#service_page .more-button {
   color: #000;
   display: inline-block;
   font-size: 18px;
@@ -2487,7 +2544,7 @@ header .header nav.header-black li {
   position: relative;
   margin-bottom: 240px;
 }
-#service_page .group .group-solution .service-list .more-button:after {
+#service_page .more-button:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -2500,7 +2557,7 @@ header .header nav.header-black li {
   box-sizing: border-box;
 }
 @media screen and (max-width: 576px) {
-  #service_page .group .group-solution .service-list .more-button {
+  #service_page .more-button {
     margin-bottom: 160px;
   }
 }

@@ -24,8 +24,7 @@ get_header();
 			<div class="solution-content">
 				<div class="image-block">
 					<picture>
-						<source
-							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
+						<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
 							type="image/webp">
 						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.png'; ?>"
 							alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
@@ -38,11 +37,9 @@ get_header();
 				</div>
 			</div>
 			<div class="solution-table ">
-				<a href="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>"
-					target="_blank">
+				<a href="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>" target="_blank">
 					<picture>
-						<source
-							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>"
+						<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>"
 							type="image/webp">
 						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/solution_table.png'; ?>"
 							alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
@@ -51,13 +48,32 @@ get_header();
 			</div>
 		</div>
 	</section>
+	<section id="ir_service">
+		<div class="ir_service container">
+			<div class="ir_service-content">
+				<div class="image-block">
+					<picture>
+						<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
+							type="image/webp">
+						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.png'; ?>"
+							alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
+					</picture>
+				</div>
+				<div class="text-block">
+					<h2 class="heading">CyLeagueサイバーレジリエンス・パッケージ </h2>
+				</div>
+				<p class="lead">年間100万円で、“いざ”というときに動ける体制を確保できるS&JとサイリーグHDの共同開発サービス</p>
+				<a href="/ir_service" class="more-button">More... </a>
+			</div>
+
+		</div>
+	</section>
 	<section id="group">
 		<div class="group container">
 			<div class="group-content">
 				<div class="image-block">
 					<picture>
-						<source
-							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
+						<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
 							type="image/webp">
 						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.png'; ?>"
 							alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">

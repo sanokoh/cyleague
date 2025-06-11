@@ -77,6 +77,73 @@
 		}
 	}
 
+	.ir_service {
+		padding-top: 233px;
+		@include sp {
+			padding-top: 0;
+		}
+
+		.ir_service-content {
+			@include pc {
+
+				padding-left: 156px;
+				padding-right: 156px;
+				min-width: 800px;
+				position: relative;
+			}
+
+			@include sp {}
+
+			.image-block {
+				@include pc {
+
+					position: absolute;
+					top: -126px;
+					left: 10px;
+				}
+
+				@include sp {
+					text-align: center;
+
+					img {
+						width: 72px;
+					}
+				}
+			}
+
+			.text-block {
+				flex-grow: 1;
+
+				.heading {
+					font-size: 30px;
+					font-weight: 300;
+					line-height: 2;
+					margin-bottom: 40px;
+
+					@include sp {
+						font-size: 22px;
+						margin-top: 10px;
+						margin-bottom: 30px;
+					}
+
+				}
+			}
+
+			.lead {
+				font-size: 20px;
+				font-weight: 300;
+
+				@include sp {
+					font-size: 14px;
+					margin-bottom: 30px;
+				}
+
+			}
+
+		}
+
+	}
+
 	.group {
 		padding-top: 233px;
 
@@ -219,15 +286,16 @@
 
 				}
 
-				.more-button {
-					@include more-button;
-					margin-bottom: 240px;
-
-					@include sp {
-						margin-bottom: 160px;
-					}
-				}
 			}
+		}
+	}
+
+	.more-button {
+		@include more-button;
+		margin-bottom: 240px;
+
+		@include sp {
+			margin-bottom: 160px;
 		}
 	}
 }
