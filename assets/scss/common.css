@@ -2404,6 +2404,7 @@ header .header nav.header-black li {
 #service_page .ir_service .ir_service-content .lead {
   font-size: 20px;
   font-weight: 300;
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 576px) {
   #service_page .ir_service .ir_service-content .lead {

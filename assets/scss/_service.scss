@@ -79,6 +79,7 @@
 
 	.ir_service {
 		padding-top: 233px;
+
 		@include sp {
 			padding-top: 0;
 		}
@@ -132,6 +133,7 @@
 			.lead {
 				font-size: 20px;
 				font-weight: 300;
+				margin-bottom: 60px;
 
 				@include sp {
 					font-size: 14px;
