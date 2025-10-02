@@ -8,9 +8,9 @@ body {
   color: #000000;
   font-size: 100%;
   font-size: 1.0rem;
-  font-weight: 300;
+  font-weight: 400;
   background-color: #FFFFFF;
-  line-height: 2;
+  line-height: 1.7;
   font-family: 'Futura PT', 'Noto Sans JP', sans-serif;
   overflow: scroll;
   // width: min(100%, 1920px);
@@ -62,7 +62,7 @@ a:active {
 }
 
 p {
-  line-height: 2;
+  line-height: 1.7;
 }
 
 /* 通常時のclearfix

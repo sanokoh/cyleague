@@ -41,5 +41,14 @@ function add_widgets()
 		'before_title' => '<h3>',
 		'after_title' => '</h3>'
 	));
+	register_sidebar( array(
+        'name'          => 'ブログサイドバー',
+        'id'            => 'blog_sidebar',
+        'description'   => '投稿ページの横に表示されるサイドバーです。',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">', // %1$s = widgetのID, %2$s = class
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
 }
 add_action('widgets_init', 'add_widgets');

@@ -49,7 +49,7 @@ font-size
 		.head {
 			margin-top: 90px;
 			font-size: 50px;
-			font-weight: 300;
+			font-weight: 400;
 
 			@if $image==none {
 				@include sp {
@@ -72,13 +72,13 @@ font-size
 			}
 
 			line-height: 1.571;
-			font-weight: 300;
+			font-weight: 400;
 			text-align: center;
 		}
 
 		.lead {
 			font-size: 20px;
-			font-weight: 300;
+			font-weight: 400;
 
 			@if $image ==none {
 				color: #000;
@@ -136,7 +136,7 @@ font-size
 
 		.heading {
 			font-size: 30px;
-			font-weight: 300;
+			font-weight: 400;
 			margin-left: -35px;
 			z-index: 1000;
 		}
@@ -170,7 +170,7 @@ font-size
 	@include more-button;
 	padding-right: 140px;
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 400;
 	text-align: center;
 
 	&:after {
@@ -193,7 +193,7 @@ font-size
 	padding-left: 69px;
 	padding-bottom: 0;
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 400;
 	text-align: center;
 	margin: 0 auto;
 

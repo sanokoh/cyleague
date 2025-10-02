@@ -49,42 +49,53 @@
 
         <?php if ($the_query->have_posts()): ?>
             <div class="archive-posts container-small">
-                <?php while ($the_query->have_posts()):
-                    $the_query->the_post(); ?>
-                    <article class="post-item">
-                        <a href="<?php the_permalink(); ?>" class="post-link">
-                            <div class="post-meta">
-                                <span class="post-date"><?php echo get_the_date('Y.m.d'); ?></span>
+                <div class="archive-posts__sidebar">
+                    <?php if (is_active_sidebar('blog_sidebar')): ?>
+                        <aside id="secondary" class="widget-area">
+                            <?php dynamic_sidebar('blog_sidebar'); ?>
+                        </aside>
+                    <?php endif; ?>
 
-                                <?php
-                                // news_type と event_type のタクソノミーを一度に処理
-                                $taxonomies = ['news_type', 'event_type'];
+                </div>
+                <div class="archive-posts__main">
+                    <?php while ($the_query->have_posts()):
+                        $the_query->the_post(); ?>
+                        <article class="post-item">
+                            <a href="<?php the_permalink(); ?>" class="post-link">
+                                <div class="post-meta">
+                                    <span class="post-date"><?php echo get_the_date('Y.m.d'); ?></span>
 
-                                foreach ($taxonomies as $taxonomy) {
-                                    $terms = get_the_terms(get_the_ID(), $taxonomy);
-                                    if ($terms && !is_wp_error($terms)):
-                                        foreach ($terms as $term): ?>
-                                            <span class="post-category"><?php echo esc_html($term->name); ?></span>
-                                        <?php endforeach;
-                                    endif;
-                                }
+                                    <?php
+                                    // news_type と event_type のタクソノミーを一度に処理
+                                    $taxonomies = ['news_type', 'event_type'];
 
-                                ?>
+                                    foreach ($taxonomies as $taxonomy) {
+                                        $terms = get_the_terms(get_the_ID(), $taxonomy);
+                                        if ($terms && !is_wp_error($terms)):
+                                            foreach ($terms as $term): ?>
+                                                <span class="post-category"><?php echo esc_html($term->name); ?></span>
+                                            <?php endforeach;
+                                        endif;
+                                    }
 
-                                <h2 class="post-title"><?php the_title(); ?></h2>
-                                <?php if (get_post_meta(get_the_ID(), 'date', true)): ?>
-                                    <p class="detail"><?php echo esc_html(get_post_meta(get_the_ID(), 'date', true)); ?></p>
-                                <?php endif; ?>
+                                    ?>
 
-                                <?php if (get_post_meta(get_the_ID(), 'place', true)): ?>
-                                    <p class="detail"><?php echo esc_html(get_post_meta(get_the_ID(), 'place', true)); ?></p>
-                                <?php endif; ?>
-                            </div>
-                            <div class="arrow"> </div>
-                        </a>
-                    </article>
-                    <hr class="post-divider">
-                <?php endwhile; ?>
+                                    <h2 class="post-title"><?php the_title(); ?></h2>
+                                    <?php if (get_post_meta(get_the_ID(), 'date', true)): ?>
+                                        <p class="detail"><?php echo esc_html(get_post_meta(get_the_ID(), 'date', true)); ?></p>
+                                    <?php endif; ?>
+
+                                    <?php if (get_post_meta(get_the_ID(), 'place', true)): ?>
+                                        <p class="detail"><?php echo esc_html(get_post_meta(get_the_ID(), 'place', true)); ?></p>
+                                    <?php endif; ?>
+                                </div>
+                                <div class="arrow"> </div>
+                            </a>
+                        </article>
+                        <hr class="post-divider">
+                    <?php endwhile; ?>
+                </div>
+
             </div><!-- .archive-posts -->
 
             <div class="pagination">

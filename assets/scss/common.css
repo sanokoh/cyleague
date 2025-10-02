@@ -234,9 +234,9 @@ body {
   color: #000000;
   font-size: 100%;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   background-color: #FFFFFF;
-  line-height: 2;
+  line-height: 1.7;
   font-family: "Futura PT", "Noto Sans JP", sans-serif;
   overflow: scroll;
   margin: 0 auto;
@@ -291,7 +291,7 @@ a:active {
 }
 
 p {
-  line-height: 2;
+  line-height: 1.7;
 }
 
 /* 通常時のclearfix
@@ -874,7 +874,7 @@ header .header nav.header-black li {
 .breadcrumb {
   margin-top: 40px;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (min-width: 577px) {
   .breadcrumb {
@@ -972,7 +972,7 @@ header .header nav.header-black li {
   font-size: 60px;
   color: #FFF;
   line-height: 1.571;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (max-width: 576px) {
   #top_page .hero__content .head {
@@ -1031,7 +1031,7 @@ header .header nav.header-black li {
 #top_page .news-box .news-title {
   color: #FFF;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.143;
   padding-top: 24px;
 }
@@ -1079,7 +1079,7 @@ header .header nav.header-black li {
   #top_page .news-box--sp .news-title {
     color: #FFF;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 2.143;
     padding-top: 24px;
   }
@@ -1162,7 +1162,7 @@ header .header nav.header-black li {
   }
   #top_page .about .square-box .square-box-wrapper .heading, #top_page .service .square-box .square-box-wrapper .heading {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: -35px;
     z-index: 1000;
   }
@@ -1202,7 +1202,7 @@ header .header nav.header-black li {
   }
   #top_page .about .square-box .square-box-wrapper .heading, #top_page .service .square-box .square-box-wrapper .heading {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: -35px;
     z-index: 1000;
   }
@@ -1267,7 +1267,7 @@ header .header nav.header-black li {
   #top_page .about .header, #top_page .service .header {
     text-align: center;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 1.2;
@@ -1275,13 +1275,13 @@ header .header nav.header-black li {
   #top_page .about .sub, #top_page .service .sub {
     text-align: center;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     padding-bottom: 20px;
     line-height: 1.2;
   }
   #top_page .about .lead, #top_page .service .lead {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 20px;
     margin-bottom: 60px;
   }
@@ -1375,7 +1375,7 @@ header .header nav.header-black li {
 }
 #top_page .news .post .header .square-box .square-box-wrapper .heading {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: -35px;
   z-index: 1000;
 }
@@ -1393,7 +1393,7 @@ header .header nav.header-black li {
   font-size: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (min-width: 577px) {
   #top_page .news .post .header__title {
@@ -1409,7 +1409,7 @@ header .header nav.header-black li {
 #top_page .news .post .header__caption {
   font-size: 16px;
   color: #FFF;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (max-width: 576px) {
   #top_page .news .post .header__caption {
@@ -1475,7 +1475,7 @@ header .header nav.header-black li {
 #top_page .news .post .post-item .text .title {
   color: #FFF;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.143;
   padding-top: 24px;
   transition: all 0.3s;
@@ -1595,7 +1595,7 @@ header .header nav.header-black li {
 }
 #top_page .group-companies .header .square-box .square-box-wrapper .heading {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: -35px;
   z-index: 1000;
 }
@@ -1611,7 +1611,7 @@ header .header nav.header-black li {
 #top_page .group-companies .header__title {
   color: #000;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1804,10 +1804,10 @@ header .header nav.header-black li {
 #about_page .mv__content .head {
   margin-top: 90px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   line-height: 1.571;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 @media screen and (max-width: 576px) {
@@ -1817,7 +1817,7 @@ header .header nav.header-black li {
 }
 #about_page .mv__content .lead {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   padding-top: 10px;
   letter-spacing: 0.1em;
@@ -1879,7 +1879,7 @@ header .header nav.header-black li {
   }
   #about_page .about-company .about-content .square-box .square-box-wrapper .heading {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: -35px;
     z-index: 1000;
   }
@@ -1919,7 +1919,7 @@ header .header nav.header-black li {
   }
   #about_page .about-company .about-content .square-box .square-box-wrapper .heading {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: -35px;
     z-index: 1000;
   }
@@ -1945,8 +1945,8 @@ header .header nav.header-black li {
 }
 #about_page .about-company .about-content .text-block .heading {
   font-size: 30px;
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.7;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 576px) {
@@ -1959,10 +1959,10 @@ header .header nav.header-black li {
 }
 #about_page .about-company .about-content .text-block .subheading {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
   color: #000;
-  line-height: 2;
+  line-height: 1.7;
 }
 @media screen and (min-width: 577px) {
   #about_page .about-company .about-content .text-block .subheading {
@@ -1981,9 +1981,9 @@ header .header nav.header-black li {
 }
 #about_page .about-company .about-content .detail .description {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
-  line-height: 2;
+  line-height: 1.7;
   width: 50%;
 }
 @media screen and (min-width: 577px) {
@@ -2034,7 +2034,7 @@ header .header nav.header-black li {
   position: relative;
   padding-right: 140px;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 #about_page .about-company .buttons .link-button:after {
@@ -2102,7 +2102,7 @@ header .header nav.header-black li {
 }
 #about_page #group_companies .group-companies__content .header .square-box .square-box-wrapper .heading {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: -35px;
   z-index: 1000;
 }
@@ -2113,7 +2113,7 @@ header .header nav.header-black li {
 #about_page #group_companies .group-companies__content .header .heading {
   color: #FFF;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin-top: 10px;
 }
@@ -2128,7 +2128,7 @@ header .header nav.header-black li {
 #about_page #group_companies .group-companies__content .company-overview .head {
   color: #FFF;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 #about_page #group_companies .group-companies__content .company-overview .image-container {
@@ -2199,7 +2199,7 @@ header .header nav.header-black li {
 }
 #about_page #company_structure .company-structure__content .header .square-box .square-box-wrapper .heading {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: -35px;
   z-index: 1000;
 }
@@ -2210,14 +2210,14 @@ header .header nav.header-black li {
 #about_page #company_structure .company-structure__content .header .heading {
   color: #000;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin-top: 10px;
 }
 #about_page #company_structure .company-structure__content .header .description {
   color: #000;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin-top: 30px;
 }
@@ -2283,10 +2283,10 @@ header .header nav.header-black li {
 #service_page .mv__content .head {
   margin-top: 90px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   line-height: 1.571;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 @media screen and (max-width: 576px) {
@@ -2296,7 +2296,7 @@ header .header nav.header-black li {
 }
 #service_page .mv__content .lead {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   padding-top: 10px;
   letter-spacing: 0.1em;
@@ -2340,8 +2340,8 @@ header .header nav.header-black li {
 }
 #service_page .solution .solution-content .text-block .heading {
   font-size: 30px;
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.7;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 576px) {
@@ -2390,8 +2390,8 @@ header .header nav.header-black li {
 }
 #service_page .ir_service .ir_service-content .text-block .heading {
   font-size: 30px;
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.7;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 576px) {
@@ -2403,7 +2403,7 @@ header .header nav.header-black li {
 }
 #service_page .ir_service .lead {
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 60px;
 }
 @media screen and (max-width: 576px) {
@@ -2448,8 +2448,8 @@ header .header nav.header-black li {
 }
 #service_page .group .group-content .text-block .heading {
   font-size: 30px;
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.7;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 576px) {
@@ -2471,7 +2471,7 @@ header .header nav.header-black li {
 }
 #service_page .group .group-solution .service-list .service-title {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 60px;
 }
 @media screen and (max-width: 576px) {
@@ -2496,7 +2496,7 @@ header .header nav.header-black li {
 }
 #service_page .group .group-solution .service-list .service-content h3.wp-block-heading {
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (max-width: 576px) {
   #service_page .group .group-solution .service-list .service-content h3.wp-block-heading {
@@ -2506,12 +2506,12 @@ header .header nav.header-black li {
 }
 #service_page .group .group-solution .service-list .service-content h4.wp-block-heading {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 40px;
 }
 #service_page .group .group-solution .service-list .service-content p {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (max-width: 576px) {
   #service_page .group .group-solution .service-list .service-content p {
@@ -2524,7 +2524,7 @@ header .header nav.header-black li {
 }
 #service_page .group .group-solution .service-list .service-content .wp-block-list li {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 #service_page .group .group-solution .service-list .service-content .wp-block-list li::before {
   content: "";
@@ -2607,10 +2607,10 @@ header .header nav.header-black li {
 #ir_service .mv__content .head {
   margin-top: 90px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   line-height: 1.571;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 @media screen and (max-width: 576px) {
@@ -2620,7 +2620,7 @@ header .header nav.header-black li {
 }
 #ir_service .mv__content .lead {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   padding-top: 10px;
   letter-spacing: 0.1em;
@@ -2705,8 +2705,8 @@ header .header nav.header-black li {
 }
 #ir_service .solution .solution-content .text-block .heading {
   font-size: 30px;
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.7;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 576px) {
@@ -2718,10 +2718,10 @@ header .header nav.header-black li {
 }
 #ir_service .solution .solution-content .text-block .description {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
   color: #000;
-  line-height: 2;
+  line-height: 1.7;
 }
 @media screen and (min-width: 577px) {
   #ir_service .solution .solution-content .text-block .description {
@@ -2772,8 +2772,8 @@ header .header nav.header-black li {
 }
 #ir_service .features .features-content .text-block .heading {
   font-size: 30px;
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.7;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 576px) {
@@ -2786,10 +2786,10 @@ header .header nav.header-black li {
 }
 #ir_service .features .features-content .text-block .subheading {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
   color: #000;
-  line-height: 2;
+  line-height: 1.7;
 }
 @media screen and (min-width: 577px) {
   #ir_service .features .features-content .text-block .subheading {
@@ -2877,8 +2877,8 @@ header .header nav.header-black li {
 }
 #ir_service .plans .plans-content .text-block .heading {
   font-size: 30px;
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.7;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 576px) {
@@ -2891,10 +2891,10 @@ header .header nav.header-black li {
 }
 #ir_service .plans .plans-content .text-block .subheading {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
   color: #000;
-  line-height: 2;
+  line-height: 1.7;
 }
 @media screen and (min-width: 577px) {
   #ir_service .plans .plans-content .text-block .subheading {
@@ -3276,10 +3276,10 @@ header .header nav.header-black li {
 #message_page .mv__content .head {
   margin-top: 90px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
   line-height: 1.571;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 @media screen and (max-width: 576px) {
@@ -3294,7 +3294,7 @@ header .header nav.header-black li {
 }
 #message_page .mv__content .lead {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
   padding-top: 10px;
   letter-spacing: 0.1em;
@@ -3371,7 +3371,7 @@ header .header nav.header-black li {
 #message_page .message .content .executive-container .executive .heading {
   color: #fff;
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (max-width: 576px) {
   #message_page .message .content .executive-container .executive .heading {
@@ -3438,7 +3438,7 @@ header .header nav.header-black li {
   }
   #message_page .message .content .executive-container .executive .square-box .square-box-wrapper .heading {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: -35px;
     z-index: 1000;
   }
@@ -3477,7 +3477,7 @@ header .header nav.header-black li {
   }
   #message_page .message .content .executive-container .executive .square-box .square-box-wrapper .heading {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: -35px;
     z-index: 1000;
   }
@@ -3512,8 +3512,8 @@ header .header nav.header-black li {
 #message_page .message .text {
   margin-top: 30px;
   font-size: 14px;
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.7;
 }
 @media screen and (min-width: 577px) {
   #message_page .message .text {
@@ -3523,8 +3523,8 @@ header .header nav.header-black li {
 #message_page .message .profile {
   margin-top: 30px;
   font-size: 13px;
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.7;
 }
 @media screen and (min-width: 577px) {
   #message_page .message .profile {
@@ -3555,7 +3555,7 @@ header .header nav.header-black li {
   position: relative;
   padding-right: 140px;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 #message_page .buttons .link-button:after {
@@ -3614,10 +3614,10 @@ header .header nav.header-black li {
 #company_page .mv__content .head {
   margin-top: 90px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
   line-height: 1.571;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 @media screen and (max-width: 576px) {
@@ -3632,7 +3632,7 @@ header .header nav.header-black li {
 }
 #company_page .mv__content .lead {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
   padding-top: 10px;
   letter-spacing: 0.1em;
@@ -3667,7 +3667,7 @@ header .header nav.header-black li {
   background-color: #000;
   color: #fff;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3682,7 +3682,7 @@ header .header nav.header-black li {
 #company_page .company .section-content {
   padding-left: 50px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   align-self: center;
   width: 100%;
 }
@@ -3726,7 +3726,7 @@ header .header nav.header-black li {
   position: relative;
   padding-right: 140px;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 #company_page .buttons .link-button:after {
@@ -3797,10 +3797,10 @@ header .header nav.header-black li {
 #archive_page .mv-topics__content .head {
   margin-top: 90px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   line-height: 1.571;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 @media screen and (max-width: 576px) {
@@ -3810,7 +3810,7 @@ header .header nav.header-black li {
 }
 #archive_page .mv-topics__content .lead {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   padding-top: 10px;
   letter-spacing: 0.1em;
@@ -3853,10 +3853,10 @@ header .header nav.header-black li {
 #archive_page .mv-event__content .head {
   margin-top: 90px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   line-height: 1.571;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 @media screen and (max-width: 576px) {
@@ -3866,7 +3866,7 @@ header .header nav.header-black li {
 }
 #archive_page .mv-event__content .lead {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
   padding-top: 10px;
   letter-spacing: 0.1em;
@@ -3875,11 +3875,19 @@ header .header nav.header-black li {
 #archive_page .archive-posts {
   margin-top: 80px;
   margin-bottom: 80px;
+  display: flex;
+  gap: 30px;
 }
 @media screen and (max-width: 576px) {
   #archive_page .archive-posts {
     margin-top: 40px;
   }
+}
+#archive_page .archive-posts__sidebar {
+  width: 200px;
+}
+#archive_page .archive-posts__main {
+  width: 100%;
 }
 #archive_page .archive-posts .post-item {
   margin-bottom: 40px;
@@ -3921,7 +3929,7 @@ header .header nav.header-black li {
 }
 #archive_page .archive-posts .post-item .post-meta .post-date {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   margin-right: 39px;
 }
 @media screen and (min-width: 577px) {
@@ -3942,7 +3950,7 @@ header .header nav.header-black li {
   background-color: #000;
   color: #FFF;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   margin-right: 10px;
 }
@@ -3955,7 +3963,7 @@ header .header nav.header-black li {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 34px;
   transition: all 0.3s;
 }
@@ -4032,7 +4040,7 @@ header .header nav.header-black li {
 }
 #single_page .single-post .entry-header .entry-meta .entry-date {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 24px;
   margin-right: 39px;
   margin-bottom: 20px;
@@ -4049,7 +4057,7 @@ header .header nav.header-black li {
   background-color: #000;
   color: #FFF;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   margin-right: 10px;
 }
@@ -4063,7 +4071,7 @@ header .header nav.header-black li {
   margin-top: 20px;
   margin-bottom: 50px;
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.69;
 }
 @media screen and (max-width: 576px) {
@@ -4126,7 +4134,7 @@ header .header nav.header-black li {
 #single_page .single-post h5,
 #single_page .single-post h6 {
   margin-bottom: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #333333;
 }
 #single_page .single-post h1 {
@@ -4149,10 +4157,10 @@ header .header nav.header-black li {
   }
 }
 #single_page .single-post p {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 14px;
-  line-height: 2;
-  font-weight: 300;
+  line-height: 1.7;
+  font-weight: 400;
 }
 @media screen and (min-width: 577px) {
   #single_page .single-post p {
@@ -4262,7 +4270,7 @@ header .header nav.header-black li {
   padding-left: 69px;
   padding-bottom: 0;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin: 0 auto;
 }
@@ -4287,21 +4295,21 @@ header .header nav.header-black li {
 
 #product .entry-content .entry-title {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 60px;
 }
 #product .entry-content h3.wp-block-heading {
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 400;
 }
 #product .entry-content h4.wp-block-heading {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 40px;
 }
 #product .entry-content p {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 #product .entry-content .more-button {
   margin-top: 60px;
@@ -4340,7 +4348,7 @@ header .header nav.header-black li {
 #privacy_page .privacy h2,
 #privacy_page .privacy h3 {
   color: #333;
-  font-weight: 300;
+  font-weight: 400;
 }
 #privacy_page .privacy h1 {
   font-size: 28px;
