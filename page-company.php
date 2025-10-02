@@ -29,7 +29,7 @@ get_header();
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2163.4587032702498!2d139.7446418544293!3d35.66406203251425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b111ad1e99f%3A0xb088e1d2691de830!2z44K144Kk44Oq44O844Kw44Ob44O844Or44OH44Kj44Oz44Kw44K55qCq5byP5Lya56S-!5e0!3m2!1sja!2sjp!4v1729482691995!5m2!1sja!2sjp" width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CyLeague Holdings所在地"></iframe>
                                 <p class="mt20">アクセス<br>東京メトロ日比谷線「神谷町」駅徒歩約1分<br>銀座線「虎ノ門」駅徒歩約9分<br>都営地下鉄三田線「御成門」駅徒歩約9分</p>',
                     '設立' => '2023年12月',
-                    '資本金' => '99 百万円',
+                    '資本金' => '349 百万円',
                     '株主' => '株式会社チェンジホールディングス<br>
                     ※サイリーグホールディングス株式会社は株式会社チェンジホールディングスの100％子会社です。',
                     '代表取締役社長' => '高谷 康久（<a href="/message/#takatani" style="text-decoration: underline!important;">プロフィール</a>）',

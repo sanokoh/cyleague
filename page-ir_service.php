@@ -228,7 +228,8 @@ get_header();
 								</tr>
 								<tr>
 									<td class="service-name">インシデントハンドリング</td>
-									<td class="small-text merged-cell" colspan="2">年間1件 40時間まで</td>
+									<td class="small-text">年間1件 40時間まで</td>
+									<td class="small-text">年間1件 60時間まで</td>
 								</tr>
 							</tbody>
 						</table>
