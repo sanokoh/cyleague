@@ -23,8 +23,7 @@ get_header();
 			<div class="about-content">
 				<div class="image-block">
 					<picture>
-						<source
-							srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
+						<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.webp'; ?>"
 							type="image/webp">
 						<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/company_mark.png'; ?>"
 							alt="サイリーグホールディングスのロゴ" class="image" loading="lazy">
@@ -34,53 +33,53 @@ get_header();
 					<h2 class="heading">お客様の事業の<br class="sp-only">成長と発展を支える、<br class="pc-only">
 						総合的な<br class="sp-only">サイバーセキュリティ企業へ</h2>
 					<p class="subheading pc-only">
-					サイリーグホールディングスは、日本の企業や組織のサイバーセキュリティを高めることを使命とする持株会社です。M&A、業務提携、自社サービスの開発を通じて、ITインフラやネットワークの安全性を確保しつつ、事業の成長と発展を支えます。
+						サイリーグホールディングスは、日本の企業や組織のサイバーセキュリティを高めることを使命とする持株会社です。M&A、業務提携、自社サービスの開発を通じて、ITインフラやネットワークの安全性を確保しつつ、事業の成長と発展を支えます。
 
 					</p>
 				</div>
 				<div class="detail">
 					<div class="about-image">
 						<picture>
-							<source
-								srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/building-image.avif'; ?>"
+							<source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/building-image.avif'; ?>"
 								type="image/webp">
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/building-image.png'; ?>"
 								alt="オフィスビルの外観" class="image" loading="lazy">
 						</picture>
 					</div>
 					<p class="description">
-						<span class="sp-only">サイリーグホールディングスは、日本の企業や組織のサイバーセキュリティを高めることを使命とする持株会社です。M&A、業務提携、自社サービスの開発を通じて、ITインフラやネットワークの安全性を確保しつつ、事業の成長と発展を支えます。</span>
+						<span
+							class="sp-only">サイリーグホールディングスは、日本の企業や組織のサイバーセキュリティを高めることを使命とする持株会社です。M&A、業務提携、自社サービスの開発を通じて、ITインフラやネットワークの安全性を確保しつつ、事業の成長と発展を支えます。</span>
 						「リーグ（League）」の精神のもと、グループ企業やパートナーと切磋琢磨し、日本のサイバーセキュリティ業界を牽引します。セキュリティ人材育成にも注力し、企業が抱えるサイバー脅威に迅速に対応できる体制を構築。デジタル社会の安心・安全に貢献する総合的なサイバーセキュリティ企業を目指します。
 
 					</p>
 				</div>
 			</div>
 			<?php
-            // リンク情報を生成
-            $links = [
-                ['url' => home_url('/message'), 'class' => 'message', 'text' => 'メッセージ'],
-                ['url' => home_url('/company'), 'class' => 'company', 'text' => '会社概要/アクセス']
-            ];
-            set_query_var('links', $links);
-            get_template_part('templates/parts/link-buttons');
-            ?>
+			// リンク情報を生成
+			$links = [
+				['url' => home_url('/message'), 'class' => 'message', 'text' => 'メッセージ'],
+				['url' => home_url('/company'), 'class' => 'company', 'text' => '会社概要/アクセス']
+			];
+			set_query_var('links', $links);
+			get_template_part('templates/parts/link-buttons');
+			?>
 		</div>
 	</section>
 	<section id="group_companies">
 		<div class="group-companies container">
 			<div class="group-companies__content">
 				<div class="header">
-					<!-- <div class="square-box">
+					<div class="square-box">
 						<div class="square-box-wrapper">
 							<div class="inner-box">
 								<span class="inner-box-text"></span>
 							</div>
 						</div>
-					</div> -->
+					</div>
 					<h2 class="heading">チェンジ<br class="sp-only">ホールディングスの<br class="sp-only">事業領域とグループ各社</h2>
 				</div>
 				<div class="company-overview">
-					<!-- <h3 class="head">株式会社チェンジホールディングス</h3>
+					<h3 class="head">株式会社チェンジホールディングス</h3>
 					<div class="change-logo image-container pr70 pl70">
 						<picture>
 							<source
@@ -89,9 +88,9 @@ get_header();
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/change_holdings_logo_colored.png'; ?>"
 								alt="株式会社チェンジホールディングスのロゴ" class="image">
 						</picture>
-					</div> -->
+					</div>
 					<div class="image-container container">
-						<!-- <picture>
+						<picture>
 							<source
 								srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/group_companies_NEW-IT.avif'; ?>"
 								type="image/webp">
@@ -106,21 +105,21 @@ get_header();
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/group_comapnies_publitec.png'; ?>"
 								alt="パブリテックのグループ企業: TRUST BANK、Governance Technologies、Travel Zip、Orb、LoGoチャット、LoGoフォーム、ふるさとチョイス、ガバメイツ、アップクロス"
 								class="image" loading="lazy">
-						</picture> -->
-						<picture>
+						</picture>
+						<!-- <picture>
 							<source
 								srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/img_business_area01.webp'; ?>"
 								type="image/webp">
 							<img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/img_business_area01.png'; ?>"
 								alt="NEW-ITのグループ企業: CHANGE、サイリーグホールディングス、E-Guardian、IdealRoute Consulting、DFA Robotics、beacapp、KaWaL eLearning、KaWaL診断.パブリテックのグループ企業: TRUST BANK、Governance Technologies、Travel Zip、Orb、LoGoチャット、LoGoフォーム、ふるさとチョイス、ガバメイツ、アップクロス"
 								class="image" loading="lazy">
-						</picture>
+						</picture> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- <section id="company_structure">
+	<section id="company_structure">
 		<div class="company-structure container">
 			<div class="company-structure__content">
 				<div class="header">
@@ -147,7 +146,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</section> -->
+	</section>
 </main>
 <?php get_footer(); ?>
 

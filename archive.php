@@ -55,7 +55,6 @@
                             <?php dynamic_sidebar('blog_sidebar'); ?>
                         </aside>
                     <?php endif; ?>
-
                 </div>
                 <div class="archive-posts__main">
                     <?php while ($the_query->have_posts()):

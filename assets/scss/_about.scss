@@ -22,10 +22,12 @@
 		}
 
 		.about-content {
-			padding-left: 156px;
-			padding-right: 156px;
+			// padding-left: 156px;
+			// padding-right: 156px;
+			max-width: 850px;
 			min-width: 800px;
 			position: relative;
+			margin: 0 auto;
 
 			@include sp {
 				padding: 0;
@@ -47,7 +49,7 @@
 				@include pc {
 					position: absolute;
 					top: -126px;
-					left: 10px;
+					left: -145px;
 				}
 
 				@include sp {
@@ -65,7 +67,7 @@
 
 				.heading {
 					font-size: 30px;
-					font-weight: 400;
+					font-weight: 300;
 					line-height: 1.7;
 					margin-bottom: 40px;
 
@@ -84,7 +86,7 @@
 					}
 
 					font-size: 14px;
-					font-weight: 400;
+					font-weight: 300;
 					margin-bottom: 10px;
 					color: #000;
 					line-height: 1.7;
@@ -155,14 +157,14 @@
 	}
 
 	#group_companies {
-		background-color: #414141;
+		background-color: #000;
 		padding-top: 80px;
 		padding-bottom: 80px;
 
 		.group-companies {
 			&__content {
 				.header {
-					margin-bottom: 40px;
+					margin-bottom: 90px;
 
 					.square-box {
 						@include square-box(#FFF, 14px, 45px, 42px, center);
@@ -196,11 +198,6 @@
 						font-weight: 400;
 						margin-bottom: 10px;
 					}
-
-
-
-
-
 					.image-container {
 						margin-bottom: 20px;
 						display: flex;
@@ -257,7 +254,7 @@
 					.heading {
 						color: #000;
 						font-size: 30px;
-						font-weight: 400;
+						font-weight: 300;
 						text-align: center;
 						margin-top: 10px;
 					}
@@ -269,7 +266,7 @@
 
 						color: #000;
 						font-size: 14px;
-						font-weight: 400;
+						font-weight: 300;
 						text-align: center;
 						margin-top: 30px;
 					}

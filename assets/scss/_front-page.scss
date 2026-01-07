@@ -7,6 +7,7 @@
 	}
 
 	.hero-wrapper {
+		margin-bottom: 180px;
 		@include sp {
 			height: 100vh;
 		}
@@ -219,8 +220,7 @@
 	}
 
 	.about {
-		margin-top: 100px;
-		margin-bottom: 240px;
+		margin-bottom: 180px;
 
 		@include sp {
 			margin-top: 100px;
@@ -347,6 +347,10 @@
 	.service {
 		@extend .about;
 	}
+	.news-topics {
+		@extend .about;
+	}
+
 
 	.news {
 		background-color: #000;
@@ -377,16 +381,16 @@
 
 			}
 
-			&:first-child {
+			&:last-child {
 				@include pc {
-					border-right: 1px solid #FFF;
+					border-left: 1px solid #FFF;
 
 					.header {
 						margin-right: 120px;
 					}
 
 					.post-list {
-						margin-right: 120px;
+						// margin-right: 120px;
 					}
 				}
 
@@ -403,6 +407,7 @@
 				@include pc {
 					display: flex;
 					justify-content: center;
+					flex-direction: column;
 				}
 
 				.square-box {
@@ -451,6 +456,8 @@
 				flex-direction: column;
 				gap: 80px;
 				padding-top: 80px;
+				padding-left: 42.5px;
+				padding-right: 42.5px;
 
 			}
 
@@ -458,7 +465,7 @@
 				@include pc {
 
 					.post-list {
-						margin-left: 120px;
+						// margin-left: 120px;
 					}
 				}
 
@@ -577,6 +584,7 @@
 			@include pc {
 				display: flex;
 				justify-content: center;
+				flex-direction: column;
 			}
 
 			.square-box {
@@ -620,12 +628,12 @@
 		}
 
 		.companies-list {
-			margin-top: 70px;
+			margin-top: 40px;
 			display: flex;
 			justify-content: center;
 			align-items: flex-end;
 			flex-wrap: wrap;
-
+			gap: 100px;
 			@include sp {
 				margin-top: 80px;
 				flex-direction: column;
@@ -635,7 +643,12 @@
 			.company {
 				width: 40%;
 				text-align: center;
-				margin-bottom: 120px;
+				&:nth-of-type(odd){
+					text-align: right;
+				}
+				&:nth-of-type(even){
+					text-align: left;
+				}
 
 				@include sp {
 					width: 100%;

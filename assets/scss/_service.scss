@@ -23,7 +23,6 @@
 
 		.solution-content {
 			@include pc {
-
 				padding-left: 156px;
 				padding-right: 156px;
 				min-width: 800px;
@@ -66,7 +65,15 @@
 
 				}
 			}
+		}
 
+		.solution-lead {
+			.sub-heading {
+				@include pc {
+					font-size: 24px;
+					margin-bottom: 40px;
+				}
+			}
 		}
 
 		.solution-table {
@@ -74,6 +81,150 @@
 				width: 100%;
 			}
 
+		}
+	}
+
+	#our_services {
+		background-color: #000;
+	}
+
+	.our-services {
+		padding-top: 120px;
+
+		&__head {
+			.header {
+				margin-bottom: 90px;
+
+				.square-box {
+					@include square-box(#FFF, 14px, 45px, 42px, center);
+
+					.inner-box::before {
+						width: 20px !important;
+						height: 22px !important;
+					}
+				}
+
+				.heading {
+					color: #FFF;
+					font-size: 30px;
+					font-weight: 400;
+					text-align: center;
+					margin-top: 10px;
+					display: flex;
+					flex-direction: column;
+
+					&:after {
+						content: "Our Services";
+						position: relative;
+						color: #FFF;
+						font-size: 14px;
+					}
+
+					@include sp {
+						font-size: 22px;
+
+					}
+				}
+			}
+
+		}
+
+		&__contents {
+			.content {
+				max-width: 1180px;
+				margin: 0 auto;
+				display: flex;
+				gap: 40px;
+				margin-bottom: 120px;
+
+				&:nth-last-of-type(even) {
+					flex-direction: row-reverse;
+				}
+
+				&__text {
+					display: flex;
+					width: 50%;
+
+					.text-company-mark {
+						mr10 img {
+							width: 46px;
+						}
+					}
+
+					.text-wrapper {
+						margin-left: 10px;
+					}
+
+					.header {
+						.span {
+							font-size: 24px;
+
+						}
+
+						color: #FFF;
+						font-size: 30px;
+						margin-bottom: 40px;
+					}
+
+					.sub-header {
+						color: #FFF;
+						font-size: 24px;
+						margin-bottom: 20px;
+					}
+
+					.lead {
+						color: #FFF;
+						margin-bottom: 20px;
+
+					}
+
+					.btn-detail {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						gap: 12px;
+						margin-left: auto;
+						width: 164px;
+						height: 40px;
+						border: 1px solid #d9d9d9;
+						color: #fff;
+						text-decoration: none;
+						background: transparent;
+					}
+
+					.btn-detail::after {
+						content: "›";
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						height: 1em;
+						font-size: 34px;
+						line-height: 1;
+						transform: translateY(-4px);
+						opacity: .9;
+					}
+
+					.btn-detail:hover {
+						opacity: .85;
+					}
+
+					.border {
+						margin-top: 40px;
+						margin-bottom: 40px;
+					}
+
+				}
+
+				&__pic {
+					width: 50%;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
 		}
 	}
 

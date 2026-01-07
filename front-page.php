@@ -156,7 +156,7 @@ get_header();
                     </div>
                 </div>
                 <h2 class="header">
-                    サイリーグについて
+                    サイリーグHDについて
                 </h2>
                 <p class="sub">Who We Are</p>
             </div>
@@ -196,7 +196,7 @@ get_header();
                                 </div>
                                 <h2 class="heading">製品・サービス</h2>
                             </div>
-                            <p class="description">特定から復旧まで幅広いソリューションをワンストップで提供しています</p>
+                            <p class="description">サイリーグHDのサイバーレジリエンス強化サービス</p>
                         </div>
                         <p class="more"> <a href="/service" class="more-button">More...</a> </p>
 
@@ -228,13 +228,71 @@ get_header();
             </div>
             <div class="container">
                 <p class="lead">
-                    特定から復旧まで幅広いソリューションをワンストップで提供しています </p>
+                サイリーグHDのサイバーレジリエンス強化サービス </p>
                 <p class="more"> <a href="/service" class="more-button">More...</a> </p>
+            </div>
+        </div>
+    </section>
+    <section id="news_topics" class="news-topics">
+        <div class="pc-only">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="text-wrapper">
+                        <div class="square-box">
+                            <div class="square-box-wrapper">
+                                <div class="inner-box">
+                                    <span class="inner-box-text">News <br>＆ Topics</span>
+                                </div>
+                                <h2 class="heading">ニュース & トピックス</h2>
+                            </div>
+                            <p class="description">事業活動、プロジェクト、各種リリースに関する情報をお届けします</p>
+                        </div>
+                        <p class="more"> <a href="/about" class="more-button">More...</a> </p>
+                    </div>
+                    <div class="image-block image-block-left">
+                        <picture>
+                            <source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/news＆topics.avif'; ?>"
+                                type="image/webp">
+                            <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/news＆topics.png'; ?>"
+                                alt="サイリーグについての説明セクションのイメージ" class="image" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sp-only">
+            <div class="container">
+                <div class="square-box">
+                    <div class="square-box-wrapper">
+                        <div class="inner-box">
+                            <span class="inner-box-text"></span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="header">
+                    ニュース & トピックス
+                </h2>
+                <p class="sub">News ＆ Topics</p>
+            </div>
+            <div class="image">
+                <picture>
+                    <source srcset="<?php echo STYLESHEET_DIRECTORY . '/assets/images/news＆topics.avif'; ?>"
+                        type="image/webp">
+                    <img src="<?php echo STYLESHEET_DIRECTORY . '/assets/images/news＆topics.png'; ?>"
+                        alt="サイリーグについての説明セクションのイメージ" class="image" loading="lazy">
+                </picture>
+            </div>
+            <div class="container">
+                <p class="lead">
+                    事業活動、プロジェクト、各種リリースに関する情報をお届けします
+                </p>
+                <p class="more"> <a href="/about" class="more-button">More...</a> </p>
             </div>
         </div>
     </section>
     <section id="news" class="news">
         <div class="container wrapper">
+            <!-- 資料ダウンロード -->
             <div class="post">
                 <div class="header">
                     <div class="square-box">
@@ -245,59 +303,125 @@ get_header();
                         </div>
                     </div>
                     <div class="haader__wrapper">
-                        <h2 class="header__title">トピックス</h2>
-                        <span class="header__caption">News & Topics</span>
+                        <h2 class="header__title">資料ダウンロード</h2>
+                        <span class="header__caption">Material Download</span>
                     </div>
                 </div>
+
                 <div class="post-list">
                     <?php
-                    // カスタム投稿タイプ 'topics' の最新3件を取得するクエリ
+                    // カスタム投稿タイプ 'downloads' の最新3件を取得
                     $args = array(
-                        'post_type' => 'topics', // カスタム投稿タイプ 'topics'
-                        'posts_per_page' => 3,        // 表示する投稿数
-                        'orderby' => 'date',   // 日付順に並び替え
-                        'order' => 'DESC',   // 最新順に表示
+                        'post_type' => 'downloads',
+                        'posts_per_page' => 3,
+                        'orderby' => 'date',
+                        'order' => 'DESC',
                     );
-                    $topics_query = new WP_Query($args);
+                    $downloads_query = new WP_Query($args);
 
-                    if ($topics_query->have_posts()):
-                        // 投稿ループ
-                        while ($topics_query->have_posts()):
-                            $topics_query->the_post(); ?>
+                    if ($downloads_query->have_posts()):
+                        while ($downloads_query->have_posts()):
+                            $downloads_query->the_post(); ?>
 
                             <a href="<?php the_permalink(); ?>" class="post-item">
                                 <div class="text">
-                                    <!-- 日付を動的に表示 -->
                                     <span class="date"><?php echo get_the_date('Y.m.d'); ?></span>
 
-                                    <!-- カテゴリ（タクソノミー）を動的に表示 -->
                                     <?php
-                                    $terms = get_the_terms(get_the_ID(), 'news_type'); // カスタムタクソノミー 'news_type'
-                                    if ($terms && !is_wp_error($terms)):
+                                    // 資料カテゴリ（material_category）を表示（最初の1つだけ）
+                                    $terms = get_the_terms(get_the_ID(), 'material_category');
+                                    if ($terms && !is_wp_error($terms)) {
                                         $term = array_shift($terms);
-                                        ?>
-                                        <span class="category"><?php echo esc_html($term->name); ?></span>
-                                    <?php endif; ?>
+                                        echo '<span class="category">' . esc_html($term->name) . '</span>';
+                                    }
+                                    ?>
 
-                                    <!-- タイトルを動的に表示 -->
                                     <p class="title"><?php echo mb_strimwidth(get_the_title(), 0, 100, '...'); ?></p>
                                 </div>
-                                <div class="arrow"> </div>
+                                <div class="arrow"></div>
                             </a>
 
                         <?php endwhile; ?>
 
-                        <!-- More ボタン -->
                         <div class="more">
-                            <a href="<?php echo get_post_type_archive_link('topics'); ?>" class="more-button">More...</a>
+                            <?php
+                            // downloads は has_archive=true 前提。falseなら固定ページURLにする必要あり
+                            $downloads_archive_url = get_post_type_archive_link('downloads');
+                            ?>
+                            <a href="<?php echo esc_url($downloads_archive_url); ?>" class="more-button">More...</a>
                         </div>
 
                     <?php else: ?>
-                        <p>トピックスが見つかりませんでした。</p>
-                    <?php endif; ?>
+                        <p>資料が見つかりませんでした。</p>
+                    <?php endif;
 
+                    wp_reset_postdata();
+                    ?>
+                </div>
+            </div>
+
+            <!-- ブログ -->
+            <div class="post">
+                <div class="header">
+                    <div class="square-box">
+                        <div class="square-box-wrapper">
+                            <div class="inner-box">
+                                <span class="inner-box-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="haader__wrapper">
+                        <h2 class="header__title">ブログ</h2>
+                        <span class="header__caption">Blog</span>
+                    </div>
+                </div>
+                <div class="post-list">
                     <?php
-                    // ループ後にクエリをリセット
+                    // 標準投稿（ブログ）の最新3件
+                    $args = array(
+                        'post_type' => 'post', // 標準投稿
+                        'posts_per_page' => 3,
+                        'orderby' => 'date',
+                        'order' => 'DESC',
+                    );
+                    $post_query = new WP_Query($args);
+
+                    if ($post_query->have_posts()):
+                        while ($post_query->have_posts()):
+                            $post_query->the_post(); ?>
+
+                            <a href="<?php the_permalink(); ?>" class="post-item">
+                                <div class="text">
+                                    <span class="date"><?php echo get_the_date('Y.m.d'); ?></span>
+
+                                    <?php
+                                    // 標準カテゴリ（category）を表示（最初の1つだけ）
+                                    $cats = get_the_category();
+                                    if (!empty($cats)) {
+                                        echo '<span class="category">' . esc_html($cats[0]->name) . '</span>';
+                                    }
+                                    ?>
+
+                                    <p class="title"><?php echo mb_strimwidth(get_the_title(), 0, 100, '...'); ?></p>
+                                </div>
+                                <div class="arrow"></div>
+                            </a>
+
+                        <?php endwhile; ?>
+
+                        <div class="more">
+                            <?php
+                            // ★「投稿ページ」（/blog/ など）へのリンク
+                            $posts_page_id = get_option('page_for_posts');
+                            $blog_url = $posts_page_id ? get_permalink($posts_page_id) : home_url('/');
+                            ?>
+                            <a href="<?php echo esc_url($blog_url); ?>" class="more-button">More...</a>
+                        </div>
+
+                    <?php else: ?>
+                        <p>ブログが見つかりませんでした。</p>
+                    <?php endif;
+
                     wp_reset_postdata();
                     ?>
                 </div>
@@ -313,7 +437,6 @@ get_header();
                         </div>
                     </div>
                     <div class="header__wrapper">
-
                         <h2 class="header__title">イベント・セミナー情報</h2>
                         <span class="header__caption">Events & Seminars</span>
                     </div>
@@ -327,12 +450,12 @@ get_header();
                         'orderby' => 'date',   // 日付順に並び替え
                         'order' => 'DESC',   // 最新順に表示
                     );
-                    $topics_query = new WP_Query($args);
+                    $post_query = new WP_Query($args);
 
-                    if ($topics_query->have_posts()):
+                    if ($post_query->have_posts()):
                         // 投稿ループ
-                        while ($topics_query->have_posts()):
-                            $topics_query->the_post(); ?>
+                        while ($post_query->have_posts()):
+                            $post_query->the_post(); ?>
 
                             <a href="<?php the_permalink(); ?>" class="post-item">
                                 <div class="text">

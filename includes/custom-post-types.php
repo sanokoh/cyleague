@@ -21,8 +21,8 @@ function my_custom_post_type()
 		'description' => 'Products ＆ Services',
 		'has_archive' => false,
 		'rewrite' => array(
-			'slug' => 'products',  // カスタム投稿タイプのスラッグ（URLに表示される部分）
-			'with_front' => false  // trueの場合、前にベースのパーマリンク（例: /blog/）が付く
+			'slug' => 'products',
+			'with_front' => false
 		),
 		'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
 		'menu_icon' => 'dashicons-admin-post',
@@ -78,6 +78,37 @@ function my_custom_post_type()
 		'rewrite' => array('slug' => 'event'),
 		'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
 		'menu_icon' => 'dashicons-admin-post',
+		'hierarchical' => false,
+		'show_in_rest' => true,
+	));
+
+	// 資料ダウンロード投稿タイプ（追加）
+	register_post_type('downloads', array(
+		'labels' => array(
+			'name' => '資料ダウンロード',
+			'singular_name' => '資料ダウンロード',
+			'menu_name' => '資料ダウンロード',
+			'all_items' => 'すべての資料',
+			'add_new' => '新規追加',
+			'add_new_item' => '新しい資料を追加',
+			'edit_item' => '資料を編集',
+			'new_item' => '新しい資料',
+			'view_item' => '資料を見る',
+			'search_items' => '資料を検索',
+			'not_found' => '資料が見つかりません',
+			'not_found_in_trash' => 'ゴミ箱に資料が見つかりません',
+		),
+		'public' => true,
+		'description' => 'Documents Download',
+		'has_archive' => true,
+		'rewrite' => array(
+			'slug' => 'download',
+			'with_front' => false
+		),
+		'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+		// カテゴリ分けしたい場合に備えて category を有効化
+		// 'taxonomies' => array('category'),
+		'menu_icon' => 'dashicons-media-document',
 		'hierarchical' => false,
 		'show_in_rest' => true,
 	));
